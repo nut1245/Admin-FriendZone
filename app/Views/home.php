@@ -30,6 +30,7 @@
 
 <body>
   <div class="container-scroller">
+    <?php $session = session(); ?>
     <!-- partial:partials/_sidebar.html -->
     <nav class="sidebar sidebar-offcanvas" id="sidebar">
       <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
@@ -333,8 +334,8 @@
         <div class="content-wrapper">
           <div class="row">
             <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-              <div class="card" >
-                <div class="card-body " >
+              <div class="card">
+                <div class="card-body ">
                   <div class="row">
                     <div class="col-9">
                       <div class="d-flex align-items-center align-self-start">
@@ -413,7 +414,7 @@
               </div>
             </div>
           </div>
-          <!------------------------------------- ตารางแสดงข้อมูล ------------------------------------->
+          <!------------------------------------- Tabel show data User ------------------------------------->
           <div class="row ">
             <div class="col-12 grid-margin">
               <div class="card">
@@ -438,304 +439,50 @@
                           <th> รหัสบัตรประชาชน </th>
                           <th> เพศ </th>
                           <th> วันเกิด </th>
-                          <th> ที่อยุ่ </th>
                           <th> อีเมล </th>
                           <th> สถานะ </th>
                           <th> Action </th>
                         </tr>
                       </thead>
                       <tbody>
+                        <?php $no = 1;
+                        foreach ($user as $key => $value) { ?>
+                          <tr>
+                            <td class="id">
+                              <?php echo $value['userId']; ?>
+                            </td>
+                            <td>
+                              <img src="<?php echo $value['userImage']; ?>" alt="image" />
+                              <span class="pl-2"><?php echo $value['FName']; ?></span>
+                            </td>
+                            <td> <?php echo $value['idCard']; ?> </td>
+                            <td> <?php echo $value['gender']; ?> </td>
+                            <td> <?php echo $value['birthday']; ?> </td>
+                            <td> <?php echo $value['email']; ?> </td>
+                            <td>
+                              <?php if ($value['statusUser'] == "0") {
+                                echo "<p>รอการยืนยันตัวตน</p>";
+                              } else if ($value['statusUser'] == "1") {
+                                echo "<p>ยืนยันตัวตนสำเร็จ</p>";
+                              };
+                              ?>
+                            </td>
+                            <td>
+                              <a href="#" class="btn btn-outline-primary btn-update" data-bs-toggle="modal" data-bs-target="#update<?= $value
+                              ['userId'] ?>">
+                                <i class="mdi mdi-eye"></i>
+                              </a>
+                            </td>
+                          </tr>
+                        <?php } ?>
 
-                        <tr>
-                          <td class="id">
-                            1
-                          </td>
-                          <td>
-                            <img src="https://cdn.discordapp.com/attachments/687292314988707850/689003346740379667/76912995_249466042696626_7100283618412462080_o.jpg" alt="image" />
-                            <span class="pl-2">ณัฐพล แซ่โฟ้ง</span>
-                          </td>
-                          <td> 1559900381325 </td>
-                          <td> ชาย</td>
-                          <td> 20-2-2000 </td>
-                          <td> 118/9 หมู่ 5 </td>
-                          <td> 624259012@webmail.npru.ac.th </td>
-                          <td>
-                            <div class="badge badge-outline-success">ยืนยันตัวตนสำเร็จ</div>
-                          </td>
-                          <td>
-                            <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#exampleModalCenter">
-                              <i class="mdi mdi-eye"></i>
-                            </button>
 
-                            <!-- Modal -->
-                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                              <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
-                                <div class="modal-content">
-                                  <div class="modal-header" style="background-color:#191c24">
-                                    <h5 class="modal-title" id="exampleModalLongTitle">ข้อมูลเพิ่มเติม</h5>
-                                    <button type="button" class="close " data-dismiss="modal" aria-label="Close" style="color:#fff; margin-right:1px;">
-                                      <span aria-hidden="true">&times;</span>
-                                    </button>
-                                  </div>
-                                  <div class="modal-body " style="background-color:#191c24">
-                                    <div class="container-fluid">
-                                      <div class="row">
-                                        <div class="col-md-4"> <img class="#" src="https://cdn.discordapp.com/attachments/687292314988707850/689003346740379667/76912995_249466042696626_7100283618412462080_o.jpg" style="width: 100%; height:90%; border-radius:10%" /></div>
-                                        
-                                        <div class="col-md-2 ">
-                                          <div class="decoration">
-                                            <div class="decoration-inside">
-                                            </div>
-                                          </div>
-                                        </div>
 
-                                        
-                                        <div class="col-md-6 ">
-                                          <img class="#" src="https://cdn.discordapp.com/attachments/901413238841946187/946620558420873306/-2021-.jpg" style="width: 100%; height:90%; border-radius:3%" />
-                                      </div>
-                                      </div>
-                                      <div class="row">
-                                        <div class="col-md-3 ">
-                                          <h4 style="color:	#FF00AA;">ชื่อ-นามสกุล :<span style="color:#fff"> ณัฐพล แซ่โฟ้ง</span></h4>
-                                        </div>
-                                        <div class="col-md-6 ms-auto">
-                                          <h4 style="color:	#FF00AA;">เลขบัตรประชาชน :<span style="color:#fff"> 5487629538156</span></h4>
-                                        </div>
-                                      </div>
-                                      <div class="row">
-                                        <div class="col-md-6 ms-auto">
-                                          <h4 style="color:	#FF00AA;">วันเกิด :<span style="color:#fff"> 20 กุมภาพันธ์ 2543</span></h4>
-                                        </div>
-                                        <div class="col-md-6 ms-auto">
-                                          <h4 style="color:	#FF00AA;">ที่อยู่ : :<span style="color:#fff"> 115/9 หมู่ 9 หมู่บ้าน ปะปานคร ซอย9</span></h4>
-
-                                        </div>
-
-                                      </div>
-                                      <div class="row">
-                                        <div class="col-md-6 ms-auto">
-                                          <h4 style="color:	#FF00AA;">เพศ :<span style="color:#fff"> ชาย</span></h4>
-
-                                        </div>
-                                        <div class="col-md-2 ms-auto">
-                                          <h4 style="color:	#FF00AA;">จังหวัด :<span style="color:#fff"> น่าน</span></h4>
-
-                                        </div>
-                                        <div class="col-md-2 ms-auto">
-                                          <h4 style="color:	#FF00AA;">อำเภอ :<span style="color:#fff"> เมืองน่าน</span></h4>
-
-                                        </div>
-                                        <div class="col-md-2 ms-auto">
-                                          <h4 style="color:	#FF00AA;">ตำบล :<span style="color:#fff"> สะเนียน</span></h4>
-
-                                        </div>
-                                      </div>
-                                      <div class="row">
-                                        <div class="col-md-6 ms-auto">
-                                          <h4 style="color:	#FF00AA;">เบอร์โทรติดต่อ :<span style="color:#fff"> 0875487256</span></h4>
-
-                                        </div>
-                                        <div class="col-md-6 ms-auto">
-                                          <h4 style="color:	#FF00AA;">สถานะ : <span style="color:#3CB371">&nbsp; ยืนยันตัวตนสำเร็จ</span></h4>
-                                        </div>
-                                      </div>
-                                      <div class="row">
-                                        <div class="col-md-2 ms-auto">
-                                          <button type="button" class="btn btn-outline-success ">
-                                            <h5>ผ่าน</h5>
-                                          </button>
-                                          &nbsp;
-                                          <button type="button" class="btn btn-outline-danger ">
-                                            <h5>ไม่ผ่าน</h5>
-                                          </button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
                   </div>
                 </div>
               </div>
 
               </td>
-              </tr>
-              <tr>
-                <td class="id">
-                  2
-                </td>
-                <td>
-                  <img src="https://scontent.fbkk14-1.fna.fbcdn.net/v/t39.30808-6/271529160_897896007577012_8566764423477441608_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeExZUa_xC9dmG8fcmlvi90a4tndVdhANf_i2d1V2EA1_71xr0gZjq_2yBbB46yvdjcIPqGbrfj-Jk4nUDuClOge&_nc_ohc=RMjTu1rEJQ0AX-OvaEF&tn=HscLT6h9xUbAVcLQ&_nc_ht=scontent.fbkk14-1.fna&oh=00_AT-3c7c3l7QUqfcEjmr7D0t9sm5xcYfSkkq6AFcB1IR_dg&oe=622C6A13" alt="image" />
-                  <span class="pl-2">กนกพล พวงวัดโพธิ์</span>
-                </td>
-                <td> 1235469748521 </td>
-                <td> ชาย </td>
-                <td> 6-5-2000 </td>
-                <td> 8/9 หมู่ 8 </td>
-                <td> 624259001@webmail.npru.ac.th </td>
-                <td>
-                  <div class="badge badge-outline-success">ยืนยันตัวตนสำเร็จ</div>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-outline-primary ">
-                    <i class="mdi mdi-eye"></i>
-                  </button>
-                  &nbsp;
-
-
-                </td>
-              </tr>
-              <tr>
-                <td class="id">
-                  3
-                </td>
-                <td>
-                  <img src="https://scontent.fbkk10-1.fna.fbcdn.net/v/t1.6435-9/104672793_2033913823406120_7607148666258561544_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHsk5Wqbdg4pSQBeVp8oFRy2PXLuJWSatrY9cu4lZJq2hx_htSj7EkXj3wEnviTnaxbie_RAUkfvc7u3d7pHjPh&_nc_ohc=VAe5ZJf5FGIAX-RI1s-&_nc_ht=scontent.fbkk10-1.fna&oh=00_AT-s89EBCNzjS5DmAqGOZMZxdHyiZN7pPwY_ZiCis5dxiA&oe=624C3AF0" alt="image" />
-                  <span class="pl-2">ญาณสิชฌ์ สันติเอกชุน</span>
-                </td>
-                <td> 6598413587426 </td>
-                <td> ชาย </td>
-                <td> 10-6-2000 </td>
-                <td> 8/12 หมู่ 3 </td>
-                <td> 624259011@webmail.npru.ac.th </td>
-                <td>
-                  <div class="badge badge-outline-success">ยืนยันตัวตนสำเร็จ</div>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-outline-primary ">
-                    <i class="mdi mdi-eye"></i>
-                  </button>
-                  &nbsp;
-
-
-                </td>
-              </tr>
-              <tr>
-                <td class="id">
-                  4
-                </td>
-                <td>
-                  <img src="https://scontent.fbkk14-1.fna.fbcdn.net/v/t39.30808-6/207061825_1259935477757034_664282644293399090_n.jpg?_nc_cat=104&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeErQbFzdnJdyvL80OiwphNdJ4f9VecbQs0nh_1V5xtCzfoc5OfZkCiUJzhyM_rv8b4MKg8zHWL-ZT7DzzPAqrsP&_nc_ohc=bLyceIeCCukAX9j2PRW&tn=HscLT6h9xUbAVcLQ&_nc_ht=scontent.fbkk14-1.fna&oh=00_AT-Z78kie9Ope3uQkT0sy16_rNMzzEv-PeGhsrmwmIvXRg&oe=622CD746" alt="image" />
-                  <span class="pl-2">ชนกานต์ บัวขาว</span>
-                </td>
-                <td> 5698452364781 </td>
-                <td> หญิง </td>
-                <td> 9-6-2000 </td>
-                <td> 9/5 หมู่ 9 </td>
-                <td> 624259009@webmail.npru.ac.th </td>
-                <td>
-                  <div class="badge badge-outline-success">ยืนยันตัวตนสำเร็จ</div>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-outline-primary ">
-                    <i class="mdi mdi-eye"></i>
-                  </button>
-                  &nbsp;
-
-
-                </td>
-              </tr>
-
-              <tr>
-                <td class="id">
-                  5
-                </td>
-                <td>
-                  <img src="# alt=" image" />
-                  <span class="pl-2">-----</span>
-                </td>
-                <td> --------- </td>
-                <td> ---- </td>
-                <td> ---- </td>
-                <td> ---- </td>
-                <td> -------- </td>
-                <td>
-                  <div class="badge badge-outline-warning">รอยืนยันตัวตน</div>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-outline-primary ">
-                    <i class="mdi mdi-eye"></i>
-                  </button>
-                  &nbsp;
-
-
-                </td>
-              </tr>
-              <tr>
-                <td class="id">
-                  6
-                </td>
-                <td>
-                  <img src="# alt=" image" />
-                  <span class="pl-2">-----</span>
-                </td>
-                <td> --------- </td>
-                <td> ---- </td>
-                <td> ---- </td>
-                <td> ---- </td>
-                <td> -------- </td>
-                <td>
-                  <div class="badge badge-outline-warning">รอยืนยันตัวตน</div>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-outline-primary ">
-                    <i class="mdi mdi-eye"></i>
-                  </button>
-                  &nbsp;
-
-
-                </td>
-              </tr>
-              <tr>
-                <td class="id">
-                  7
-                </td>
-                <td>
-                  <img src="# alt=" image" />
-                  <span class="pl-2">-----</span>
-                </td>
-                <td> --------- </td>
-                <td> ---- </td>
-                <td> ---- </td>
-                <td> ---- </td>
-                <td> -------- </td>
-                <td>
-                  <div class="badge badge-outline-warning">รอยืนยันตัวตน</div>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-outline-primary ">
-                    <i class="mdi mdi-eye"></i>
-                  </button>
-                  &nbsp;
-
-
-                </td>
-              </tr>
-              <tr>
-                <td class="id">
-                  8
-                </td>
-                <td>
-                  <img src="# alt=" image" />
-                  <span class="pl-2">-----</span>
-                </td>
-                <td> --------- </td>
-                <td> ---- </td>
-                <td> ---- </td>
-                <td> ---- </td>
-                <td> -------- </td>
-                <td>
-                  <div class="badge badge-outline-warning">รอยืนยันตัวตน</div>
-                </td>
-                <td>
-                  <button type="button" class="btn btn-outline-primary ">
-                    <i class="mdi mdi-eye"></i>
-                  </button>
-                  &nbsp;
-
-
-                </td>
               </tr>
               </tbody>
               </table>
@@ -744,8 +491,106 @@
         </div>
       </div>
     </div>
-    <!------------------------------------- สิ้นสุดตารางแสดงข้อมูล ------------------------------------->
   </div>
+  <!-------------------------------------End Tabel show data User ------------------------------------->
+
+  <!--------------------------------------- Modal Update Status --------------------------------------->
+  <?php $no = 1;
+  foreach ($user as $key => $value) { ?>
+    <div class="modal fade" id="update<?= $value['userId'] ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header" style="background-color:#191c24">
+            <h5 class="modal-title" id="exampleModalLongTitle">ข้อมูลเพิ่มเติม</h5>
+            <button type="button" class="close " data-dismiss="modal" aria-label="Close" style="color:#fff; margin-right:1px;">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body " style="background-color:#191c24">
+            <?php echo form_open('UserController/updateStatus' . $value['userId']) ?>
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-4"> <img class="#" src="<?php echo $value['userImage']; ?>" style="width: 100%; height:90%; border-radius:10%" /></div>
+
+                <div class="col-md-2 ">
+                  <div class="decoration">
+                    <div class="decoration-inside">
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-6 ">
+                  <img class="#" src="<?php echo $value['idCardImage']; ?>" style="width: 100%; height:90%; border-radius:3%" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3 ">
+                  <h4 style="color:	#FF00AA;">ชื่อ-นามสกุล :<span style="color:#fff"> <?php echo $value['FName']." ".$value['LName']; ?> </span></h4>
+                </div>
+                <div class="col-md-6 ms-auto">
+                  <h4 style="color:	#FF00AA;">เลขบัตรประชาชน :<span style="color:#fff"> <?php echo $value['idCard']; ?></span></h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 ms-auto">
+                  <h4 style="color:	#FF00AA;">วันเกิด :<span style="color:#fff"> <?php echo $value['birthday']; ?></span></h4>
+                </div>
+                <div class="col-md-6 ms-auto">
+                  <h4 style="color:	#FF00AA;">ที่อยู่ : :<span style="color:#fff"> <?php echo $value['address']; ?></span></h4>
+
+                </div>
+
+              </div>
+              <div class="row">
+                <div class="col-md-6 ms-auto">
+                  <h4 style="color:	#FF00AA;">เพศ :<span style="color:#fff"> <?php echo $value['gender']; ?></span></h4>
+
+                </div>
+                <div class="col-md-2 ms-auto">
+                  <h4 style="color:	#FF00AA;">จังหวัด :<span style="color:#fff"> <?php echo $value['province']; ?></span></h4>
+
+                </div>
+                <div class="col-md-2 ms-auto">
+                  <h4 style="color:	#FF00AA;">อำเภอ :<span style="color:#fff"> <?php echo $value['district']; ?></span></h4>
+
+                </div>
+                <div class="col-md-2 ms-auto">
+                  <h4 style="color:	#FF00AA;">ตำบล :<span style="color:#fff"> <?php echo $value['subDistrict']; ?></span></h4>
+
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 ms-auto">
+                  <h4 style="color:	#FF00AA;">เบอร์โทรติดต่อ :<span style="color:#fff"> <?php echo $value['phoneNumber']; ?></span></h4>
+
+                </div>
+                <div class="col-md-6 ms-auto">
+                  <h4 style="color:	#FF00AA;">สถานะ : <span style="color:#3CB371">&nbsp; <?php echo $value['statusUser']; ?></span></h4>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-2 ms-auto">
+                  <button type="button" class="btn btn-outline-success ">
+                    <h5>ผ่าน</h5>
+                  </button>
+                  &nbsp;
+                  <button type="button" class="btn btn-outline-danger ">
+                    <h5>ไม่ผ่าน</h5>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <?php echo form_close() ?>
+        </div>
+      </div>
+    </div>
+  <?php } ?>
+  <!--End Modal Update Status -->
+
+
   <!-- content-wrapper ends -->
   <!-- partial:partials/_footer.html -->
 
@@ -779,6 +624,7 @@
   <!-- Custom js for this page -->
   <script src="js/dashboard.js"></script>
   <!-- End custom js for this page -->
+  </script>
 </body>
 
 </html>
