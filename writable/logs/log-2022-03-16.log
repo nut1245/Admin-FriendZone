@@ -130,3 +130,41 @@ CRITICAL - 2022-03-16 04:51:44 --> Undefined variable $user
 #8 D:\AllWork\ProjectADMIN\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #9 D:\AllWork\ProjectADMIN\AdminNew\system\Commands\Server\rewrite.php(43): require_once('D:\\AllWork\\Proj...')
 #10 {main}
+CRITICAL - 2022-03-16 09:12:49 --> Undefined property: App\Controllers\UserController::$UserModel
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(59): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', 'C:\\xampp\\htdocs...', 59, Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->updateStatus('31')
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-16 09:17:04 --> Return value of CodeIgniter\BaseModel::transformDataToArray() must be of the type array, string returned
+#0 C:\xampp\htdocs\AdminNew\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray('31', 'update')
+#1 C:\xampp\htdocs\AdminNew\system\Model.php(651): CodeIgniter\BaseModel->update(Array, '31')
+#2 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(59): CodeIgniter\Model->update('1', '31')
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->updateStatus('31')
+#4 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#5 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-03-16 09:17:10 --> Return value of CodeIgniter\BaseModel::transformDataToArray() must be of the type array, string returned
+#0 C:\xampp\htdocs\AdminNew\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray('31', 'update')
+#1 C:\xampp\htdocs\AdminNew\system\Model.php(651): CodeIgniter\BaseModel->update(Array, '31')
+#2 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(59): CodeIgniter\Model->update('1', '31')
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->updateStatus('31')
+#4 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#5 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-03-16 09:18:13 --> Return value of CodeIgniter\BaseModel::transformDataToArray() must be of the type array, string returned
+#0 C:\xampp\htdocs\AdminNew\system\BaseModel.php(832): CodeIgniter\BaseModel->transformDataToArray('31', 'update')
+#1 C:\xampp\htdocs\AdminNew\system\Model.php(651): CodeIgniter\BaseModel->update(Array, '31')
+#2 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(62): CodeIgniter\Model->update(Array, '31')
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->updateStatus('31')
+#4 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#5 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}

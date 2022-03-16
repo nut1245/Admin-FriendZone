@@ -450,10 +450,12 @@
                             <td> <?php echo $value['birthday']; ?> </td>
                             <td> <?php echo $value['email']; ?> </td>
                             <td>
-                              <?php if ($value['statusUser'] == "0") {
-                                echo "<p>รอการยืนยันตัวตน</p>";
+                            <?php if ($value['statusUser'] == "0") {
+                                echo '<div class="badge badge-outline-warning">รอการยืนยันตัวตน</div>';
                               } else if ($value['statusUser'] == "1") {
-                                echo "<p>ยืนยันตัวตนสำเร็จ</p>";
+                                echo '<div class="badge badge-outline-success">ยืนยันตัวตนสำเร็จ</div>';
+                              } else if ($value['statusUser'] == "2") {
+                                echo '<div class="badge badge-outline-danger">รอการแก้ไขข้อมูล</div>';    
                               };
                               ?>
                             </td>
@@ -557,14 +559,22 @@
 
                 </div>
                 <div class="col-md-6 ms-auto">
-                  <h4 style="color:	#FF00AA;">สถานะ : <span style="color:#3CB371">&nbsp; <?php echo $value['statusUser']; ?></span></h4>
+                  <h4 style="color:	#FF00AA;">สถานะ : <span style="color:#3CB371">&nbsp; <?php if ($value['statusUser'] == "0") {
+                                echo '<div class="badge badge-outline-warning">รอการยืนยันตัวตน</div>';
+                              } else if ($value['statusUser'] == "1") {
+                                echo '<div class="badge badge-outline-success">ยืนยันตัวตนสำเร็จ</div>';
+                              } else if ($value['statusUser'] == "2") {
+                                echo '<div class="badge badge-outline-danger">รอการแก้ไขข้อมูล</div>';
+                                
+                              };
+                              ?></span></h4>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-2 ms-auto">
-                  <button type="button" class="btn btn-outline-success ">
+                  <a href="/updateStatus/<?php echo $value['userId'];?>" type="button" class="btn btn-outline-success ">
                     <h5>ผ่าน</h5>
-                  </button>
+                  </a>
                   &nbsp;
                   <button type="button" class="btn btn-outline-danger ">
                     <h5>ไม่ผ่าน</h5>

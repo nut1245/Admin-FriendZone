@@ -22,13 +22,8 @@ class UserModel extends Model{
         $data = $this->where('userId',$id)->findAll();
         return $data;
     }
-
-    //update Status
-    public function updateStatus($data, $userId)
-    {
-        return $this->db->table('users')->update($data, array('userId' => $userId));
-    }
-
+    
+   
     
     
 
