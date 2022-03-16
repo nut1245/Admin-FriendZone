@@ -30,7 +30,7 @@
                         
                         <div class="card-body px-5 py-5">
                        
-                            <h3 class="card-title text-left mb-3">Login AdminFZ</h3>
+                            <h3 class="card-title text-center mb-3">Login AdminFZ</h3>
                             <form>
                                 <div class="form-group">
                                     <label>Username</label>
@@ -38,7 +38,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label>Password</label>
-                                    <input type="text" class="form-control p_input">
+                                    <input type="password" class="form-control p_input">
                                 </div>
                                 <div class="form-group d-flex align-items-center justify-content-between">
                                     
