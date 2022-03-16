@@ -40,6 +40,17 @@ class UserController extends ResourceController // เปลี่ยนจา�
         
     }
 
+    
+    public function register(){
+        helper('form');
+        echo view('register');
+    }
+
+    public function logout(){
+        helper('form');
+        echo view('login');
+    }
+
     //update Status
     public function updateStatus($userId)
     {

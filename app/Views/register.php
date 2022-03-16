@@ -5,7 +5,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>AdminFZ</title>
+  <title>เพิ่มแอดมิน</title>
   <!-- plugins:css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,7 +30,6 @@
 
 <body>
   <div class="container-scroller">
-    <?php $session = session(); ?>
     <!-- partial:partials/_sidebar.html -->
     <nav class="sidebar sidebar-offcanvas" id="sidebar">
       <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
@@ -94,6 +93,7 @@
           <a class="nav-link" href="home.php">
             <span class="menu-icon">
               <i class="mdi mdi-home"></i>
+
             </span>
             <span class="menu-title">หน้าแรก</span>
           </a>
@@ -106,6 +106,7 @@
             <span class="menu-title">เพิ่มแอดมิน</span>
           </a>
         </li>
+
         <!-- <li class="nav-item menu-items">
           <a class="nav-link" href="pages/forms/basic_elements.html">
             <span class="menu-icon">
@@ -324,267 +325,118 @@
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
-          <div class="row">
-            <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body ">
-                  <div class="row">
-                    <div class="col-9">
-                      <div class="d-flex align-items-center align-self-start">
-                        <h3 class="mb-0">4</h3>
-
-                      </div>
-                    </div>
-                    <div class="col-3">
-                      <div class="icon icon-box-warning ">
-                        <span class="mdi mdi-account-multiple icon-item"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <h4 class="text-muted font-weight-normal">คำขอที่รออนุมัติ</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-9">
-                      <div class="d-flex align-items-center align-self-start">
-                        <h3 class="mb-0">4</h3>
-                        <!-- <p class="text-success ml-2 mb-0 font-weight-medium">+11%</p> -->
-                      </div>
-                    </div>
-                    <div class="col-3">
-                      <div class="icon icon-box-success">
-                        <span class="mdi mdi-checkbox-marked-outline icon-item"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <h4 class="text-muted font-weight-normal">คำขอที่อนุมัติแล้ว</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-9">
-                      <div class="d-flex align-items-center align-self-start">
-                        <h3 class="mb-0">299</h3>
-                        <!-- <p class="text-danger ml-2 mb-0 font-weight-medium">-2.4%</p> -->
-                      </div>
-                    </div>
-                    <div class="col-3">
-                      <div class="icon icon-box-primary">
-                        <span class="mdi mdi-credit-card-multiple icon-item"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <h4 class="text-muted font-weight-normal">โพสทั้งหมด</h4>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row">
-                    <div class="col-9">
-                      <div class="d-flex align-items-center align-self-start">
-                        <h3 class="mb-0">12</h3>
-                        <!-- <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p> -->
-                      </div>
-                    </div>
-                    <div class="col-3">
-                      <div class="icon icon-box-danger ">
-                        <span class="mdi mdi-alert-octagon icon-item"></span>
-                      </div>
-                    </div>
-                  </div>
-                  <h4 class="text-muted font-weight-normal">รายงานโพส</h4>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!------------------------------------- Tabel show data User ------------------------------------->
-          <div class="row ">
-            <div class="col-12 grid-margin">
-              <div class="card">
-                <div class="card-body">
-                  <div class="row justify-content-between ">
-                    <h4 class="card-title">ข้อมูลผู้ใช้งานทั้งหมด</h4>
-                    <div class="template-demo">
-                    <button type="button" class="btn btn-outline-success btn-fw">ยืนยันตัวตนสำเร็จ</button>
-                    <button type="button" class="btn btn-outline-warning btn-fw">รอยืนยันตัวตน</button>
-                    <button type="button" class="btn btn-outline-danger btn-fw">รอการแก้ไข</button>
-                      <br><br>
-                    </div>
-                  </div>
-                  <div class="table-responsive">
-                    <table class="table">
-                      <thead>
-                        <tr>
-                          <th> ไอดี </th>
-                          <th> ชื่อ-นามสกุล </th>
-                          <th> รหัสบัตรประชาชน </th>
-                          <th> เพศ </th>
-                          <th> วันเกิด </th>
-                          <th> อีเมล </th>
-                          <th> สถานะ </th>
-                          <th> Action </th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <?php $no = 1;
-                        foreach ($user as $key => $value) { ?>
-                          <tr>
-                            <td class="id">
-                              <?php echo $value['userId']; ?>
-                            </td>
-                            <td>
-                              <img src="<?php echo $value['userImage']; ?>" alt="image" />
-                              <span class="pl-2"><?php echo $value['FName']; ?></span>
-                            </td>
-                            <td> <?php echo $value['idCard']; ?> </td>
-                            <td> <?php echo $value['gender']; ?> </td>
-                            <td> <?php echo $value['birthday']; ?> </td>
-                            <td> <?php echo $value['email']; ?> </td>
-                            <td>
-                              <?php if ($value['statusUser'] == "0") {
-                                echo "<p>รอการยืนยันตัวตน</p>";
-                              } else if ($value['statusUser'] == "1") {
-                                echo "<p>ยืนยันตัวตนสำเร็จ</p>";
-                              };
-                              ?>
-                            </td>
-                            <td>
-                              <a href="#" class="btn btn-outline-primary btn-update" data-bs-toggle="modal" data-bs-target="#update<?= $value
-                              ['userId'] ?>">
-                                <i class="mdi mdi-eye"></i>
-                              </a>
-                            </td>
-                          </tr>
-                        <?php } ?>
-
-
-
-                  </div>
-                </div>
-              </div>
-
-              </td>
-              </tr>
-              </tbody>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-------------------------------------End Tabel show data User ------------------------------------->
-
-  <!--------------------------------------- Modal Update Status --------------------------------------->
-  <?php $no = 1;
-  foreach ($user as $key => $value) { ?>
-    <div class="modal fade" id="update<?= $value['userId'] ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-      <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
-        <div class="modal-content">
-          <div class="modal-header" style="background-color:#191c24">
-            <h5 class="modal-title" id="exampleModalLongTitle">ข้อมูลเพิ่มเติม</h5>
-            <button type="button" class="close " data-dismiss="modal" aria-label="Close" style="color:#fff; margin-right:1px;">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body " style="background-color:#191c24">
-            <?php echo form_open('UserController/updateStatus' . $value['userId']) ?>
-
-            <div class="container-fluid">
-              <div class="row">
-                <div class="col-md-4"> <img class="#" src="<?php echo $value['userImage']; ?>" style="width: 100%; height:90%; border-radius:10%" /></div>
-
-                <div class="col-md-2 ">
-                  <div class="decoration">
-                    <div class="decoration-inside">
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="col-md-6 ">
-                  <img class="#" src="<?php echo $value['idCardImage']; ?>" style="width: 100%; height:90%; border-radius:3%" />
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-3 ">
-                  <h4 style="color:	#FF00AA;">ชื่อ-นามสกุล :<span style="color:#fff"> <?php echo $value['FName']." ".$value['LName']; ?> </span></h4>
-                </div>
-                <div class="col-md-6 ms-auto">
-                  <h4 style="color:	#FF00AA;">เลขบัตรประชาชน :<span style="color:#fff"> <?php echo $value['idCard']; ?></span></h4>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6 ms-auto">
-                  <h4 style="color:	#FF00AA;">วันเกิด :<span style="color:#fff"> <?php echo $value['birthday']; ?></span></h4>
-                </div>
-                <div class="col-md-6 ms-auto">
-                  <h4 style="color:	#FF00AA;">ที่อยู่ : :<span style="color:#fff"> <?php echo $value['address']; ?></span></h4>
-
-                </div>
-
-              </div>
-              <div class="row">
-                <div class="col-md-6 ms-auto">
-                  <h4 style="color:	#FF00AA;">เพศ :<span style="color:#fff"> <?php echo $value['gender']; ?></span></h4>
-
-                </div>
-                <div class="col-md-2 ms-auto">
-                  <h4 style="color:	#FF00AA;">จังหวัด :<span style="color:#fff"> <?php echo $value['province']; ?></span></h4>
-
-                </div>
-                <div class="col-md-2 ms-auto">
-                  <h4 style="color:	#FF00AA;">อำเภอ :<span style="color:#fff"> <?php echo $value['district']; ?></span></h4>
-
-                </div>
-                <div class="col-md-2 ms-auto">
-                  <h4 style="color:	#FF00AA;">ตำบล :<span style="color:#fff"> <?php echo $value['subDistrict']; ?></span></h4>
-
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6 ms-auto">
-                  <h4 style="color:	#FF00AA;">เบอร์โทรติดต่อ :<span style="color:#fff"> <?php echo $value['phoneNumber']; ?></span></h4>
-
-                </div>
-                <div class="col-md-6 ms-auto">
-                  <h4 style="color:	#FF00AA;">สถานะ : <span style="color:#3CB371">&nbsp; <?php echo $value['statusUser']; ?></span></h4>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-2 ms-auto">
-                  <button type="button" class="btn btn-outline-success ">
-                    <h5>ผ่าน</h5>
-                  </button>
+          <div class="col-12 grid-margin">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">เพิ่มข้อมูลแอดมิน</h4>
+                <form class="form-sample">
                   &nbsp;
-                  <button type="button" class="btn btn-outline-danger ">
-                    <h5>ไม่ผ่าน</h5>
-                  </button>
-                </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">ชื่อ</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">นามสกุล</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">ชื่อผู้ใช้งาน</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">เพศ</label>
+                        <div class="col-sm-2">
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <i class="mdi mdi-gender-male" style="color:cyan"></i>
+                              <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked=""> ชาย <i class="input-helper"></i></label>
+                          </div>
+                        </div>
+                        <div class="col-sm-2">
+                          <div class="form-check">
+                            <label class="form-check-label">
+                              <i class="mdi mdi-gender-female" style="color:deeppink"></i>
+                              <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios2" value="option2"> หญิง <i class="input-helper"></i></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">รหัสผ่าน</label>
+                        <div class="col-sm-9">
+                          <input type="password" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">เบอร์โทร</label>
+                        <div class="col-sm-9">
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">ยืนยันรหัสผ่าน</label>
+                        <div class="col-sm-9">
+                          <input type="password" class="form-control">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group row">
+                        <label class="col-sm-2 col-form-label">รูปภาพ</label>
+                        <div class="col-sm-9">
+                          <span class="input-group-append">
+                            <input type="text" class="form-control">
+                            <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class= "col-sm-12 ">
+                    <button type="button" class="btn btn-primary btn-icon-text">
+                       ยืนยัน </button>
+                      <button type="button" class="btn btn-danger btn-icon-text">
+                       ยกเลิก </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
-          <?php echo form_close() ?>
         </div>
       </div>
+      <!------------------------------------- สิ้นสุดตารางแสดงข้อมูล ------------------------------------->
     </div>
-  <?php } ?>
-  <!--End Modal Update Status -->
+    <!-- content-wrapper ends -->
+    <!-- partial:partials/_footer.html -->
 
-
-  <!-- content-wrapper ends -->
-  <!-- partial:partials/_footer.html -->
-
-  <!-- partial -->
+    <!-- partial -->
   </div>
   <!-- main-panel ends -->
   </div>
@@ -614,7 +466,6 @@
   <!-- Custom js for this page -->
   <script src="js/dashboard.js"></script>
   <!-- End custom js for this page -->
-  </script>
 </body>
 
 </html>
