@@ -464,6 +464,10 @@
                               ['userId'] ?>">
                                 <i class="mdi mdi-eye"></i>
                               </a>
+                              <a href="#" class="btn btn-outline-danger btn-update" data-bs-toggle="modal" data-bs-target="#update<?= $value
+                              ['userId'] ?>">
+                                <i class="mdi mdi-close"></i>
+                              </a>
                             </td>
                           </tr>
                         <?php } ?>
