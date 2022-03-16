@@ -54,25 +54,12 @@ class UserController extends ResourceController // เปลี่ยนจา�
     //update Status
     public function updateStatus($userId)
     {
-        $data = [
-            'userId' => $this->request->getPost('userId'),
-            'FName' => $this->request->getPost('FName'),
-            'LName' => $this->request->getPost('LName'),
-            'idCard' => $this->request->getPost('idCard'),
-            'idCardImage' => $this->request->getPost('idCardImage'),
-            'statusUser' => $this->request->getPost('statusUser'),
-            'gender' => $this->request->getPost('gender'),
-            'userImage' => $this->request->getPost('userImage'),
-            'birthday' => $this->request->getPost('birthday'),
-            'address' => $this->request->getPost('address'),
-            'province' => $this->request->getPost('province'),
-            'district' => $this->request->getPost('district'),
-            'subDistrict' => $this->request->getPost('subDistrict'),
-            'email' => $this->request->getPost('email'),
-            'expIdCard' => $this->request->getPost('expIdCard'),
-            'phoneNumber' => $this->request->getPost('phoneNumber'),
+        $status = "1";
+        $data =[
+            'statusUser' => $status
         ];
-        $this->UserModel->updateStatus($data, $userId);
+        $Usermodel = new UserModel();
+        $Usermodel->where('userId', $userId)->set($data)->update();
         return redirect()->to('/');
     }
 }

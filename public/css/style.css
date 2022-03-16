@@ -20205,8 +20205,8 @@ div.tagsinput {
 /* === Landing screens === */
 /* Auth */
 .auth.login-bg {
-  background: url("http://127.0.0.1:5500/template/assets/images/auth/Login_bg.jpg");
-  background-size: cover; }
+    background: url("https://cdn.discordapp.com/attachments/687292314988707850/953595739500576878/Login_bg.jpg");
+    background-size: cover; }
 
 .auth .login-half-bg {
   background: url("../images/auth/login-bg.jpg");

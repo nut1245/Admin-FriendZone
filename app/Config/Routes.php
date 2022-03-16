@@ -34,6 +34,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'UserController::viewUser');
 $routes->get('/register', 'UserController::register');
 $routes->get('/logout', 'UserController::logout');
+$routes->get('/updateStatus/(:any)', 'UserController::updateStatus/$1');
 /*
  * --------------------------------------------------------------------
  * Additional Routing
