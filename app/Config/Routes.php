@@ -33,7 +33,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'OfficerController::index');                                      //Login
 $routes->get('/home', 'UserController::viewUser');    
-$routes->get('/register', 'UserController::register');
+$routes->get('/register', 'OfficerController::index2');
 $routes->get('/logout', 'OfficerController::logout');
 $routes->get('/updateStatus/(:any)', 'UserController::updateStatus/$1');             //updateStatusSuccess
 $routes->get('/updateStatusFail/(:any)', 'UserController::updateStatusFail/$1');     //updateStatusFail
