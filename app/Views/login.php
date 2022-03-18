@@ -32,7 +32,7 @@
 
                         <div class="card-body px-5 py-5">
 
-                            <h3 class="card-title text-center mb-3">Login AdminFZ</h3>
+                            <h1 class="card-title text-center mb-3">Login AdminFZ</h1>
                             <form action="/OfficerController/login" method="post" class="signin-form">
                                 <div class="form-group">
                                     <?php if (session()->getFlashdata('msg')) : ?>
