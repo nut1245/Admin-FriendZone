@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Corona Admin</title>
+    <title>Login Admin</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
@@ -18,37 +18,51 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- End layout styles -->
     <link rel="shortcut icon" href="images/favicon.png" />
+    <!--- sweetalert2 -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
     <div class="container-scroller">
         <div class="container-fluid page-body-wrapper full-page-wrapper">
             <div class="row w-100 m-0">
-                
+
                 <div class="content-wrapper full-page-wrapper d-flex align-items-center auth login-bg">
                     <div class="card col-lg-4 mx-auto">
-                        
+
                         <div class="card-body px-5 py-5">
-                       
+
                             <h3 class="card-title text-center mb-3">Login AdminFZ</h3>
-                            <form>
+                            <form action="/OfficerController/login" method="post" class="signin-form">
                                 <div class="form-group">
-                                    <label>Username</label>
-                                    <input type="text" class="form-control p_input">
-                                </div>
-                                <div class="form-group">
-                                    <label>Password</label>
-                                    <input type="password" class="form-control p_input">
-                                </div>
-                                <div class="form-group d-flex align-items-center justify-content-between">
-                                    
-                                    
-                                </div>
-                                <div class="text-center">
-                                    <button type="submit" class="btn btn-primary btn-block enter-btn">Login</button>
-                                </div>
-                                
-                                
+                                    <?php if (session()->getFlashdata('msg')) : ?>
+                                        <div>
+                                            <script>
+                                                Swal.fire({
+                                                    icon: 'error',
+                                                    text: '<?= session()->getFlashdata('msg') ?>',
+                                                    text: 'โปรดตรวจสอบชื่อผู้ใช้หรือรหัสผ่านให้ถูกต้อง',
+                                                })
+                                            </script>
+                                        <?php endif ?>
+
+                                        <label>ชื่อผู้ใช้งาน</label>
+                                        <input type="text" class="form-control p_input" name="userName" value="<?= set_value('userName'); ?>" required>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>รหัสผ่าน</label>
+                                            <input type="password" class="form-control p_input" name="password" value="<?= set_value('password'); ?>" required>
+
+                                        </div>
+                                        <div class="form-group d-flex align-items-center justify-content-between">
+
+
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-primary btn-block enter-btn">เข้าสู่ระบบ</button>
+                                        </div>
+
+
                             </form>
                         </div>
                     </div>

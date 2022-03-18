@@ -42,11 +42,11 @@
           <div class="profile-desc">
             <div class="profile-pic">
               <div class="count-indicator">
-                <img class="img-xs rounded-circle " src="https://cdn.discordapp.com/attachments/687292314988707850/689003346740379667/76912995_249466042696626_7100283618412462080_o.jpg" alt="">
+                <img class="img-xs rounded-circle " src="<?php echo $session->get('offImage'); ?>" alt="">
                 <span class="count bg-success"></span>
               </div>
               <div class="profile-name">
-                <h5 class="mb-0 font-weight-normal">Nutthapon</h5>
+                <h5 class="mb-0 font-weight-normal"><?php echo $session->get('FName'); ?></h5>
                 <span>Administer</span>
               </div>
             </div>
@@ -180,7 +180,7 @@
           <ul class="navbar-nav w-100">
             <li class="nav-item w-100">
               <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
-                <input type="text" class="form-control" placeholder="Search products" style="color:#fff">
+                <input type="text" class="form-control" placeholder="Search" style="color:#fff">
               </form>
             </li>
           </ul>
@@ -282,8 +282,8 @@
             <li class="nav-item dropdown">
               <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
                 <div class="navbar-profile">
-                  <img class="img-xs rounded-circle" src="https://cdn.discordapp.com/attachments/687292314988707850/689003346740379667/76912995_249466042696626_7100283618412462080_o.jpg" alt="">
-                  <p class="mb-0 d-none d-sm-block navbar-profile-name">Nutthapon</p>
+                  <img class="img-xs rounded-circle" src="<?php echo $session->get('offImage'); ?>" alt="">
+                  <p class="mb-0 d-none d-sm-block navbar-profile-name"><?php echo $session->get('FName'); ?></p>
                   <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                 </div>
               </a>
@@ -414,9 +414,9 @@
                   <div class="row justify-content-between ">
                     <h4 class="card-title">ข้อมูลผู้ใช้งานทั้งหมด</h4>
                     <div class="template-demo">
-                    <button type="button" class="btn btn-outline-success btn-fw">ยืนยันตัวตนสำเร็จ</button>
-                    <button type="button" class="btn btn-outline-warning btn-fw">รอยืนยันตัวตน</button>
-                    <button type="button" class="btn btn-outline-danger btn-fw">รอการแก้ไข</button>
+                      <button type="button" class="btn btn-outline-success btn-fw">ยืนยันตัวตนสำเร็จ</button>
+                      <button type="button" class="btn btn-outline-warning btn-fw">รอยืนยันตัวตน</button>
+                      <button type="button" class="btn btn-outline-danger btn-fw">รอการแก้ไข</button>
                       <br><br>
                     </div>
                   </div>
@@ -450,24 +450,24 @@
                             <td> <?php echo $value['birthday']; ?> </td>
                             <td> <?php echo $value['email']; ?> </td>
                             <td>
-                            <?php if ($value['statusUser'] == "0") {
+                              <?php if ($value['statusUser'] == "0") {
                                 echo '<div class="badge badge-outline-warning">รอการยืนยันตัวตน</div>';
                               } else if ($value['statusUser'] == "1") {
                                 echo '<div class="badge badge-outline-success">ยืนยันตัวตนสำเร็จ</div>';
                               } else if ($value['statusUser'] == "2") {
-                                echo '<div class="badge badge-outline-danger">รอการแก้ไขข้อมูล</div>';    
+                                echo '<div class="badge badge-outline-danger">รอการแก้ไขข้อมูล</div>';
                               };
                               ?>
                             </td>
                             <td>
-                              <a href="#" class="btn btn-outline-primary btn-update" data-bs-toggle="modal" data-bs-target="#update<?= $value
-                              ['userId'] ?>">
+                              <a href="#" class="btn btn-outline-primary btn-update" data-bs-toggle="modal" data-bs-target="#update<?= $value['userId'] ?>">
                                 <i class="mdi mdi-eye"></i>
                               </a>
-                              <a href="#" class="btn btn-outline-danger btn-update" data-bs-toggle="modal" data-bs-target="#update<?= $value
-                              ['userId'] ?>">
-                                <i class="mdi mdi-close"></i>
+
+                              <a href="/updateStatusFail/<?php echo $value['userId']; ?>" type="button" class="btn btn-outline-danger ">
+                              <i class="mdi mdi-close"></i>
                               </a>
+
                             </td>
                           </tr>
                         <?php } ?>
@@ -516,14 +516,13 @@
                   </div>
                 </div>
 
-
                 <div class="col-md-6 ">
                   <img class="#" src="<?php echo $value['idCardImage']; ?>" style="width: 100%; height:90%; border-radius:3%" />
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-3 ">
-                  <h4 style="color:	#FF00AA;">ชื่อ-นามสกุล :<span style="color:#fff"> <?php echo $value['FName']." ".$value['LName']; ?> </span></h4>
+                  <h4 style="color:	#FF00AA;">ชื่อ-นามสกุล :<span style="color:#fff"> <?php echo $value['FName'] . " " . $value['LName']; ?> </span></h4>
                 </div>
                 <div class="col-md-6 ms-auto">
                   <h4 style="color:	#FF00AA;">เลขบัตรประชาชน :<span style="color:#fff"> <?php echo $value['idCard']; ?></span></h4>
@@ -564,25 +563,24 @@
                 </div>
                 <div class="col-md-6 ms-auto">
                   <h4 style="color:	#FF00AA;">สถานะ : <span style="color:#3CB371">&nbsp; <?php if ($value['statusUser'] == "0") {
-                                echo '<div class="badge badge-outline-warning">รอการยืนยันตัวตน</div>';
-                              } else if ($value['statusUser'] == "1") {
-                                echo '<div class="badge badge-outline-success">ยืนยันตัวตนสำเร็จ</div>';
-                              } else if ($value['statusUser'] == "2") {
-                                echo '<div class="badge badge-outline-danger">รอการแก้ไขข้อมูล</div>';
-                                
-                              };
-                              ?></span></h4>
+                                                                                            echo '<div class="badge badge-outline-warning">รอการยืนยันตัวตน</div>';
+                                                                                          } else if ($value['statusUser'] == "1") {
+                                                                                            echo '<div class="badge badge-outline-success">ยืนยันตัวตนสำเร็จ</div>';
+                                                                                          } else if ($value['statusUser'] == "2") {
+                                                                                            echo '<div class="badge badge-outline-danger">รอการแก้ไขข้อมูล</div>';
+                                                                                          };
+                                                                                          ?></span></h4>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-2 ms-auto">
-                  <a href="/updateStatus/<?php echo $value['userId'];?>" type="button" class="btn btn-outline-success ">
+                  <a href="/updateStatus/<?php echo $value['userId']; ?>" type="button" class="btn btn-outline-success ">
                     <h5>ผ่าน</h5>
                   </a>
                   &nbsp;
-                  <button type="button" class="btn btn-outline-danger ">
+                  <a href="/updateStatusFail/<?php echo $value['userId']; ?>" type="button" class="btn btn-outline-danger ">
                     <h5>ไม่ผ่าน</h5>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>

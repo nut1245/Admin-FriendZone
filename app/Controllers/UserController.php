@@ -12,19 +12,7 @@ class UserController extends ResourceController // เปลี่ยนจา�
 {
     use RequestTrait; // เรียกใช้
 
-    //Get all User by userId
-    public function viewUser2($id)
-    {
-        $model = new UserModel();
-        $data['user'] = $model->viewUser2($id);
-        if ( $data['user']) {
-            return view('dataUser', $data);
-        }
-         else{
-             return view('dataUser');
-         }
-    }
-    
+   
     //Get all User
     public function viewUser()
     {
@@ -40,18 +28,21 @@ class UserController extends ResourceController // เปลี่ยนจา�
         
     }
 
-    
-    public function register(){
-        helper('form');
-        echo view('register');
+    //Get  User by userId
+    public function viewUser2($id)
+    {
+        $model = new UserModel();
+        $data['user'] = $model->viewUser2($id);
+        if ( $data['user']) {
+            return view('dataUser', $data);
+        }
+         else{
+             return view('dataUser');
+         }
     }
 
-    public function logout(){
-        helper('form');
-        echo view('login');
-    }
 
-    //update Status
+    //update Status Success
     public function updateStatus($userId)
     {
         $status = "1";
@@ -60,6 +51,18 @@ class UserController extends ResourceController // เปลี่ยนจา�
         ];
         $Usermodel = new UserModel();
         $Usermodel->where('userId', $userId)->set($data)->update();
-        return redirect()->to('/');
+        return redirect()->to('/home');
+    }
+
+    //update Status Fail
+    public function updateStatusFail($userId)
+    {
+        $status = "2";
+        $data =[
+            'statusUser' => $status
+        ];
+        $Usermodel = new UserModel();
+        $Usermodel->where('userId', $userId)->set($data)->update();
+        return redirect()->to('/home');
     }
 }
