@@ -41,7 +41,6 @@
                                                 Swal.fire({
                                                     icon: 'error',
                                                     text: '<?= session()->getFlashdata('msg') ?>',
-                                                    text: 'โปรดตรวจสอบชื่อผู้ใช้หรือรหัสผ่านให้ถูกต้อง',
                                                 })
                                             </script>
                                         <?php endif ?>
