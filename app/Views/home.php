@@ -26,9 +26,11 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- End layout styles -->
   <link rel="shortcut icon" href="#" />
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
+<!------------------------------------------------------- Menu ---------------------------------------------------------------------------->
   <div class="container-scroller">
     <?php $session = session(); ?>
     <!-- partial:partials/_sidebar.html -->
@@ -37,6 +39,8 @@
         <a class="sidebar-brand brand-logo" style="color:aliceblue;" href="home.php">AdminFZ</a>
         <a class="sidebar-brand brand-logo-mini" href="index.html"></a>
       </div>
+
+
       <ul class="nav">
         <li class="nav-item profile">
           <div class="profile-desc">
@@ -166,9 +170,11 @@
         </li> -->
       </ul>
     </nav>
-    <!-- partial -->
+<!-------------------------------------------------------End Menu ------------------------------------------------------------------------->
+
+<!----------------------------------------------------- End Navbar ------------------------------------------------------------------------>
     <div class="container-fluid page-body-wrapper">
-      <!-- partial:partials/_navbar.html -->
+
       <nav class="navbar p-0 fixed-top d-flex flex-row">
         <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
           <!-- <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a> -->
@@ -196,6 +202,8 @@
                 <i class="mdi mdi-email"></i>
                 <span class="count bg-success"></span>
               </a>
+
+              <!------------------------------------------- dropdown-menu ----------------------------------------------------------->
               <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
                 <h6 class="p-3 mb-0">Messages</h6>
                 <div class="dropdown-divider"></div>
@@ -231,6 +239,7 @@
                 <div class="dropdown-divider"></div>
                 <p class="p-3 mb-0 text-center">4 new messages</p>
               </div>
+              <!-------------------------------------------End dropdown-menu ----------------------------------------------------------->
             </li>
             <li class="nav-item dropdown border-left">
               <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
@@ -321,9 +330,11 @@
           </button>
         </div>
       </nav>
-      <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
+<!---------------------------------------------------- End Navbar ------------------------------------------------------------------------->
+
+<!---------------------------------------------------- Tabel show Status ------------------------------------------------------------------>
           <div class="row">
             <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
               <div class="card">
@@ -406,7 +417,9 @@
               </div>
             </div>
           </div>
-          <!------------------------------------- Tabel show data User ------------------------------------->
+<!-------------------------------------------------- End Tabel show Status ---------------------------------------------------------------->
+
+<!-------------------------------------------------- Tabel show data User ----------------------------------------------------------------->
           <div class="row ">
             <div class="col-12 grid-margin">
               <div class="card">
@@ -465,7 +478,7 @@
                               </a>
 
                               <a href="/updateStatusFail/<?php echo $value['userId']; ?>" type="button" class="btn btn-outline-danger ">
-                              <i class="mdi mdi-close"></i>
+                                <i class="mdi mdi-close"></i>
                               </a>
 
                             </td>
@@ -488,9 +501,9 @@
       </div>
     </div>
   </div>
-  <!-------------------------------------End Tabel show data User ------------------------------------->
+<!-------------------------------------------------End Tabel show data User --------------------------------------------------------------->
 
-  <!--------------------------------------- Modal Update Status --------------------------------------->
+<!-------------------------------------------------- Modal Update Status ------------------------------------------------------------------>
   <?php $no = 1;
   foreach ($user as $key => $value) { ?>
     <div class="modal fade" id="update<?= $value['userId'] ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -590,7 +603,8 @@
       </div>
     </div>
   <?php } ?>
-  <!--End Modal Update Status -->
+<!------------------------------------------------End Modal Update Status ----------------------------------------------------------------->
+
 
 
   <!-- content-wrapper ends -->
