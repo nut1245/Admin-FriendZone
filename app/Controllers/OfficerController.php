@@ -60,7 +60,7 @@ class OfficerController extends ResourceController // เปลี่ยนจ�
         $data = $model->login($userName, $password);
         if ($data) {
             $session->set($data);
-            return redirect()->to('home');
+            return redirect()->to('dashboard');
         } else {
             $session->setFlashdata('msg', 'ไม่สามารถเข้าสู่ระบบได้ !!!');
             return redirect()->to('/');

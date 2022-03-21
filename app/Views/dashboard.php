@@ -30,13 +30,13 @@
 </head>
 
 <body>
-<!------------------------------------------------------- Menu ---------------------------------------------------------------------------->
+  <!------------------------------------------------------- Menu ---------------------------------------------------------------------------->
   <div class="container-scroller">
     <?php $session = session(); ?>
     <!-- partial:partials/_sidebar.html -->
     <nav class="sidebar sidebar-offcanvas" id="sidebar">
       <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-        <a class="sidebar-brand brand-logo" style="color:aliceblue;" href="home.php">AdminFZ</a>
+        <a class="sidebar-brand brand-logo" style="color:aliceblue;" href="/dashboard">AdminFZ</a>
         <a class="sidebar-brand brand-logo-mini" href="index.html"></a>
       </div>
 
@@ -95,7 +95,7 @@
           <span class="nav-link">แถบเมนู</span>
         </li>
         <li class="nav-item menu-items">
-          <a class="nav-link" href="home.php">
+          <a class="nav-link" href='/dashboard'>
             <span class="menu-icon">
               <i class="mdi mdi-home"></i>
             </span>
@@ -110,6 +110,7 @@
             <span class="menu-title">เพิ่มแอดมิน</span>
           </a>
         </li>
+
         <!-- <li class="nav-item menu-items">
           <a class="nav-link" href="pages/forms/basic_elements.html">
             <span class="menu-icon">
@@ -170,9 +171,9 @@
         </li> -->
       </ul>
     </nav>
-<!-------------------------------------------------------End Menu ------------------------------------------------------------------------->
+    <!-------------------------------------------------------End Menu ------------------------------------------------------------------------->
 
-<!----------------------------------------------------- End Navbar ------------------------------------------------------------------------>
+    <!-----------------------------------------------------  Navbar ------------------------------------------------------------------------>
     <div class="container-fluid page-body-wrapper">
 
       <nav class="navbar p-0 fixed-top d-flex flex-row">
@@ -332,9 +333,9 @@
       </nav>
       <div class="main-panel">
         <div class="content-wrapper">
-<!---------------------------------------------------- End Navbar ------------------------------------------------------------------------->
+          <!---------------------------------------------------- End Navbar ------------------------------------------------------------------------->
 
-<!---------------------------------------------------- Tabel show Status ------------------------------------------------------------------>
+          <!---------------------------------------------------- Tabel show Status ------------------------------------------------------------------>
           <div class="row">
             <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
               <div class="card">
@@ -417,9 +418,9 @@
               </div>
             </div>
           </div>
-<!-------------------------------------------------- End Tabel show Status ---------------------------------------------------------------->
+          <!-------------------------------------------------- End Tabel show Status ---------------------------------------------------------------->
 
-<!-------------------------------------------------- Tabel show data User ----------------------------------------------------------------->
+          <!-------------------------------------------------- Tabel show data User ----------------------------------------------------------------->
           <div class="row ">
             <div class="col-12 grid-margin">
               <div class="card">
@@ -427,9 +428,9 @@
                   <div class="row justify-content-between ">
                     <h4 class="card-title">ข้อมูลผู้ใช้งานทั้งหมด</h4>
                     <div class="template-demo">
-                      <button type="button" class="btn btn-outline-success btn-fw">ยืนยันตัวตนสำเร็จ</button>
-                      <button type="button" class="btn btn-outline-warning btn-fw">รอยืนยันตัวตน</button>
-                      <button type="button" class="btn btn-outline-danger btn-fw">รอการแก้ไข</button>
+                      <a href="/viewUserSuccess" type="button" class="btn btn-outline-success btn-fw">ยืนยันตัวตนสำเร็จ</a>
+                      <a href="/viewUserFail" type="button" class="btn btn-outline-warning btn-fw">รอยืนยันตัวตน</a>
+                      <a href="/viewUserEdit" type="button" class="btn btn-outline-danger btn-fw">รอการแก้ไข</a>
                       <br><br>
                     </div>
                   </div>
@@ -484,13 +485,9 @@
                             </td>
                           </tr>
                         <?php } ?>
-
-
-
                   </div>
                 </div>
               </div>
-
               </td>
               </tr>
               </tbody>
@@ -501,9 +498,9 @@
       </div>
     </div>
   </div>
-<!-------------------------------------------------End Tabel show data User --------------------------------------------------------------->
+  <!-------------------------------------------------End Tabel show data User --------------------------------------------------------------->
 
-<!-------------------------------------------------- Modal Update Status ------------------------------------------------------------------>
+  <!-------------------------------------------------- Modal Update Status ------------------------------------------------------------------>
   <?php $no = 1;
   foreach ($user as $key => $value) { ?>
     <div class="modal fade" id="update<?= $value['userId'] ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -516,7 +513,7 @@
             </button>
           </div>
           <div class="modal-body " style="background-color:#191c24">
-            <?php echo form_open('UserController/updateStatus' . $value['userId']) ?>
+
 
             <div class="container-fluid">
               <div class="row">
@@ -598,12 +595,12 @@
               </div>
             </div>
           </div>
-          <?php echo form_close() ?>
+
         </div>
       </div>
     </div>
   <?php } ?>
-<!------------------------------------------------End Modal Update Status ----------------------------------------------------------------->
+  <!------------------------------------------------End Modal Update Status ----------------------------------------------------------------->
 
 
 
