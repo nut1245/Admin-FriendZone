@@ -33,7 +33,7 @@
     <!-- partial:partials/_sidebar.html -->
     <nav class="sidebar sidebar-offcanvas" id="sidebar">
       <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-        <a class="sidebar-brand brand-logo" style="color:aliceblue;" href="home.php">AdminFZ</a>
+        <a class="sidebar-brand brand-logo" style="color:aliceblue;" href="dashboard">AdminFZ</a>
         <a class="sidebar-brand brand-logo-mini" href="index.html"></a>
       </div>
       <ul class="nav">
@@ -90,10 +90,9 @@
           <span class="nav-link">แถบเมนู</span>
         </li>
         <li class="nav-item menu-items">
-          <a class="nav-link" href="home.php">
+          <a class="nav-link" href="/dashboard">
             <span class="menu-icon">
               <i class="mdi mdi-home"></i>
-
             </span>
             <span class="menu-title">หน้าแรก</span>
           </a>
@@ -106,6 +105,7 @@
             <span class="menu-title">เพิ่มแอดมิน</span>
           </a>
         </li>
+        
 
         <!-- <li class="nav-item menu-items">
           <a class="nav-link" href="pages/forms/basic_elements.html">

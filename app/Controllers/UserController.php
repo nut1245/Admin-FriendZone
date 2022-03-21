@@ -20,25 +20,12 @@ class UserController extends ResourceController // เปลี่ยนจา�
         $model = new UserModel();
         $data['user'] = $model->viewUser();
         if ( $data['user']) {
-            return view('home', $data);
+            echo view('dashboard', $data);
         }
          else{
-             return view('home');
+             echo view('dashboard');
          }
         
-    }
-
-    //Get  User by userId
-    public function viewUser2($id)
-    {
-        $model = new UserModel();
-        $data['user'] = $model->viewUser2($id);
-        if ( $data['user']) {
-            return view('dataUser', $data);
-        }
-         else{
-             return view('dataUser');
-         }
     }
 
 
@@ -51,7 +38,7 @@ class UserController extends ResourceController // เปลี่ยนจา�
         ];
         $Usermodel = new UserModel();
         $Usermodel->where('userId', $userId)->set($data)->update();
-        return redirect()->to('/home');
+        return redirect()->to('/dashboard');
     }
 
     //update Status Fail
@@ -63,6 +50,47 @@ class UserController extends ResourceController // เปลี่ยนจา�
         ];
         $Usermodel = new UserModel();
         $Usermodel->where('userId', $userId)->set($data)->update();
-        return redirect()->to('/home');
+        return redirect()->to('/dashboard');
     }
+
+    //Get User by edit status
+    public function viewUserEdit()
+    {
+        $model = new UserModel();
+        $data['user'] = $model->viewUserEdit();
+        if ( $data['user']) {
+            echo view('dashboard', $data);
+        }
+         else{
+             echo view('dashboard');
+         }
+    }
+
+    //Get User by success status
+    public function viewUserSuccess()
+    {
+        $model = new UserModel();
+        $data['user'] = $model->viewUserSuccess();
+        if ( $data['user']) {
+            echo view('dashboard', $data);
+        }
+         else{
+             echo view('dashboard');
+         }
+    }
+
+    //Get User by fail status
+    public function viewUserFail()
+    {
+        $model = new UserModel();
+        $data['user'] = $model->viewUserFail();
+        if ( $data['user']) {
+            echo view('dashboard', $data);
+        }
+         else{
+             echo view('dashboard');
+         }
+    }
+
+    
 }

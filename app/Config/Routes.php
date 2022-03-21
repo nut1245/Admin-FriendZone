@@ -31,12 +31,17 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'OfficerController::index');                                      //Login
-$routes->get('/home', 'UserController::viewUser');    
-$routes->get('/register', 'OfficerController::index2');
-$routes->get('/logout', 'OfficerController::logout');
+$routes->get('/', 'OfficerController::index');                                      //Login (index)
+$routes->get('/dashboard', 'UserController::viewUser');                             //Dashboard
+$routes->get('/register', 'OfficerController::index2');                             //Register
+$routes->get('/logout', 'OfficerController::logout');                               //Logout    
+
 $routes->get('/updateStatus/(:any)', 'UserController::updateStatus/$1');             //updateStatusSuccess
 $routes->get('/updateStatusFail/(:any)', 'UserController::updateStatusFail/$1');     //updateStatusFail
+
+$routes->get('/viewUserSuccess', 'UserController::viewUserSuccess');                 //viewUserSuccess
+$routes->get('/viewUserFail', 'UserController::viewUserFail');                       //viewUserFail
+$routes->get('/viewUserEdit', 'UserController::viewUserEdit');                       //viewUserEdit
 /*
  * --------------------------------------------------------------------
  * Additional Routing
