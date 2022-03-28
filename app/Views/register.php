@@ -7,28 +7,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>เพิ่มแอดมิน</title>
   <!-- plugins:css -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
-  <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+  <link href="/https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="preconnect" href="/https://fonts.googleapis.com">
+  <link rel="preconnect" href="/https://fonts.gstatic.com" crossorigin>
+  <link href="/https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="/vendors/css/vendor.bundle.base.css">
   <!-- endinject -->
   <!-- Plugin css for this page -->
-  <link rel="stylesheet" href="vendors/jvectormap/jquery-jvectormap.css">
-  <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css">
-  <link rel="stylesheet" href="vendors/owl-carousel-2/owl.carousel.min.css">
-  <link rel="stylesheet" href="vendors/owl-carousel-2/owl.theme.default.min.css">
+  <link rel="stylesheet" href="/vendors/jvectormap/jquery-jvectormap.css">
+  <link rel="stylesheet" href="/vendors/flag-icon-css/css/flag-icon.min.css">
+  <link rel="stylesheet" href="/vendors/owl-carousel-2/owl.carousel.min.css">
+  <link rel="stylesheet" href="/vendors/owl-carousel-2/owl.theme.default.min.css">
   <!-- End plugin css for this page -->
   <!-- inject:css -->
   <!-- endinject -->
   <!-- Layout styles -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
   <!-- End layout styles -->
   <link rel="shortcut icon" href="#" />
 </head>
 
 <body>
+  <?php $session = session(); ?>
   <div class="container-scroller">
     <!-- partial:partials/_sidebar.html -->
     <nav class="sidebar sidebar-offcanvas" id="sidebar">
@@ -41,11 +42,11 @@
           <div class="profile-desc">
             <div class="profile-pic">
               <div class="count-indicator">
-                <img class="img-xs rounded-circle " src="https://cdn.discordapp.com/attachments/687292314988707850/689003346740379667/76912995_249466042696626_7100283618412462080_o.jpg" alt="">
+                <img class="img-xs rounded-circle " src="<?php echo $session->get('offImage'); ?>" alt="">
                 <span class="count bg-success"></span>
               </div>
               <div class="profile-name">
-                <h5 class="mb-0 font-weight-normal">Nutthapon</h5>
+                <h5 class="mb-0 font-weight-normal"><?php echo $session->get('FName'); ?></h5>
                 <span>Administer</span>
               </div>
             </div>
@@ -105,7 +106,7 @@
             <span class="menu-title">เพิ่มแอดมิน</span>
           </a>
         </li>
-        
+
 
         <!-- <li class="nav-item menu-items">
           <a class="nav-link" href="pages/forms/basic_elements.html">
@@ -283,8 +284,8 @@
             <li class="nav-item dropdown">
               <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
                 <div class="navbar-profile">
-                  <img class="img-xs rounded-circle" src="https://cdn.discordapp.com/attachments/687292314988707850/689003346740379667/76912995_249466042696626_7100283618412462080_o.jpg" alt="">
-                  <p class="mb-0 d-none d-sm-block navbar-profile-name">Nutthapon</p>
+                  <img class="img-xs rounded-circle" src="<?php echo $session->get('offImage'); ?>" alt="">
+                  <p class="mb-0 d-none d-sm-block navbar-profile-name"><?php echo $session->get('FName'); ?></p>
                   <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                 </div>
               </a>
@@ -329,14 +330,17 @@
             <div class="card">
               <div class="card-body">
                 <h4 class="card-title">เพิ่มข้อมูลแอดมิน</h4>
-                <form class="form-sample">
+                <?php if (isset($validation)) : ?>
+                  <div class="alert alert-danger"><?= $validation->listErrors(); ?></div>
+                <?php endif ?>
                   &nbsp;
+                  <form action="/OfficerController/register" method="post" class="form-sample">
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group row">
                         <label class="col-sm-2 col-form-label">ชื่อ</label>
                         <div class="col-sm-9">
-                          <input type="text" class="form-control">
+                          <input type="text" class="form-control" id="FName" name="FName" require>
                         </div>
                       </div>
                     </div>
@@ -344,7 +348,7 @@
                       <div class="form-group row">
                         <label class="col-sm-2 col-form-label">นามสกุล</label>
                         <div class="col-sm-9">
-                          <input type="text" class="form-control">
+                          <input type="text" class="form-control" id="LName" name="LName" require>
                         </div>
                       </div>
                     </div>
@@ -354,7 +358,7 @@
                       <div class="form-group row">
                         <label class="col-sm-2 col-form-label">ชื่อผู้ใช้งาน</label>
                         <div class="col-sm-9">
-                          <input type="text" class="form-control">
+                          <input type="text" class="form-control" id="userName" name="userName" require>
                         </div>
                       </div>
                     </div>
@@ -365,14 +369,14 @@
                           <div class="form-check">
                             <label class="form-check-label">
                               <i class="mdi mdi-gender-male" style="color:cyan"></i>
-                              <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios1" value="" checked=""> ชาย <i class="input-helper"></i></label>
+                              <input type="radio" class="form-check-input" name="gender" id="membershipRadios1" value="ชาย"> ชาย <i class="input-helper"></i></label>
                           </div>
                         </div>
                         <div class="col-sm-2">
                           <div class="form-check">
                             <label class="form-check-label">
                               <i class="mdi mdi-gender-female" style="color:deeppink"></i>
-                              <input type="radio" class="form-check-input" name="membershipRadios" id="membershipRadios2" value="option2"> หญิง <i class="input-helper"></i></label>
+                              <input type="radio" class="form-check-input" name="gender" id="membershipRadios2" value="หญิง"> หญิง <i class="input-helper"></i></label>
                           </div>
                         </div>
                       </div>
@@ -381,9 +385,10 @@
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">รหัสผ่าน</label>
+                      <p style="text-align: center; color: red;" id="message"></p>
+                        <label class="col-sm-2 col-form-label" for="password">รหัสผ่าน</label>
                         <div class="col-sm-9">
-                          <input type="password" class="form-control">
+                          <input type="password" class="form-control" id="password" name="password" require>
                         </div>
                       </div>
                     </div>
@@ -391,7 +396,7 @@
                       <div class="form-group row">
                         <label class="col-sm-2 col-form-label">เบอร์โทร</label>
                         <div class="col-sm-9">
-                          <input type="text" class="form-control">
+                          <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" require>
                         </div>
                       </div>
                     </div>
@@ -400,9 +405,9 @@
                   <div class="row">
                     <div class="col-md-6">
                       <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">ยืนยันรหัสผ่าน</label>
+                        <label class="col-sm-2 col-form-label" for="confirm">ยืนยันรหัสผ่าน</label>
                         <div class="col-sm-9">
-                          <input type="password" class="form-control">
+                          <input type="password" onchange="checkPassword()" class="form-control" id="confirmPassword" name="confirmpassword">
                         </div>
                       </div>
                     </div>
@@ -411,19 +416,19 @@
                         <label class="col-sm-2 col-form-label">รูปภาพ</label>
                         <div class="col-sm-9">
                           <span class="input-group-append">
-                            <input type="text" class="form-control">
-                            <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
+                            <input type="text" class="form-control" id="offImage" name="offImage" require>
+                            <!-- <button class="file-upload-browse btn btn-primary" type="button">Upload</button> -->
                           </span>
                         </div>
                       </div>
                     </div>
                   </div>
                   <br>
-                  <div class= "col-sm-12 ">
-                    <button type="button" class="btn btn-primary btn-icon-text">
-                       ยืนยัน </button>
-                      <button type="button" class="btn btn-danger btn-icon-text">
-                       ยกเลิก </button>
+                  <div class="col-sm-12 ">
+                    <button type="submit" id="btn" class="btn btn-primary btn-icon-text">
+                      ยืนยัน </button>
+                    <button type="button" class="btn btn-danger btn-icon-text">
+                      ยกเลิก </button>
                   </div>
                 </form>
               </div>
@@ -466,6 +471,21 @@
   <!-- Custom js for this page -->
   <script src="js/dashboard.js"></script>
   <!-- End custom js for this page -->
+
+  <script>
+        function checkPassword() {
+            let password = document.getElementById("password").value;
+            let confirmPassword = document.getElementById("confirmPassword").value;
+            console.log(password, confirmPassword);
+            if (password == confirmPassword) {
+                document.getElementById("message").innerHTML = "รหัสผ่านตรงกัน";
+                document.getElementById("btn").disabled = false;
+            } else {
+                document.getElementById("message").innerHTML = "รหัสผ่านไม่ตรงกัน !!";
+                document.getElementById("btn").disabled = true;
+            }
+        }
+    </script>
 </body>
 
 </html>

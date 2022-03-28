@@ -55,7 +55,7 @@
                       </div>
                     </div>
                   </div>
-                  <h4 class="text-muted font-weight-normal">โพสทั้งหมด</h4>
+                  <h4 class="text-muted font-weight-normal">โพสต์ทั้งหมด</h4>
                 </div>
               </div>
             </div>
@@ -75,7 +75,7 @@
                       </div>
                     </div>
                   </div>
-                  <h4 class="text-muted font-weight-normal">รายงานโพส</h4>
+                  <h4 class="text-muted font-weight-normal">รายงานโพสต์</h4>
                 </div>
               </div>
             </div>

@@ -43,7 +43,7 @@ class OfficerController extends ResourceController // เปลี่ยนจ�
              ];
             if($data){
                  $register = $model->register($data);
-                 return redirect()->to('/');
+                 return redirect()->to('/dashboard');
             }
             }else{
                  $data['validation'] = $this->validator;
