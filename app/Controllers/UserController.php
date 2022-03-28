@@ -8,6 +8,18 @@ use App\Models\UserModel;
 class UserController extends BaseController
 {
 
+    public function index()
+    {
+        helper('form');
+        echo view('dashboard');
+    }
+
+    public function reportPost()
+    {
+        helper('form');
+        echo view('reportpost');
+    }
+
     //Get all User
     public function viewUser()
     {
@@ -17,7 +29,7 @@ class UserController extends BaseController
             'user' => $model->paginate(10),
             'pager' => $model->pager,
         ];
-        echo view('dashboard', $data);
+        echo view('alluser', $data);
     }
 
 

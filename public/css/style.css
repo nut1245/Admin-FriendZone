@@ -21173,3 +21173,10 @@ transform: translate(-50%, -50%);
 
 }
 
+
+.pagination a{
+  color:#00314e;
+}
+.active a{
+  color:#00ac4a;
+}

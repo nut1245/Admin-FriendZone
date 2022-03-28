@@ -33,140 +33,7 @@
   <div class="container-scroller">
     <!-- partial:partials/_sidebar.html -->
     <nav class="sidebar sidebar-offcanvas" id="sidebar">
-      <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-        <a class="sidebar-brand brand-logo" style="color:aliceblue;" href="dashboard">AdminFZ</a>
-        <a class="sidebar-brand brand-logo-mini" href="index.html"></a>
-      </div>
-      <ul class="nav">
-        <li class="nav-item profile">
-          <div class="profile-desc">
-            <div class="profile-pic">
-              <div class="count-indicator">
-                <img class="img-xs rounded-circle " src="<?php echo $session->get('offImage'); ?>" alt="">
-                <span class="count bg-success"></span>
-              </div>
-              <div class="profile-name">
-                <h5 class="mb-0 font-weight-normal"><?php echo $session->get('FName'); ?></h5>
-                <span>Administer</span>
-              </div>
-            </div>
-            <a href="#" id="profile-dropdown" data-toggle="dropdown"><i class="mdi mdi-dots-vertical"></i></a>
-            <div class="dropdown-menu dropdown-menu-right sidebar-dropdown preview-list" aria-labelledby="profile-dropdown">
-              <a href="#" class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <div class="preview-icon bg-dark rounded-circle">
-                    <i class="mdi mdi-settings text-primary"></i>
-                  </div>
-                </div>
-                <div class="preview-item-content">
-                  <p class="preview-subject ellipsis mb-1 text-small">Account settings</p>
-                </div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <div class="preview-icon bg-dark rounded-circle">
-                    <i class="mdi mdi-onepassword  text-info"></i>
-                  </div>
-                </div>
-                <div class="preview-item-content">
-                  <p class="preview-subject ellipsis mb-1 text-small">Change Password</p>
-                </div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a href="#" class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <div class="preview-icon bg-dark rounded-circle">
-                    <i class="mdi mdi-calendar-today text-success"></i>
-                  </div>
-                </div>
-                <div class="preview-item-content">
-                  <p class="preview-subject ellipsis mb-1 text-small">To-do list</p>
-                </div>
-              </a>
-            </div>
-          </div>
-        </li>
-        <li class="nav-item nav-category">
-          <span class="nav-link">แถบเมนู</span>
-        </li>
-        <li class="nav-item menu-items">
-          <a class="nav-link" href="/dashboard">
-            <span class="menu-icon">
-              <i class="mdi mdi-home"></i>
-            </span>
-            <span class="menu-title">หน้าแรก</span>
-          </a>
-        </li>
-        <li class="nav-item menu-items">
-          <a class="nav-link" href="/register">
-            <span class="menu-icon">
-              <i class="mdi mdi-laptop"></i>
-            </span>
-            <span class="menu-title">เพิ่มแอดมิน</span>
-          </a>
-        </li>
-
-
-        <!-- <li class="nav-item menu-items">
-          <a class="nav-link" href="pages/forms/basic_elements.html">
-            <span class="menu-icon">
-              <i class="mdi mdi-playlist-play"></i>
-            </span>
-            <span class="menu-title">Form Elements</span>
-          </a>
-        </li>
-        <li class="nav-item menu-items">
-          <a class="nav-link" href="pages/tables/basic-table.html">
-            <span class="menu-icon">
-              <i class="mdi mdi-table-large"></i>
-            </span>
-            <span class="menu-title">Tables</span>
-          </a>
-        </li>
-        <li class="nav-item menu-items">
-          <a class="nav-link" href="pages/charts/chartjs.html">
-            <span class="menu-icon">
-              <i class="mdi mdi-chart-bar"></i>
-            </span>
-            <span class="menu-title">Charts</span>
-          </a>
-        </li>
-        <li class="nav-item menu-items">
-          <a class="nav-link" href="pages/icons/mdi.html">
-            <span class="menu-icon">
-              <i class="mdi mdi-contacts"></i>
-            </span>
-            <span class="menu-title">Icons</span>
-          </a>
-        </li> -->
-        <!-- <li class="nav-item menu-items">
-          <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-            <span class="menu-icon">
-              <i class="mdi mdi-security"></i>
-            </span>
-            <span class="menu-title">User Pages</span>
-            <i class="menu-arrow"></i>
-          </a>
-          <div class="collapse" id="auth">
-            <ul class="nav flex-column sub-menu">
-              <li class="nav-item"> <a class="nav-link" href="pages/samples/blank-page.html"> Blank Page </a></li>
-              <li class="nav-item"> <a class="nav-link" href="pages/samples/error-404.html"> 404 </a></li>
-              <li class="nav-item"> <a class="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
-              <li class="nav-item"> <a class="nav-link" href="pages/samples/login.html"> Login </a></li>
-              <li class="nav-item"> <a class="nav-link" href="pages/samples/register.html"> Register </a></li>
-            </ul>
-          </div>
-        </li> -->
-        <!-- <li class="nav-item menu-items">
-          <a class="nav-link" href="http://www.bootstrapdash.com/demo/corona-free/jquery/documentation/documentation.html">
-            <span class="menu-icon">
-              <i class="mdi mdi-file-document-box"></i>
-            </span>
-            <span class="menu-title">Documentation</span>
-          </a>
-        </li> -->
-      </ul>
+      <?php require('components/Navbar.php'); ?>
     </nav>
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
@@ -325,130 +192,13 @@
       </nav>
       <!-- partial -->
       <div class="main-panel">
-        <div class="content-wrapper">
-          <div class="col-12 grid-margin">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">เพิ่มข้อมูลแอดมิน</h4>
-                <?php if (isset($validation)) : ?>
-                  <div class="alert alert-danger"><?= $validation->listErrors(); ?></div>
-                <?php endif ?>
-                  &nbsp;
-                  <form action="/OfficerController/register" method="post" class="form-sample">
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">ชื่อ</label>
-                        <div class="col-sm-9">
-                          <input type="text" class="form-control" id="FName" name="FName" require>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">นามสกุล</label>
-                        <div class="col-sm-9">
-                          <input type="text" class="form-control" id="LName" name="LName" require>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">ชื่อผู้ใช้งาน</label>
-                        <div class="col-sm-9">
-                          <input type="text" class="form-control" id="userName" name="userName" require>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">เพศ</label>
-                        <div class="col-sm-2">
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <i class="mdi mdi-gender-male" style="color:cyan"></i>
-                              <input type="radio" class="form-check-input" name="gender" id="membershipRadios1" value="ชาย"> ชาย <i class="input-helper"></i></label>
-                          </div>
-                        </div>
-                        <div class="col-sm-2">
-                          <div class="form-check">
-                            <label class="form-check-label">
-                              <i class="mdi mdi-gender-female" style="color:deeppink"></i>
-                              <input type="radio" class="form-check-input" name="gender" id="membershipRadios2" value="หญิง"> หญิง <i class="input-helper"></i></label>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group row">
-                      <p style="text-align: center; color: red;" id="message"></p>
-                        <label class="col-sm-2 col-form-label" for="password">รหัสผ่าน</label>
-                        <div class="col-sm-9">
-                          <input type="password" class="form-control" id="password" name="password" require>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">เบอร์โทร</label>
-                        <div class="col-sm-9">
-                          <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" require>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="form-group row">
-                        <label class="col-sm-2 col-form-label" for="confirm">ยืนยันรหัสผ่าน</label>
-                        <div class="col-sm-9">
-                          <input type="password" onchange="checkPassword()" class="form-control" id="confirmPassword" name="confirmpassword">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-group row">
-                        <label class="col-sm-2 col-form-label">รูปภาพ</label>
-                        <div class="col-sm-9">
-                          <span class="input-group-append">
-                            <input type="text" class="form-control" id="offImage" name="offImage" require>
-                            <!-- <button class="file-upload-browse btn btn-primary" type="button">Upload</button> -->
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <br>
-                  <div class="col-sm-12 ">
-                    <button type="submit" id="btn" class="btn btn-primary btn-icon-text">
-                      ยืนยัน </button>
-                    <button type="button" class="btn btn-danger btn-icon-text">
-                      ยกเลิก </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
+        <?php require('components/Register.php'); ?>
       </div>
-      <!------------------------------------- สิ้นสุดตารางแสดงข้อมูล ------------------------------------->
     </div>
-    <!-- content-wrapper ends -->
-    <!-- partial:partials/_footer.html -->
+  </div>
 
-    <!-- partial -->
-  </div>
-  <!-- main-panel ends -->
-  </div>
-  <!-- page-body-wrapper ends -->
-  </div>
-  <!-- container-scroller -->
-  <!-- plugins:js -->
+
+
   <script src="vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page -->
@@ -473,19 +223,19 @@
   <!-- End custom js for this page -->
 
   <script>
-        function checkPassword() {
-            let password = document.getElementById("password").value;
-            let confirmPassword = document.getElementById("confirmPassword").value;
-            console.log(password, confirmPassword);
-            if (password == confirmPassword) {
-                document.getElementById("message").innerHTML = "รหัสผ่านตรงกัน";
-                document.getElementById("btn").disabled = false;
-            } else {
-                document.getElementById("message").innerHTML = "รหัสผ่านไม่ตรงกัน !!";
-                document.getElementById("btn").disabled = true;
-            }
-        }
-    </script>
+    function checkPassword() {
+      let password = document.getElementById("password").value;
+      let confirmPassword = document.getElementById("confirmPassword").value;
+      console.log(password, confirmPassword);
+      if (password == confirmPassword) {
+        document.getElementById("message").innerHTML = "รหัสผ่านตรงกัน";
+        document.getElementById("btn").disabled = false;
+      } else {
+        document.getElementById("message").innerHTML = "รหัสผ่านไม่ตรงกัน !!";
+        document.getElementById("btn").disabled = true;
+      }
+    }
+  </script>
 </body>
 
 </html>
