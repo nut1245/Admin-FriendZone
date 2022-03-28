@@ -32,9 +32,11 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'OfficerController::index');                                      //Login (index)
-$routes->get('/dashboard', 'UserController::viewUser');                             //Dashboard
+$routes->get('/dashboard', 'UserController::index');                             //Dashboard
 $routes->get('/register', 'OfficerController::index2');                             //Register
 $routes->get('/logout', 'OfficerController::logout');                               //Logout    
+$routes->get('/reportpost', 'UserController::reportPost');  
+$routes->get('/alluser', 'UserController::viewUser'); 
 
 $routes->get('/updateStatus/(:any)', 'UserController::updateStatus/$1');             //updateStatusSuccess
 $routes->get('/updateStatusFail/(:any)', 'UserController::updateStatusFail/$1');     //updateStatusFail

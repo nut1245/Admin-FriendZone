@@ -36,11 +36,12 @@
     <?php require('components/Navbar.php'); ?>
     <div class="main-panel">
       <div class="content-wrapper">
-        <?php require('components/Status.php'); ?>
-        
+        <?php require('components/DataTable.php'); ?>
       </div>
     </div>
   </div>
+
+  <?php require('components/ModalData.php'); ?>
   <!-- plugins:js -->
   <script src="vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
