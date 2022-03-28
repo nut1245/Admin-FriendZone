@@ -11,10 +11,15 @@ class UserModel extends Model{
  
 
     //show User
-    public function viewUser()
+    public function viewUser($page)
     {
-        $data = $this->orderBy('userId', "ASC")->findAll();
-        return $data;
+        return $this->select()
+        ->join('provinces','users.province = provinces.id')
+        ->join('amphures','users.district = amphures.id')
+        ->join('districts','users.subDistrict = districts.id')
+        ->orderBy('userId', "ASC")
+        ->paginate(10,'pages',$page);
+        //->get()->getResultArray();
     }
 
     //show User by edit status

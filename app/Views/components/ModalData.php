@@ -51,15 +51,15 @@
 
                 </div>
                 <div class="col-md-2 ms-auto">
-                  <h4 style="color:	#FF00AA;">จังหวัด :<span style="color:#fff"> <?php echo $value['province']; ?></span></h4>
+                  <h4 style="color:	#FF00AA;">จังหวัด :<span style="color:#fff"> <?php echo $value['name_th']; ?></span></h4>
 
                 </div>
                 <div class="col-md-2 ms-auto">
-                  <h4 style="color:	#FF00AA;">อำเภอ :<span style="color:#fff"> <?php echo $value['district']; ?></span></h4>
+                  <h4 style="color:	#FF00AA;">อำเภอ :<span style="color:#fff"> <?php echo $value['name_th_dis']; ?></span></h4>
 
                 </div>
                 <div class="col-md-2 ms-auto">
-                  <h4 style="color:	#FF00AA;">ตำบล :<span style="color:#fff"> <?php echo $value['subDistrict']; ?></span></h4>
+                  <h4 style="color:	#FF00AA;">ตำบล :<span style="color:#fff"> <?php echo $value['name_th_am']; ?></span></h4>
 
                 </div>
               </div>

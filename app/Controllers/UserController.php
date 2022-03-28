@@ -12,15 +12,17 @@ class UserController extends BaseController
     public function viewUser()
     {
         helper('form');
+        $page=$this->request->getGet('pages');
         $model = new \App\Models\UserModel();
         $data = [
-            'user' => $model->paginate(10),
+            'user' => $model->viewUser($page),
+            'user1'=> $model->paginate(10 ,'pages'),
             'pager' => $model->pager,
         ];
         echo view('dashboard', $data);
     }
 
-
+    
     //update Status Success
     public function updateStatus($userId)
     {
