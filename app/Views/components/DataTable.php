@@ -59,18 +59,18 @@
                       <i class="mdi mdi-close"></i>
                     </a>
 
-                  </td>
-                </tr>
-              <?php } ?>
-        </div>
-      </div>
-    </div>
-    </td>
-    </tr>
-    </tbody>
-    </table>
-  </div>
 
-  <?= $pager->links() ?>
-  
-</div>
+                            </td>
+                          </tr>
+                        <?php } ?>
+                  </div>
+                </div>
+              </div>
+              </td>
+              </tr>
+              </tbody>
+              </table>
+            </div>
+            <?= $pager->links('pages') ?>
+          </div>
+
