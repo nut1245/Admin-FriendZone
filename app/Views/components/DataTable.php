@@ -70,4 +70,5 @@
               </tbody>
               </table>
             </div>
+            <?= $pager->links() ?>
           </div>

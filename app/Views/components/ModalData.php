@@ -40,7 +40,7 @@
                   <h4 style="color:	#FF00AA;">วันเกิด :<span style="color:#fff"> <?php echo $value['birthday']; ?></span></h4>
                 </div>
                 <div class="col-md-6 ms-auto">
-                  <h4 style="color:	#FF00AA;">ที่อยู่ : :<span style="color:#fff"> <?php echo $value['address']; ?></span></h4>
+                  <h4 style="color:	#FF00AA;">ที่อยู่ :<span style="color:#fff"> <?php echo $value['address']; ?></span></h4>
 
                 </div>
 

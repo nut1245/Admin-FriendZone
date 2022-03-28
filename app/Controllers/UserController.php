@@ -2,30 +2,22 @@
 
 namespace App\Controllers;
 
-use CodeIgniter\Controller;
 use App\Models\UserModel;
-use CodeIgniter\RESTful\ResourceController; // เรียกใช้API
-use CodeIgniter\HTTP\RequestTrait; // เรียกใช้API
 
-
-class UserController extends ResourceController // เปลี่ยนจาก Controller
+//------------------------Manage all users---------------------------------
+class UserController extends BaseController
 {
-    use RequestTrait; // เรียกใช้
 
-   
     //Get all User
     public function viewUser()
     {
         helper('form');
-        $model = new UserModel();
-        $data['user'] = $model->viewUser();
-        if ( $data['user']) {
-            echo view('dashboard', $data);
-        }
-         else{
-             echo view('dashboard');
-         }
-        
+        $model = new \App\Models\UserModel();
+        $data = [
+            'user' => $model->paginate(10),
+            'pager' => $model->pager,
+        ];
+        echo view('dashboard', $data);
     }
 
 
@@ -33,7 +25,7 @@ class UserController extends ResourceController // เปลี่ยนจา�
     public function updateStatus($userId)
     {
         $status = "1";
-        $data =[
+        $data = [
             'statusUser' => $status
         ];
         $Usermodel = new UserModel();
@@ -45,7 +37,7 @@ class UserController extends ResourceController // เปลี่ยนจา�
     public function updateStatusFail($userId)
     {
         $status = "2";
-        $data =[
+        $data = [
             'statusUser' => $status
         ];
         $Usermodel = new UserModel();
@@ -57,40 +49,47 @@ class UserController extends ResourceController // เปลี่ยนจา�
     public function viewUserEdit()
     {
         $model = new UserModel();
-        $data['user'] = $model->viewUserEdit();
-        if ( $data['user']) {
-            echo view('dashboard', $data);
-        }
-         else{
-             echo view('dashboard');
-         }
+        $data = [
+            'user' => $model->paginate(10),
+            'user' => $model->viewUserEdit(),
+            'pager' => $model->pager,
+        ];
+        echo view('dashboard', $data);
     }
+
+
+
 
     //Get User by success status
     public function viewUserSuccess()
     {
         $model = new UserModel();
-        $data['user'] = $model->viewUserSuccess();
-        if ( $data['user']) {
-            echo view('dashboard', $data);
-        }
-         else{
-             echo view('dashboard');
-         }
+        $data = [
+            'user' => $model->paginate(10),
+            'user' => $model->viewUserSuccess(),
+            'pager' => $model->pager,
+        ];
+        echo view('dashboard', $data);
     }
 
     //Get User by fail status
     public function viewUserFail()
     {
         $model = new UserModel();
-        $data['user'] = $model->viewUserFail();
-        if ( $data['user']) {
-            echo view('dashboard', $data);
-        }
-         else{
-             echo view('dashboard');
-         }
+        $data = [
+            'user' => $model->paginate(10),
+            'user' => $model->viewUserFail(),
+            'pager' => $model->pager,
+        ];
+        echo view('dashboard', $data);
     }
 
-    
+    //Count User
+    public function countUser()
+    {
+        $model = new UserModel();
+        // $data['countUser'] = $this->db->table($this->table)->where(["statusUser" => 0])->countAllResults();
+        $data['countUser'] = $model->db->table($model->table)->countAllResults();
+        echo view('dashboard', $data);
+    }
 }
