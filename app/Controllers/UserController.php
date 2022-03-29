@@ -14,16 +14,17 @@ class UserController extends BaseController
         echo view('dashboard');
     }
 
+
     public function reportPost()
     {
         helper('form');
         echo view('reportpost');
     }
 
+
     //Get all User
     public function viewUser()
     {
-        helper('form');
         $page=$this->request->getGet('pages');
         $model = new \App\Models\UserModel();
         $data = [
@@ -34,7 +35,49 @@ class UserController extends BaseController
         echo view('alluser', $data);
     }
 
+
+    //Get User by success status
+    public function viewUserSuccess()
+    {
+        $page=$this->request->getGet('pages');
+        $model = new \App\Models\UserModel();
+        $data = [
+            'user' => $model->viewUserSuccess($page),
+            'user1'=> $model->paginate(10 ,'pages'),
+            'pager' => $model->pager,
+        ];
+        echo view('alluser', $data);
+    }
+
     
+     //Get User by fail status
+     public function viewUserFail()
+     {
+         $page=$this->request->getGet('pages');
+         $model = new \App\Models\UserModel();
+         $data = [
+             'user' => $model->viewUserFail($page),
+             'user1'=> $model->paginate(10 ,'pages'),
+             'pager' => $model->pager,
+         ];
+         echo view('alluser', $data);
+     }
+
+     
+    //Get User by edit status
+    public function viewUserEdit()
+    {
+        $page=$this->request->getGet('pages');
+        $model = new \App\Models\UserModel();
+        $data = [
+            'user' => $model->viewUserEdit($page),
+            'user1'=> $model->paginate(10 ,'pages'),
+            'pager' => $model->pager,
+        ];
+        echo view('alluser', $data);
+    }
+
+
     //update Status Success
     public function updateStatus($userId)
     {
@@ -44,7 +87,7 @@ class UserController extends BaseController
         ];
         $Usermodel = new UserModel();
         $Usermodel->where('userId', $userId)->set($data)->update();
-        return redirect()->to('/dashboard');
+        return redirect()->to('/alluser');
     }
 
     //update Status Fail
@@ -56,47 +99,11 @@ class UserController extends BaseController
         ];
         $Usermodel = new UserModel();
         $Usermodel->where('userId', $userId)->set($data)->update();
-        return redirect()->to('/dashboard');
-    }
-
-    //Get User by edit status
-    public function viewUserEdit()
-    {
-        $model = new UserModel();
-        $data = [
-            'user' => $model->paginate(10),
-            'user' => $model->viewUserEdit(),
-            'pager' => $model->pager,
-        ];
-        echo view('dashboard', $data);
+        return redirect()->to('/alluser');
     }
 
 
-
-
-    //Get User by success status
-    public function viewUserSuccess()
-    {
-        $model = new UserModel();
-        $data = [
-            'user' => $model->paginate(10),
-            'user' => $model->viewUserSuccess(),
-            'pager' => $model->pager,
-        ];
-        echo view('dashboard', $data);
-    }
-
-    //Get User by fail status
-    public function viewUserFail()
-    {
-        $model = new UserModel();
-        $data = [
-            'user' => $model->paginate(10),
-            'user' => $model->viewUserFail(),
-            'pager' => $model->pager,
-        ];
-        echo view('dashboard', $data);
-    }
+    
 
     //Count User
     public function countUser()

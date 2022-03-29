@@ -1,0 +1,665 @@
+CRITICAL - 2022-03-29 09:19:24 --> Undefined index: name_th
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ModalData.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 54, Array)
+#1 C:\xampp\htdocs\AdminNew\app\Views\alluser.php(44): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('alluser', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(98): view('alluser', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserFail()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-29 09:19:28 --> Undefined index: name_th
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ModalData.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 54, Array)
+#1 C:\xampp\htdocs\AdminNew\app\Views\alluser.php(44): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('alluser', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(71): view('alluser', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-29 09:19:37 --> Undefined index: name_th
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ModalData.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 54, Array)
+#1 C:\xampp\htdocs\AdminNew\app\Views\alluser.php(44): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('alluser', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(86): view('alluser', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-29 09:20:39 --> Undefined variable: page
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 67, Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:22:08 --> Undefined variable: page
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 67, Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:22:53 --> Undefined variable: page
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 67, Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:22:58 --> Undefined variable: page
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 67, Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:23:27 --> Undefined variable: page
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 67, Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:24:10 --> Undefined index: name_th
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ModalData.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 54, Array)
+#1 C:\xampp\htdocs\AdminNew\app\Views\alluser.php(44): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('alluser', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(83): view('alluser', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-29 09:24:13 --> Undefined index: name_th
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ModalData.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 54, Array)
+#1 C:\xampp\htdocs\AdminNew\app\Views\alluser.php(44): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('alluser', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(95): view('alluser', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserFail()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-29 09:24:15 --> Undefined variable: page
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 67, Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:24:23 --> Undefined variable: page
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 67, Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:24:27 --> Undefined variable: page
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(67): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 67, Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:25:37 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(67): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:26:08 --> Undefined variable: page
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 66, Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:26:26 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(67): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:26:37 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(67): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:26:39 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(67): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:26:45 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(67): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:27:20 --> Too few arguments to function App\Models\UserModel::viewUserEdit(), 0 passed in C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php on line 68 and exactly 1 expected
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(68): App\Models\UserModel->viewUserEdit()
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:27:58 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(68): App\Models\UserModel->viewUserEdit()
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:28:02 --> syntax error, unexpected 'return' (T_RETURN)
+#0 C:\xampp\htdocs\AdminNew\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\AdminNew\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Models\\User...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Models\\User...')
+#3 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(65): spl_autoload_call('App\\Models\\User...')
+#4 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#5 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-03-29 09:28:11 --> Undefined index: name_th
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ModalData.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 54, Array)
+#1 C:\xampp\htdocs\AdminNew\app\Views\alluser.php(44): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('alluser', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(71): view('alluser', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-29 09:30:11 --> Too few arguments to function App\Models\UserModel::viewUserEdit(), 0 passed in C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php on line 67 and exactly 1 expected
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(67): App\Models\UserModel->viewUserEdit()
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:31:25 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(67): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:31:54 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(67): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:33:17 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(67): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:35:18 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(67): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:37:35 --> Undefined index: name_th
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ModalData.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 54, Array)
+#1 C:\xampp\htdocs\AdminNew\app\Views\alluser.php(44): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('alluser', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(84): view('alluser', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-29 09:38:08 --> Undefined index: name_th
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ModalData.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 54, Array)
+#1 C:\xampp\htdocs\AdminNew\app\Views\alluser.php(44): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('alluser', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(84): view('alluser', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-29 09:39:26 --> Undefined index: name_th
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ModalData.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 54, Array)
+#1 C:\xampp\htdocs\AdminNew\app\Views\alluser.php(44): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('alluser', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(84): view('alluser', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-29 09:39:47 --> Too few arguments to function App\Models\UserModel::viewUserSuccess(), 0 passed in C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php on line 81 and exactly 1 expected
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(81): App\Models\UserModel->viewUserSuccess()
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:40:30 --> Undefined variable: page
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 81, Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:40:31 --> Undefined variable: page
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 81, Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:40:53 --> Undefined variable: page
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 81, Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:40:54 --> Undefined variable: page
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(81): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', 'C:\\xampp\\htdocs...', 81, Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:41:38 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(81): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:41:39 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(81): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:43:15 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(81): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:43:19 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(81): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:43:25 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(81): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:44:51 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(67): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:45:02 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(81): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:47:15 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(46): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:47:17 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(46): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:48:26 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(46): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:48:42 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(46): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:48:48 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(46): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:48:49 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(46): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:48:50 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(46): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:51:04 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(46): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:51:40 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(46): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:51:45 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(46): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:51:55 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(46): App\Models\UserModel->viewUserEdit(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:52:22 --> Undefined index: name_th
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ModalData.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 54, Array)
+#1 C:\xampp\htdocs\AdminNew\app\Views\alluser.php(44): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('alluser', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(64): view('alluser', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-29 09:52:24 --> Undefined index: name_th
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ModalData.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 54, Array)
+#1 C:\xampp\htdocs\AdminNew\app\Views\alluser.php(44): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('alluser', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(50): view('alluser', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-29 09:52:29 --> Undefined index: name_th
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ModalData.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 54, Array)
+#1 C:\xampp\htdocs\AdminNew\app\Views\alluser.php(44): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('alluser', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(50): view('alluser', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-29 09:52:39 --> Undefined index: name_th
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ModalData.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 54, Array)
+#1 C:\xampp\htdocs\AdminNew\app\Views\alluser.php(44): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('alluser', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(50): view('alluser', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-29 09:52:46 --> Undefined index: name_th
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ModalData.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 54, Array)
+#1 C:\xampp\htdocs\AdminNew\app\Views\alluser.php(44): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('alluser', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(50): view('alluser', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-29 09:53:06 --> Undefined index: name_th
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ModalData.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 54, Array)
+#1 C:\xampp\htdocs\AdminNew\app\Views\alluser.php(44): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('alluser', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(50): view('alluser', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-29 09:53:29 --> Undefined index: name_th
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ModalData.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 54, Array)
+#1 C:\xampp\htdocs\AdminNew\app\Views\alluser.php(44): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('alluser', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(50): view('alluser', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-29 09:53:33 --> Undefined index: name_th
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ModalData.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 54, Array)
+#1 C:\xampp\htdocs\AdminNew\app\Views\alluser.php(44): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('alluser', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(64): view('alluser', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-29 09:54:08 --> Too few arguments to function App\Models\UserModel::viewUserEdit(), 0 passed in C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php on line 60 and exactly 1 expected
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(60): App\Models\UserModel->viewUserEdit()
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:55:21 --> Undefined index: name_th
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ModalData.php(54): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 54, Array)
+#1 C:\xampp\htdocs\AdminNew\app\Views\alluser.php(44): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('alluser', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(50): view('alluser', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-03-29 09:55:46 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(45): App\Models\UserModel->viewUserSuccess()
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:56:30 --> Too few arguments to function App\Models\UserModel::viewUserSuccess(), 0 passed in C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php on line 45 and exactly 1 expected
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(45): App\Models\UserModel->viewUserSuccess()
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:57:06 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::viewUserSuccess()
+#0 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-29 09:57:16 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::viewUserSuccess()
+#0 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-29 09:57:21 --> Call to undefined method CodeIgniter\HTTP\IncomingRequest::viewUserSuccess()
+#0 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-03-29 09:58:29 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(45): App\Models\UserModel->viewUserSuccess(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 09:58:36 --> Call to a member function paginate() on array
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(45): App\Models\UserModel->viewUserSuccess(NULL)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserSuccess()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-03-29 10:01:35 --> Function name must be a string
+#0 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewUserEdit()
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
