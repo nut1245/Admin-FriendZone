@@ -1,5 +1,5 @@
-<div class="row">
-            <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+<div class="row col-11">
+            <div class="col-md-3 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body ">
                   <div class="row">
@@ -19,7 +19,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+            <div class="col-md-3  grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
                   <div class="row">
@@ -39,7 +39,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+            <div class="col-md-3  grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
                   <div class="row">
@@ -59,7 +59,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+            <div class="col-md-3  grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
                   <div class="row">
