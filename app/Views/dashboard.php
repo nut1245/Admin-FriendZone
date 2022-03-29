@@ -27,6 +27,9 @@
   <!-- End layout styles -->
   <link rel="shortcut icon" href="#" />
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
 </head>
 
 <body>
@@ -37,7 +40,7 @@
     <div class="main-panel">
       <div class="content-wrapper">
         <?php require('components/Status.php'); ?>
-        
+        <?php require('components/GraphData.php'); ?>
       </div>
     </div>
   </div>
