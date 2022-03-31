@@ -15,7 +15,7 @@
                 <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
                     <div class="text-md-center text-xl-left">
                         <h6 class="mb-1">เชียงใหม่</h6>
-                        <p class="text-muted mb-0">07 Jan 2019, 09:12AM</p>
+                        <p class="text-muted mb-0">ดอย,กางเต้น</p>
                     </div>
                     <div class="align-self-center flex-grow text-right text-md-center text-xl-right py-md-2 py-xl-0">
                         <h6 class="font-weight-bold mb-0">$236</h6>
@@ -24,7 +24,7 @@
                 <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
                     <div class="text-md-center text-xl-left">
                         <h6 class="mb-1">กรุงเทพฯ</h6>
-                        <p class="text-muted mb-0">ทะเล</p>
+                        <p class="text-muted mb-0">วัดพระแก้ว</p>
                     </div>
                     <div class="align-self-center flex-grow text-right text-md-center text-xl-right py-md-2 py-xl-0">
                         <h6 class="font-weight-bold mb-0">$236</h6>
@@ -33,7 +33,7 @@
                 <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
                     <div class="text-md-center text-xl-left">
                         <h6 class="mb-1">ชลบุรี</h6>
-                        <p class="text-muted mb-0">07 Jan 2019, 09:12AM</p>
+                        <p class="text-muted mb-0">พัทยา</p>
                     </div>
                     <div class="align-self-center flex-grow text-right text-md-center text-xl-right py-md-2 py-xl-0">
                         <h6 class="font-weight-bold mb-0">$593</h6>
@@ -225,32 +225,33 @@
             </div>
         </div>
     </div>
-    &nbsp;
+</div>
+&nbsp;
 
-    <script>
-                    var xValues = ["เชียงใหม่", "กรุงเทพฯ", "ชลบุรี", "ภูเก็ต", ];
-                    var yValues = [1500, 800, 760, 450];
-                    var barColors = [
-                        "#F95CC5",
-                        "#9FF95C",
-                        "#2b5797",
-                        "#44F2FA"
-                    ];
+<script>
+    var xValues = ["เชียงใหม่", "กรุงเทพฯ", "ชลบุรี", "ภูเก็ต", ];
+    var yValues = [1500, 800, 760, 450];
+    var barColors = [
+        "#F95CC5",
+        "#9FF95C",
+        "#2b5797",
+        "#44F2FA"
+    ];
 
-                    new Chart("myChart", {
-                        type: "pie",
-                        data: {
-                            labels: xValues,
-                            datasets: [{
-                                backgroundColor: barColors,
-                                data: yValues
-                            }]
-                        },
-                        options: {
-                            title: {
-                                display: true,
-                            
-                            }
-                        }
-                    });
-                </script>
+    new Chart("myChart", {
+        type: "pie",
+        data: {
+            labels: xValues,
+            datasets: [{
+                backgroundColor: barColors,
+                data: yValues
+            }]
+        },
+        options: {
+            title: {
+                display: true,
+
+            }
+        }
+    });
+</script>

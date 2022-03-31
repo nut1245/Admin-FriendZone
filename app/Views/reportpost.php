@@ -36,7 +36,7 @@
     <?php require('components/Navbar.php'); ?>
     <div class="main-panel">
       <div class="content-wrapper">
-        
+      <?php require('components/Postreport.php'); ?>
         
       </div>
     </div>
