@@ -21181,11 +21181,14 @@ transform: translate(-50%, -50%);
 }
 
 .card-img-post{
-  height: 340px;
+  height: 300px;
+  padding: 20px;
+ 
 }
 
 #card-color{
-  background-color:#38425e;
+  background-color:#112048;
+ padding: 10px;
 }
 
 #card-radius{
@@ -21193,3 +21196,8 @@ border-radius: 500px;
 
 
 }
+
+/* #card-color:hover {
+  
+  box-shadow: 1px 1px 15px  rgb(240, 240, 240);
+} */
