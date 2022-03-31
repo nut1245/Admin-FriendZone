@@ -81,12 +81,14 @@ class UserController extends BaseController
     //update Status Success
     public function updateStatus($userId)
     {
+        $session = session();
         $status = "1";
         $data = [
             'statusUser' => $status
         ];
         $Usermodel = new UserModel();
         $Usermodel->where('userId', $userId)->set($data)->update();
+        $session->setFlashdata('Success', 'ยืนยันตัวตนสำเร็จ');
         return redirect()->to('/alluser');
     }
 

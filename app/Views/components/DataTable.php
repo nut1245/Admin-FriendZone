@@ -1,4 +1,14 @@
 <div class="row ">
+  <?php if (session()->getFlashdata('Success')) : ?> <div>
+      <script>
+        Swal.fire({
+          icon: 'success',
+          title: "<?= session()->getFlashdata('Success') ?>",
+        })
+      </script>
+    </div>
+  <?php endif ?>
+
   <div class="col-12 grid-margin">
     <div class="card">
       <div class="card-body">
@@ -12,6 +22,7 @@
           </div>
         </div>
         <div class="table-responsive">
+
           <table class="table">
             <thead>
               <tr>
@@ -60,17 +71,16 @@
                     </a>
 
 
-                            </td>
-                          </tr>
-                        <?php } ?>
-                  </div>
-                </div>
-              </div>
-              </td>
-              </tr>
-              </tbody>
-              </table>
-            </div>
-            <?= $pager->links('pages') ?>
-          </div>
-
+                  </td>
+                </tr>
+              <?php } ?>
+        </div>
+      </div>
+    </div>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+  </div>
+  <?= $pager->links('pages') ?>
+</div>
