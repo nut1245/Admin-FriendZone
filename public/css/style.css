@@ -21180,3 +21180,17 @@ transform: translate(-50%, -50%);
 .active a{
   color:#00ac4a;
 }
+
+.card-img-post{
+  height: 340px;
+}
+
+#card-color{
+  background-color:#38425e;
+}
+
+#card-radius{
+border-radius: 500px;
+
+
+}
