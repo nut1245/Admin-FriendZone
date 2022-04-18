@@ -15,13 +15,6 @@ class UserController extends BaseController
     }
 
 
-    public function reportPost()
-    {
-        helper('form');
-        echo view('reportpost');
-    }
-
-
     //Get all User
     public function viewUser()
     {

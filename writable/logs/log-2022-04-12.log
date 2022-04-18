@@ -1,0 +1,11 @@
+CRITICAL - 2022-04-12 22:53:32 --> syntax error, unexpected token ";"
+#0 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('dashboard', Array, true)
+#3 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(14): view('dashboard')
+#4 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->index()
+#5 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
