@@ -35,7 +35,7 @@ $routes->get('/', 'OfficerController::index');                                  
 $routes->get('/dashboard', 'UserController::index');                             //Dashboard
 $routes->get('/register', 'OfficerController::index2');                             //Register
 $routes->get('/logout', 'OfficerController::logout');                               //Logout    
-$routes->get('/reportpost', 'UserController::reportPost');  
+$routes->get('/reportpost', 'ReportController::viewReport');  
 $routes->get('/alluser', 'UserController::viewUser'); 
 
 $routes->get('/updateStatus/(:any)', 'UserController::updateStatus/$1');             //updateStatusSuccess
