@@ -1,8 +1,8 @@
 
     <div class="content-wrapper">
         <div class="col-12 grid-margin">
-            <div class="card">
-                <div class="card-body">
+            <div class="card"  style="background-color: #fff;  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
+                <div class="card-body" >
                     <h4 class="card-title">เพิ่มข้อมูลแอดมิน</h4>
                     <?php if (isset($validation)) : ?>
                         <div class="alert alert-danger"><?= $validation->listErrors(); ?></div>

@@ -9,7 +9,7 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body " style="background-color:#191c24">
+          <div class="modal-body " style="background-color:#F8F8FF">
 
 
             <div class="container-fluid">
@@ -29,43 +29,43 @@
               </div>
               <div class="row">
                 <div class="col-md-3 ">
-                  <h4 style="color:	#FF00AA;">ชื่อ-นามสกุล :<span style="color:#fff"> <?php echo $value['FName'] . " " . $value['LName']; ?> </span></h4>
+                  <h4 style="color:	#FF00AA;">ชื่อ-นามสกุล :<span style="color:#000"> <?php echo $value['FName'] . " " . $value['LName']; ?> </span></h4>
                 </div>
                 <div class="col-md-6 ms-auto">
-                  <h4 style="color:	#FF00AA;">เลขบัตรประชาชน :<span style="color:#fff"> <?php echo $value['idCard']; ?></span></h4>
+                  <h4 style="color:	#FF00AA;">เลขบัตรประชาชน :<span style="color:#000"> <?php echo $value['idCard']; ?></span></h4>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-6 ms-auto">
-                  <h4 style="color:	#FF00AA;">วันเกิด :<span style="color:#fff"> <?php echo $value['birthday']; ?></span></h4>
+                  <h4 style="color:	#FF00AA;">วันเกิด :<span style="color:#000"> <?php echo $value['birthday']; ?></span></h4>
                 </div>
                 <div class="col-md-6 ms-auto">
-                  <h4 style="color:	#FF00AA;">ที่อยู่ :<span style="color:#fff"> <?php echo $value['address']; ?></span></h4>
+                  <h4 style="color:	#FF00AA;">ที่อยู่ :<span style="color:#000"> <?php echo $value['address']; ?></span></h4>
 
                 </div>
 
               </div>
               <div class="row">
                 <div class="col-md-6 ms-auto">
-                  <h4 style="color:	#FF00AA;">เพศ :<span style="color:#fff"> <?php echo $value['gender']; ?></span></h4>
+                  <h4 style="color:	#FF00AA;">เพศ :<span style="color:#000"> <?php echo $value['gender']; ?></span></h4>
 
                 </div>
                 <div class="col-md-2 ms-auto">
-                  <h4 style="color:	#FF00AA;">จังหวัด :<span style="color:#fff"> <?php echo $value['name_th']; ?></span></h4>
+                  <h4 style="color:	#FF00AA;">จังหวัด :<span style="color:#000"> <?php echo $value['name_th']; ?></span></h4>
 
                 </div>
                 <div class="col-md-2 ms-auto">
-                  <h4 style="color:	#FF00AA;">อำเภอ :<span style="color:#fff"> <?php echo $value['name_th_dis']; ?></span></h4>
+                  <h4 style="color:	#FF00AA;">อำเภอ :<span style="color:#000"> <?php echo $value['name_th_dis']; ?></span></h4>
 
                 </div>
                 <div class="col-md-2 ms-auto">
-                  <h4 style="color:	#FF00AA;">ตำบล :<span style="color:#fff"> <?php echo $value['name_th_am']; ?></span></h4>
+                  <h4 style="color:	#FF00AA;">ตำบล :<span style="color:#000"> <?php echo $value['name_th_am']; ?></span></h4>
 
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-6 ms-auto">
-                  <h4 style="color:	#FF00AA;">เบอร์โทรติดต่อ :<span style="color:#fff"> <?php echo $value['phoneNumber']; ?></span></h4>
+                  <h4 style="color:	#FF00AA;">เบอร์โทรติดต่อ :<span style="color:#000"> <?php echo $value['phoneNumber']; ?></span></h4>
 
                 </div>
                 <div class="col-md-6 ms-auto">
