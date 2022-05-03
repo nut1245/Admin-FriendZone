@@ -1,6 +1,6 @@
-<div class="row col-12">
+<div class="row col-12" >
     <div class="col-md-3 grid-margin stretch-card">
-        <div class="card">
+        <div class="card" style="background-color: #fff; box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
             <div class="card-body">
                 <div class="chartjs-size-monitor">
                     <div class="chartjs-size-monitor-expand">
@@ -10,7 +10,7 @@
                         <div class=""></div>
                     </div>
                 </div>
-                <h4 class="card-title">Top 3 จังหวัดที่มีการท่องเที่ยวมากที่สุด</h4>
+                <h4 class="card-title" style="color: #000;">Top 3 จังหวัดที่มีการท่องเที่ยวมากที่สุด</h4>
                 <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
                 <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
                     <div class="text-md-center text-xl-left">
@@ -43,8 +43,8 @@
         </div>
     </div>
     <div class="col-md-4 grid-margin stretch-card">
-        <div class="card">
-            <div class="card-body">
+        <div class="card" style="background-color: #fff;  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
+            <div class="card-body" >
                 <h4 class="card-title">จังหวัดยอดนิยม</h4>
                 <div class="row">
                     <div class="col-xl-12">
@@ -153,7 +153,7 @@
         </div>
     </div>
     <div class="col-md-4 grid-margin  stretch-card">
-        <div class="card">
+        <div class="card"  style="background-color: #fff;  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
             <div class="card-body">
                 <h4 class="card-title">ภาพสถานที่ท่องเที่ยวยอดนิยม</h4>
                 <div class="owl-carousel owl-theme full-width owl-carousel-dash portfolio-carousel owl-loaded owl-drag" id="owl-carousel-basic">
@@ -195,11 +195,11 @@
                                 <div class="preview-thumbnail">
                                     <img src="https://sites.google.com/site/nattaponkamwongsa/_/rsrc/1472848472160/satw-leiyng-thi-leiyng-wi-du-len/download%20%288%29.jpg" class="rounded-circle" alt="">
                                 </div>
-                                <div class="preview-item-content d-flex flex-grow">
-                                    <div class="flex-grow">
+                                <div class="preview-item-content d-flex flex-grow"  >
+                                    <div class="flex-grow"  style="color:#000;">
                                         <div class="d-flex d-md-block d-xl-flex justify-content-between">
                                             <h6 class="preview-subject">Nutnoiz</h6>
-                                            <p class="text-muted text-small"></p>
+                                            <p class="text-muted text-small" ></p>
                                         </div>
                                         <p class="text-muted">ชอบเที่ยวทะเลสุดๆ เลยครับน้ำสวย ลมเย็นสบาย </p>
                                     </div>
@@ -210,7 +210,7 @@
                                     <img src="https://media.wired.co.uk/photos/606d9c691e0ddb19555fb809/16:9/w_2992,h_1683,c_limit/dog-unsolicited.jpg" class="rounded-circle" alt="">
                                 </div>
                                 <div class="preview-item-content d-flex flex-grow">
-                                    <div class="flex-grow">
+                                    <div class="flex-grow"  style="color:#000;">
                                         <div class="d-flex d-md-block d-xl-flex justify-content-between">
                                             <h6 class="preview-subject">Dognoiz</h6>
                                             <p class="text-muted text-small"></p>

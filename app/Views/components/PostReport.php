@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card" style="background-color: #fff;  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
     <div class="card-body">
         <h3 class="card-title">โพสต์ที่ถูกรายงาน</h3>
         <div class="row row-cols-1 row-cols-md-4 g-4 ">
