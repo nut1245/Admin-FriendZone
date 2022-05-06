@@ -41,14 +41,14 @@
                                     <label class="col-sm-2 col-form-label">เพศ</label>
                                     <div class="col-sm-2">
                                         <div class="form-check">
-                                            <label class="form-check-label">
+                                            <label class="form-check-label" style="color:#000">
                                                 <i class="mdi mdi-gender-male" style="color:cyan"></i>
-                                                <input type="radio" class="form-check-input" name="gender" id="membershipRadios1" value="ชาย"> ชาย <i class="input-helper"></i></label>
+                                                <input type="radio" class="form-check-input" name="gender" id="membershipRadios1" value="ชาย" > ชาย <i class="input-helper"></i></label>
                                         </div>
                                     </div>
                                     <div class="col-sm-2">
                                         <div class="form-check">
-                                            <label class="form-check-label">
+                                            <label class="form-check-label" style="color:#000">
                                                 <i class="mdi mdi-gender-female" style="color:deeppink"></i>
                                                 <input type="radio" class="form-check-input" name="gender" id="membershipRadios2" value="หญิง"> หญิง <i class="input-helper"></i></label>
                                         </div>

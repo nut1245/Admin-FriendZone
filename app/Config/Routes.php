@@ -44,6 +44,9 @@ $routes->get('/updateStatusFail/(:any)', 'UserController::updateStatusFail/$1');
 $routes->get('/viewUserSuccess', 'UserController::viewUserSuccess');                 //viewUserSuccess
 $routes->get('/viewUserFail', 'UserController::viewUserFail');                       //viewUserFail
 $routes->get('/viewUserEdit', 'UserController::viewUserEdit');                       //viewUserEdit
+
+$routes->get('/postmanage', 'ReportController::viewPost'); 
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

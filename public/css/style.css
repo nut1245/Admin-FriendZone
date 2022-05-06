@@ -9019,6 +9019,7 @@ textarea.tt-hint {
 
 .form-check-input {
   position: absolute;
+  color: #000;
   margin-top: 0.3rem;
   margin-left: -1.25rem; }
   .form-check-input[disabled] ~ .form-check-label,
@@ -9577,10 +9578,13 @@ fieldset:disabled .wizard > .actions a,
 
 .btn-outline-success, .editable-container.editable-inline .editableform .control-group .editable-buttons .editable-submit {
   color: #00d25b;
+ 
+    position: relative;
   border-color: #00d25b; }
   .btn-outline-success:hover, .editable-container.editable-inline .editableform .control-group .editable-buttons .editable-submit:hover {
     color: #fff;
-    background-color: #00d25b;
+    background: #00d25b;
+    
     border-color: #00d25b; }
   .btn-outline-success:focus, .editable-container.editable-inline .editableform .control-group .editable-buttons .editable-submit:focus, .btn-outline-success.focus, .editable-container.editable-inline .editableform .control-group .editable-buttons .focus.editable-submit {
     box-shadow: 0 0 0 0.2rem rgba(0, 210, 91, 0.5); }
@@ -9590,7 +9594,7 @@ fieldset:disabled .wizard > .actions a,
   .btn-outline-success:not(:disabled):not(.disabled):active, .editable-container.editable-inline .editableform .control-group .editable-buttons .editable-submit:not(:disabled):not(.disabled):active, .btn-outline-success:not(:disabled):not(.disabled).active, .editable-container.editable-inline .editableform .control-group .editable-buttons .editable-submit:not(:disabled):not(.disabled).active,
   .show > .btn-outline-success.dropdown-toggle,
   .editable-container.editable-inline .editableform .control-group .editable-buttons .show > .dropdown-toggle.editable-submit {
-    color: #fff;
+    color: #00d25b;
     background-color: #00d25b;
     border-color: #00d25b; }
     .btn-outline-success:not(:disabled):not(.disabled):active:focus, .editable-container.editable-inline .editableform .control-group .editable-buttons .editable-submit:not(:disabled):not(.disabled):active:focus, .btn-outline-success:not(:disabled):not(.disabled).active:focus, .editable-container.editable-inline .editableform .control-group .editable-buttons .editable-submit:not(:disabled):not(.disabled).active:focus,
@@ -9933,9 +9937,9 @@ input[type="button"].btn-block {
   background-color: transparent;
   border: 0; }
   .dropdown-item:hover, .dropdown-item:focus {
-    color: #16181b;
+    color: #000;
     text-decoration: none;
-    background-color: #13151b; }
+    background-color: #fff; }
   .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
@@ -11440,7 +11444,8 @@ input[type="button"].btn-block {
   margin-bottom: 0; }
 
 .card-text:last-child {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+ }
 
 .card-link:hover {
   text-decoration: none; }
@@ -17075,7 +17080,7 @@ select.tt-hint {
     .jsgrid .jsgrid-table .jsgrid-filter-row select.border-dark:focus, .select2-container--default select.border-dark.select2-selection--single:focus, .select2-container--default .select2-selection--single select.border-dark.select2-search__field:focus, select.border-dark.typeahead:focus,
     select.border-dark.tt-query:focus,
     select.border-dark.tt-hint:focus {
-      outline: 1px solid #0d0d0d; }
+      outline: 1px solid; }
 
 .form-group label {
   font-size: 0.875rem;
@@ -20201,7 +20206,7 @@ div.tagsinput {
 /* Auth */
 .auth.login-bg {
 
-  background: url("https://cdn.discordapp.com/attachments/687292314988707850/953595739500576878/Login_bg.jpg");
+  background: url("https://images.pexels.com/photos/1831234/pexels-photo-1831234.jpeg");
   background-size: cover; }
 
 
@@ -21177,8 +21182,9 @@ transform: translate(-50%, -50%);
 }
 
 #card-color{
-  background-color:#112048;
- padding: 10px;
+  background-color:#fff;
+  padding: 10px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 
 #card-radius{
@@ -21201,16 +21207,22 @@ border-radius: 500px;
   font-family: 'Fredoka One', 'cursive';
 }
 .form-control {
-  border: 1px solid #2c2e33;
+  
   height: calc(2.25rem + 2px);
   font-weight: normal;
   font-size: 0.875rem;
   padding: 0.625rem 0.6875rem;
-  background-color: #2A3038;
+  background-color: #FFBBFF;
   border-radius: 2px;
-  color: #fff; }
-
-
+  color: #000;
+  
+  }
+  p.card-text{
+    color: #000;
+  }
+p.preview-subject{
+  color: #000;
+}
 /* #card-color:hover {
   
   box-shadow: 1px 1px 15px  rgb(240, 240, 240);

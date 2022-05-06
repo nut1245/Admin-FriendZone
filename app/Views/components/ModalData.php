@@ -10,11 +10,9 @@
             </button>
           </div>
           <div class="modal-body " style="background-color:#F8F8FF">
-
-
             <div class="container-fluid">
               <div class="row">
-                <div class="col-md-4"> <img class="#" src="<?php echo $value['userImage']; ?>" style="width: 100%; height:90%; border-radius:10%" /></div>
+                <div class="col-md-4"> <img class="#" src="<?php echo $value['userImage']; ?>" style="width: 350px; height:350px; border-radius:10%" /></div>
 
                 <div class="col-md-2 ">
                   <div class="decoration">
@@ -24,11 +22,12 @@
                 </div>
 
                 <div class="col-md-6 ">
-                  <img class="#" src="<?php echo $value['idCardImage']; ?>" style="width: 100%; height:90%; border-radius:3%" />
+                  <img class="#" src="<?php echo $value['idCardImage']; ?>" style="width: 500px; height:350px; border-radius:3%" />
                 </div>
               </div>
+              <br>
               <div class="row">
-                <div class="col-md-3 ">
+                <div class="col-md-4 ">
                   <h4 style="color:	#FF00AA;">ชื่อ-นามสกุล :<span style="color:#000"> <?php echo $value['FName'] . " " . $value['LName']; ?> </span></h4>
                 </div>
                 <div class="col-md-6 ms-auto">
