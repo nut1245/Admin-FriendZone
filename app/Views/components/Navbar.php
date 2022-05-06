@@ -33,7 +33,14 @@
                 <span class="menu-title">หน้าแรก</span>
             </a>
         </li>
-
+        <li class="nav-item menu-items">
+            <a class="nav-link" href='/postmanage' >
+                <span class="menu-icon">
+                    <i class="mdi mdi-application"></i>
+                </span>
+                <span class="menu-title">จัดการโพสต์</span>
+            </a>
+        </li>
         <li class="nav-item menu-items">
             <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
                 <span class="menu-icon">

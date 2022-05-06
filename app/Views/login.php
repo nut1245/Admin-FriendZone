@@ -28,9 +28,9 @@
             <div class="row w-100 m-0">
 
                 <div class="content-wrapper full-page-wrapper d-flex align-items-center auth login-bg">
-                    <div class="card col-lg-4 mx-auto">
+                    <div class="card col-lg-4 mx-auto" style="background-color:#;">
 
-                        <div class="card-body px-5 py-5">
+                        <div class="card-body px-5 py-5" >
 
                             <h1 class="card-title text-center mb-3" style="color:aliceblue">Login AdminFZ</h1>
                             <form action="/OfficerController/login" method="post" class="signin-form">
