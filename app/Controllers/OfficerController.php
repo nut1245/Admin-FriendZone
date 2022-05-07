@@ -24,6 +24,16 @@ class OfficerController extends ResourceController // เปลี่ยนจ�
         echo view('register');
     }
 
+    public function showAdmin(){
+        helper('form');
+        echo view('adminmanage');
+    }
+
+    public function showCategory(){
+        helper('form');
+        echo view('category');
+    }
+
     //Register
     public function register() {
         $rules = [

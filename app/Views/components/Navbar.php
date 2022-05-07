@@ -3,7 +3,7 @@
 <!-- partial:partials/_sidebar.html -->
 <nav class="sidebar sidebar-offcanvas" id="sidebar">
     <div class="sidebar-brand-wrapper d-none d-lg-flex align-items-center justify-content-center fixed-top">
-        <a class="sidebar-brand brand-logo" id="logoadmin"  href="/dashboard">AdminFriendZone</a>
+        <a class="sidebar-brand brand-logo" id="logoadmin" href="/dashboard">AdminFriendZone</a>
         <a class="sidebar-brand brand-logo-mini" href="index.html"></a>
     </div>
     <ul class="nav">
@@ -34,12 +34,40 @@
             </a>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" href='/postmanage' >
+            <a class="nav-link" data-toggle="collapse" href="#Post" aria-expanded="false" aria-controls="Post">
                 <span class="menu-icon">
-                    <i class="mdi mdi-application"></i>
+                    <i class="mdi mdi-playlist-play"></i>
                 </span>
                 <span class="menu-title">จัดการโพสต์</span>
+                <i class="menu-arrow"></i>
             </a>
+            <div class="collapse" id="Post">
+                <ul class="nav flex-column sub-menu">
+                    <li class="nav-item">
+                        <a class="nav-link" href="postmanage">
+                            <span class="menu-icon">
+                                <i class="mdi mdi-account-multiple icon-item"></i>
+                            </span></i> ตรวจสอบโพสต์
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/category">
+                            <span class="menu-icon">
+                                <i class="mdi mdi-account-multiple icon-item"></i>
+                            </span></i> จัดการหมวดหมู่
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/reportpost">
+                            <span class="menu-icon">
+                                <i class="mdi mdi-alert-octagon icon-item"></i>
+                            </span></i> รายงานโพสต์
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
         </li>
         <li class="nav-item menu-items">
             <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
@@ -51,21 +79,22 @@
             </a>
             <div class="collapse" id="auth">
                 <ul class="nav flex-column sub-menu">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/allusermanage">
+                            <span class="menu-icon">
+                                <i class="mdi mdi-account-multiple icon-item"></i>
+                            </span></i> จัดการผู้ใช้งานระบบ
+                        </a>
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="/alluser">
                             <span class="menu-icon">
                                 <i class="mdi mdi-account-multiple icon-item"></i>
-                            </span></i> ผู้ใช้ทั้งหมด
+                            </span></i> คำขอการใช้งาน
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/reportpost">
-                            <span class="menu-icon">
-                                <i class="mdi mdi-alert-octagon icon-item"></i>
-                            </span></i> รายงานโพสต์
-                        </a>
-                    </li>
-
                 </ul>
             </div>
         </li>
@@ -87,13 +116,14 @@
                             </span></i> เพิ่มแอดมิน&nbsp;&nbsp;&nbsp;
                         </a>
                     </li>
-                    <!-- <li class="nav-item">
-                            <a class="nav-link" href="/register">
-                                <span class="menu-icon">
-                                    <i class="mdi mdi-alert-octagon icon-item"></i>
-                                </span></i> โพสต์ที่ถูกรายงาน
-                            </a>
-                        </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/adminmanage">
+                            <span class="menu-icon">
+                                <i class="mdi mdi-account-multiple icon-item"></i>
+                            </span></i> จัดการผู้ใช้งานแอดมิน
+                        </a>
+                    </li>
+
                 </ul>
             </div>
         </li>
@@ -109,7 +139,7 @@
     <div class="navbar-brand-wrapper d-flex d-lg-none align-items-center justify-content-center">
         <!-- <a class="navbar-brand brand-logo-mini" href="index.html"><img src="assets/images/logo-mini.svg" alt="logo" /></a> -->
     </div>
-    <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch" style="background-color:#EF5DA8; box-shadow:none;" >
+    <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch" style="background-color:#EF5DA8; box-shadow:none;">
 
         <ul class="navbar-nav w-100" style="background-color:#EF5DA8">
             <li class="nav-item w-100">
@@ -230,7 +260,7 @@
                         <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                     </div>
                 </a>
-                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown"  style="background-color: #EF5DA8;">
+                <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="profileDropdown" style="background-color: #EF5DA8;">
                     <h6 class="p-3 mb-0">Profile</h6>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item preview-item">

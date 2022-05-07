@@ -274,6 +274,7 @@ body{
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
+    color: #000000;
 }
 .card-post-dropdown-comment { /*? div ของปุ่มหลังข้อความที่คอมเมนต์ */
     margin: 0% 0% 0% 2%;

@@ -13,12 +13,12 @@
     <div class="card" style="background-color: #fff;  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
       <div class="card-body">
         <div class="row justify-content-between ">
-          <h4 class="card-title">ข้อมูลผู้ใช้งานทั้งหมด</h4>
+          <h4 class="card-title">จัดการสถานะการใช้งานทั้งหมด</h4>
           <div class="template-demo">
             <a href="/viewUserSuccess" type="button" class="btn btn-outline-success btn-fw">ยืนยันตัวตนสำเร็จ</a>
             <a href="/viewUserFail" type="button" class="btn btn-outline-warning btn-fw">รอยืนยันตัวตน</a>
             <a href="/viewUserEdit" type="button" class="btn btn-outline-danger btn-fw">รอการแก้ไข</a>
-            <a href="/alluser" type="button" class="btn btn-outline-primary btn-fw">ผู้ใช้ทั้งหมด</a>
+            <a href="/alluser" type="button" class="btn btn-outline-primary btn-fw">ผู้ใช้งานทั้งหมด</a>
             <br><br>
           </div>
         </div>
