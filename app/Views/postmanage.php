@@ -43,12 +43,35 @@
         <?php require('components/Navbar.php'); ?>
         <div class="main-panel">
             <div class="content-wrapper">
-                <div class="row col-12">
+                <div class="row col-12 allPost">
+
                     <?php require('components/Post.php'); ?>
                 </div>
             </div>
         </div>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cardPost = document.querySelector(".allPost");
+            let toggle = false;
+            cardPost.addEventListener("click", (e) => {
+                const target = e.target.closest(".btn-show-comment")
+                if (!target) return
+                console.log(target.id);
+                const card = target.closest(".card-post");
+                const slidedown = card.querySelector(".slidedown");
+                console.log(toggle);
+                if (!toggle) {
+                    toggle = true;
+                    slidedown.style.display = "block";
+                } else {
+                    toggle = false;
+                    slidedown.style.display = "none";
+                }
+            })
+        }, false);
+    </script>
     <!-- plugins:js -->
     <script src="vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->

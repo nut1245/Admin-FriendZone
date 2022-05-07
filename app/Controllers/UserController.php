@@ -14,6 +14,12 @@ class UserController extends BaseController
         echo view('dashboard');
     }
 
+    public function showAlluser()
+    {
+        helper('form');
+        echo view('allusermanage');
+    }
+
 
     //Get all User
     public function viewUser()

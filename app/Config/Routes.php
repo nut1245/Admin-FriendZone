@@ -34,9 +34,13 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'OfficerController::index');                                      //Login (index)
 $routes->get('/dashboard', 'UserController::index');                             //Dashboard
 $routes->get('/register', 'OfficerController::index2');                             //Register
+$routes->get('/adminmanage', 'OfficerController::showAdmin');  
+$routes->get('/category', 'OfficerController::showCategory'); 
+
 $routes->get('/logout', 'OfficerController::logout');                               //Logout    
 $routes->get('/reportpost', 'ReportController::viewReport');  
 $routes->get('/alluser', 'UserController::viewUser'); 
+$routes->get('/allusermanage', 'UserController::showAlluser'); 
 
 $routes->get('/updateStatus/(:any)', 'UserController::updateStatus/$1');             //updateStatusSuccess
 $routes->get('/updateStatusFail/(:any)', 'UserController::updateStatusFail/$1');     //updateStatusFail

@@ -8868,7 +8868,7 @@ pre {
   .jsgrid .jsgrid-table .jsgrid-filter-row select:focus, .jsgrid .jsgrid-table .jsgrid-filter-row input:focus[type=number], .select2-container--default .select2-selection--single:focus, .select2-container--default .select2-selection--single .select2-search__field:focus, .typeahead:focus,
   .tt-query:focus,
   .tt-hint:focus {
-    color: #495057;
+    color: #106dca;
     background-color: #fff;
     border-color: #80bdff;
     outline: 0;
@@ -8877,7 +8877,7 @@ pre {
   .jsgrid .jsgrid-table .jsgrid-filter-row select::placeholder, .jsgrid .jsgrid-table .jsgrid-filter-row input[type=number]::placeholder, .select2-container--default .select2-selection--single::placeholder, .select2-container--default .select2-selection--single .select2-search__field::placeholder, .typeahead::placeholder,
   .tt-query::placeholder,
   .tt-hint::placeholder {
-    color: #4b5564;
+    color: #3980eb;
     opacity: 1; }
   .form-control:disabled, .asColorPicker-input:disabled, .dataTables_wrapper select:disabled, .jsgrid .jsgrid-table .jsgrid-filter-row input:disabled[type=text],
   .jsgrid .jsgrid-table .jsgrid-filter-row select:disabled, .jsgrid .jsgrid-table .jsgrid-filter-row input:disabled[type=number], .select2-container--default .select2-selection--single:disabled, .select2-container--default .select2-selection--single .select2-search__field:disabled, .typeahead:disabled,
@@ -8925,8 +8925,8 @@ select.form-control:focus::-ms-value, select.asColorPicker-input:focus::-ms-valu
 .jsgrid .jsgrid-table .jsgrid-filter-row select:focus::-ms-value, .select2-container--default select.select2-selection--single:focus::-ms-value, .select2-container--default .select2-selection--single select.select2-search__field:focus::-ms-value, select.typeahead:focus::-ms-value,
 select.tt-query:focus::-ms-value,
 select.tt-hint:focus::-ms-value {
-  color: #495057;
-  background-color: #2A3038; }
+  color: #64a5e6;
+  background-color: hsl(214, 71%, 78%); }
 
 .form-control-file,
 .form-control-range {
@@ -12318,11 +12318,10 @@ a.close.disabled {
   flex-direction: column;
   width: 100%;
   pointer-events: auto;
-  background-color: #000000;
+  background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid #2c2e33;
-  border-radius: 0.3rem;
-  outline: 0; }
+  
+   }
 
 .modal-backdrop {
   position: fixed;
@@ -12342,7 +12341,8 @@ a.close.disabled {
   align-items: flex-start;
   justify-content: space-between;
   padding: 1rem 1rem;
-  border-bottom: 1px solid #2c2e33;
+  color: #000;
+  
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px); }
   .modal-header .close {
@@ -12351,7 +12351,8 @@ a.close.disabled {
 
 .modal-title {
   margin-bottom: 0;
-  line-height: 1.5; }
+   }
+
 
 .modal-body {
   position: relative;
@@ -12364,9 +12365,7 @@ a.close.disabled {
   align-items: center;
   justify-content: flex-end;
   padding: 0.6875rem;
-  border-top: 1px solid #2c2e33;
-  border-bottom-right-radius: calc(0.3rem - 1px);
-  border-bottom-left-radius: calc(0.3rem - 1px); }
+ }
   .modal-footer > * {
     margin: 0.25rem; }
 
@@ -15407,7 +15406,7 @@ body {
 .tt-hint:focus {
   outline: 0;
   box-shadow: none;
-  background: #191c20;
+  
   border: none; }
 
 a,
@@ -16593,7 +16592,8 @@ code {
     color: #000;
     margin-bottom: 1.125rem;
     text-transform: capitalize;
-    font-family: 'Fredoka One', cursive; }
+    font-family: 'Fredoka One', cursive;
+  text-align: left; }
   .card .card-subtitle {
     font-weight: normal;
     margin-top: 0.625rem;
@@ -17075,7 +17075,7 @@ select.tt-hint {
   .jsgrid .jsgrid-table .jsgrid-filter-row select.border-dark, .select2-container--default select.border-dark.select2-selection--single, .select2-container--default .select2-selection--single select.border-dark.select2-search__field, select.border-dark.typeahead,
   select.border-dark.tt-query,
   select.border-dark.tt-hint {
-    outline: 1px solid #0d0d0d; }
+    outline: 1px solid #fff; }
     select.form-control.border-dark:focus, select.border-dark.asColorPicker-input:focus, .dataTables_wrapper select.border-dark:focus,
     .jsgrid .jsgrid-table .jsgrid-filter-row select.border-dark:focus, .select2-container--default select.border-dark.select2-selection--single:focus, .select2-container--default .select2-selection--single select.border-dark.select2-search__field:focus, select.border-dark.typeahead:focus,
     select.border-dark.tt-query:focus,
@@ -21212,7 +21212,7 @@ border-radius: 500px;
   font-weight: normal;
   font-size: 0.875rem;
   padding: 0.625rem 0.6875rem;
-  background-color: #FFBBFF;
+  background-color:#ffbbff;
   border-radius: 2px;
   color: #000;
   
@@ -21223,6 +21223,12 @@ border-radius: 500px;
 p.preview-subject{
   color: #000;
 }
+
+.card input.form-control{
+  background-color: #ffbbff;
+  color: #000;
+}
+
 /* #card-color:hover {
   
   box-shadow: 1px 1px 15px  rgb(240, 240, 240);

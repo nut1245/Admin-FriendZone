@@ -8,13 +8,13 @@
                         <div class="alert alert-danger"><?= $validation->listErrors(); ?></div>
                     <?php endif ?>
                     &nbsp;
-                    <form action="/OfficerController/register" method="post" class="form-sample">
+                    <form action="/OfficerController/register" method="post" class="form-sample" >
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group row">
                                     <label class="col-sm-2 col-form-label">ชื่อ</label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="FName" name="FName" require>
+                                        <input type="text" class="form-control" id="FName" name="FName" require >
                                     </div>
                                 </div>
                             </div>
