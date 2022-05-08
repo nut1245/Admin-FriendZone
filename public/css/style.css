@@ -16592,7 +16592,7 @@ code {
     color: #000;
     margin-bottom: 1.125rem;
     text-transform: capitalize;
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Fredoka One',;
   text-align: left; }
   .card .card-subtitle {
     font-weight: normal;
@@ -21122,11 +21122,10 @@ div.tagsinput {
 .container-scroller {
   display: flex;
   position: relative; }
-
 .main-panel {
   transition: width 0.25s ease, margin 0.25s ease;
   width: 100%;
-  min-height: calc(100vh - 70px);
+  min-height: calc(130vh);
   padding-top: 70px;
   display: -webkit-flex;
   display: flex;
