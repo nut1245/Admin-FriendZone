@@ -46,21 +46,21 @@
                     <li class="nav-item">
                         <a class="nav-link" href="postmanage">
                             <span class="menu-icon">
-                                <i class="mdi mdi-account-multiple icon-item"></i>
+                                <i class="mdi mdi-animation"></i>
                             </span></i> ตรวจสอบโพสต์
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/category">
                             <span class="menu-icon">
-                                <i class="mdi mdi-account-multiple icon-item"></i>
+                                <i class="mdi mdi-star-circle" style="color:black"></i>
                             </span></i> จัดการหมวดหมู่
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/reportpost">
                             <span class="menu-icon">
-                                <i class="mdi mdi-alert-octagon icon-item"></i>
+                                <i class="mdi mdi-alert-octagon icon-item" style="color:red"></i>
                             </span></i> รายงานโพสต์
                         </a>
                     </li>
@@ -72,7 +72,7 @@
         <li class="nav-item menu-items">
             <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
                 <span class="menu-icon">
-                    <i class="mdi mdi-playlist-play"></i>
+                    <i class="mdi mdi-account-multiple"></i>
                 </span>
                 <span class="menu-title">จัดการผู้ใช้</span>
                 <i class="menu-arrow"></i>
@@ -83,7 +83,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/allusermanage">
                             <span class="menu-icon">
-                                <i class="mdi mdi-account-multiple icon-item"></i>
+                                <i class="mdi mdi-account-check" style="color:green"></i>
                             </span></i> จัดการผู้ใช้งานระบบ
                         </a>
                     </li>
@@ -91,7 +91,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/alluser">
                             <span class="menu-icon">
-                                <i class="mdi mdi-account-multiple icon-item"></i>
+                                <i class="mdi mdi-account-multiple-plus"  style="color:blue"></i>
                             </span></i> คำขอการใช้งาน
                         </a>
                     </li>
