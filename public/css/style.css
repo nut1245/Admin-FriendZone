@@ -7828,7 +7828,7 @@ mark,
 .blockquote-footer {
   display: block;
   font-size: 80%;
-  color: #6c757d; }
+   }
   .blockquote-footer::before {
     content: "\2014\00A0"; }
 
@@ -15704,9 +15704,9 @@ address p {
     color: #ffffff; }
 
 .blockquote-dark {
-  border-color: #0d0d0d; }
+  }
   .blockquote-dark .blockquote-footer {
-    color: #0d0d0d; }
+     }
 
 .error-page h1 {
   font-size: 12rem; }
@@ -15773,7 +15773,7 @@ code {
 
 /* Footer */
 .footer {
-  background: #000000;
+  
   padding: 20px 1rem;
   transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
