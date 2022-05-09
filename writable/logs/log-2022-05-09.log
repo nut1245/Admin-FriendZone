@@ -1,0 +1,372 @@
+CRITICAL - 2022-05-09 02:05:35 --> Call to a member function getVar() on null
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(25): App\Models\CategoryModel->saveCategoey()
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->saveCategoey()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-09 02:08:23 --> Call to a member function getVar() on null
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(25): App\Models\CategoryModel->saveCategoey()
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->saveCategoey()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-09 02:08:59 --> Call to a member function getVar() on null
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(25): App\Models\CategoryModel->saveCategoey()
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->saveCategoey()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-09 02:10:18 --> Call to a member function getVar() on null
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(25): App\Models\CategoryModel->saveCategoey()
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->saveCategoey()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-09 02:27:47 --> Call to a member function getVar() on null
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(25): App\Models\CategoryModel->saveCategoey()
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->saveCategoey()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-09 04:02:48 --> Undefined variable $posts
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ManageCatagory.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 8)
+#1 C:\xampp\htdocs\AdminNew\app\Views\category.php(42): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('category', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(18): view('category', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->showCategory()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-05-09 04:04:05 --> Undefined variable $categorys
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ManageCatagory.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 8)
+#1 C:\xampp\htdocs\AdminNew\app\Views\category.php(42): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('category', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(18): view('category', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->showCategory()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-05-09 04:05:36 --> Unmatched '}'
+#0 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('category', Array, true)
+#3 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(18): view('category', Array)
+#4 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->showCategory()
+#5 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-05-09 04:05:37 --> Unmatched '}'
+#0 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include()
+#1 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('category', Array, true)
+#3 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(18): view('category', Array)
+#4 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->showCategory()
+#5 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-05-09 04:15:40 --> Call to undefined method App\Models\CategoryModel::saveCategory
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(30): CodeIgniter\Model->__call('saveCategory', Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->saveCategoey()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-09 04:15:46 --> Call to undefined method App\Models\CategoryModel::saveCategory
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(30): CodeIgniter\Model->__call('saveCategory', Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->saveCategoey()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-09 04:15:52 --> Call to undefined method App\Models\CategoryModel::saveCategory
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(30): CodeIgniter\Model->__call('saveCategory', Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->saveCategoey()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-09 04:16:52 --> Call to undefined method App\Models\CategoryModel::saveCategory
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(30): CodeIgniter\Model->__call('saveCategory', Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->saveCategoey()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-09 04:16:55 --> Call to undefined method App\Models\CategoryModel::saveCategory
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(30): CodeIgniter\Model->__call('saveCategory', Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->saveCategoey()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-09 04:17:20 --> Call to undefined method App\Models\CategoryModel::saveCategory
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(30): CodeIgniter\Model->__call('saveCategory', Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->saveCategoey()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-09 04:21:37 --> Call to undefined method App\Models\CategoryModel::saveCategory
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(31): CodeIgniter\Model->__call('saveCategory', Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->saveCategoey()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-09 04:23:49 --> Call to undefined method App\Models\CategoryModel::saveCategory
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(31): CodeIgniter\Model->__call('saveCategory', Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->saveCategoey()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-09 04:29:23 --> Call to undefined method App\Models\CategoryModel::saveCategory
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(31): CodeIgniter\Model->__call('saveCategory', Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->saveCategoey()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-09 04:31:25 --> Call to undefined method App\Models\CategoryModel::saveCategory
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(31): CodeIgniter\Model->__call('saveCategory', Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->saveCategoey()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-09 04:33:32 --> Call to undefined method App\Models\CategoryModel::saveCategory
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(31): CodeIgniter\Model->__call('saveCategory', Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->saveCategoey()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-09 04:35:25 --> Call to undefined method App\Models\CategoryModel::saveCategory
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(33): CodeIgniter\Model->__call('saveCategory', Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->saveCategoey()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-09 04:36:05 --> Call to undefined method App\Models\CategoryModel::insertCategory
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(33): CodeIgniter\Model->__call('insertCategory', Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->saveCategoey()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-09 04:37:18 --> There is no data to insert.
+#0 C:\xampp\htdocs\AdminNew\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\xampp\htdocs\AdminNew\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#2 C:\xampp\htdocs\AdminNew\app\Models\CategoryModel.php(23): CodeIgniter\Model->insert(Array)
+#3 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(33): App\Models\CategoryModel->insertCategory(Array)
+#4 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->insertCategory()
+#5 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-05-09 04:39:18 --> There is no data to insert.
+#0 C:\xampp\htdocs\AdminNew\system\BaseModel.php(718): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 C:\xampp\htdocs\AdminNew\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, true)
+#2 C:\xampp\htdocs\AdminNew\app\Models\CategoryModel.php(23): CodeIgniter\Model->insert(Array)
+#3 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(33): App\Models\CategoryModel->insertCategory(Array)
+#4 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->insertCategory()
+#5 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2022-05-09 04:59:11 --> Undefined variable $value
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ManageCatagory.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 36)
+#1 C:\xampp\htdocs\AdminNew\app\Views\category.php(42): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('category', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(20): view('category', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->showCategory()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-05-09 05:00:02 --> Undefined array key "categoryId "
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ManageCatagory.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 37)
+#1 C:\xampp\htdocs\AdminNew\app\Views\category.php(42): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('category', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(20): view('category', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->showCategory()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-05-09 05:00:02 --> Undefined array key "categoryId "
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ManageCatagory.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 37)
+#1 C:\xampp\htdocs\AdminNew\app\Views\category.php(42): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('category', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(20): view('category', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->showCategory()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-05-09 05:00:03 --> Undefined array key "categoryId "
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ManageCatagory.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 37)
+#1 C:\xampp\htdocs\AdminNew\app\Views\category.php(42): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('category', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(20): view('category', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->showCategory()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-05-09 05:00:03 --> Undefined array key "categoryId "
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ManageCatagory.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 37)
+#1 C:\xampp\htdocs\AdminNew\app\Views\category.php(42): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('category', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(20): view('category', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->showCategory()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-05-09 05:00:03 --> Undefined array key "categoryId "
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ManageCatagory.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 37)
+#1 C:\xampp\htdocs\AdminNew\app\Views\category.php(42): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('category', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(20): view('category', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->showCategory()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-05-09 05:00:08 --> Undefined array key "categoryId "
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ManageCatagory.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 37)
+#1 C:\xampp\htdocs\AdminNew\app\Views\category.php(42): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('category', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(20): view('category', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->showCategory()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-05-09 05:00:08 --> Undefined array key "categoryId "
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ManageCatagory.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 37)
+#1 C:\xampp\htdocs\AdminNew\app\Views\category.php(42): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('category', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(20): view('category', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->showCategory()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-05-09 05:00:23 --> Undefined variable $value
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ManageCatagory.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 36)
+#1 C:\xampp\htdocs\AdminNew\app\Views\category.php(42): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('category', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(20): view('category', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->showCategory()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-05-09 05:00:27 --> Undefined variable $value
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ManageCatagory.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 36)
+#1 C:\xampp\htdocs\AdminNew\app\Views\category.php(42): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('category', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(20): view('category', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->showCategory()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-05-09 06:10:38 --> Undefined variable $value
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ManageCatagory.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 36)
+#1 C:\xampp\htdocs\AdminNew\app\Views\category.php(42): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('category', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\CategoeyController.php(20): view('category', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\CategoeyController->showCategory()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CategoeyController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-05-09 08:30:40 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2022-05-09 08:30:40 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 C:\xampp\htdocs\AdminNew\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 C:\xampp\htdocs\AdminNew\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 C:\xampp\htdocs\AdminNew\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 C:\xampp\htdocs\AdminNew\app\Models\OfficerModel.php(20): CodeIgniter\BaseModel->first()
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\OfficerController.php(66): App\Models\OfficerModel->login('Yannasit', '123456')
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\OfficerController->login()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfficerController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}

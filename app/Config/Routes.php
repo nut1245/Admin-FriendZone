@@ -31,26 +31,38 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+
+/** 
+*!OfficerController
+*/
 $routes->get('/', 'OfficerController::index');                                      //Login (index)
-$routes->get('/dashboard', 'UserController::index');                             //Dashboard
 $routes->get('/register', 'OfficerController::index2');                             //Register
-$routes->get('/adminmanage', 'OfficerController::showAdmin');  
-$routes->get('/category', 'OfficerController::showCategory'); 
-
+$routes->get('/adminmanage', 'OfficerController::showAdmin');                       //showAllAdmin
 $routes->get('/logout', 'OfficerController::logout');                               //Logout    
-$routes->get('/reportpost', 'ReportController::viewReport');  
-$routes->get('/alluser', 'UserController::viewUser'); 
-$routes->get('/allusermanage', 'UserController::showAlluser'); 
 
+/** 
+*!UserController
+*/
+$routes->get('/dashboard', 'UserController::index');                                 //Dashboard
+$routes->get('/alluser', 'UserController::viewUser');                                //viewUser(request)                    
+$routes->get('/allusermanage', 'UserController::showAlluser');                       //showAllUser
 $routes->get('/updateStatus/(:any)', 'UserController::updateStatus/$1');             //updateStatusSuccess
 $routes->get('/updateStatusFail/(:any)', 'UserController::updateStatusFail/$1');     //updateStatusFail
-
 $routes->get('/viewUserSuccess', 'UserController::viewUserSuccess');                 //viewUserSuccess
 $routes->get('/viewUserFail', 'UserController::viewUserFail');                       //viewUserFail
 $routes->get('/viewUserEdit', 'UserController::viewUserEdit');                       //viewUserEdit
 
-$routes->get('/postmanage', 'ReportController::viewPost'); 
+/** 
+*!ReportController
+*/
+$routes->get('/postmanage', 'ReportController::viewPost');                           //viewPost(AllPost)
+$routes->get('/reportpost', 'ReportController::viewReport');                         //viewReport
 
+/** 
+*!CategoryrController
+*/
+$routes->get('/category', 'CategoeyController::showCategory');                       //showCategory
+$routes->get('/deleteCategory/(:any)', 'CategoeyController::deleteCategory/$1',);
 /*
  * --------------------------------------------------------------------
  * Additional Routing
