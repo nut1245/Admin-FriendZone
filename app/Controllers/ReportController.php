@@ -19,6 +19,8 @@ class ReportController extends BaseController
         ];
         echo view('reportPost', $data);
     }
+
+    //Show all PostUser
     public function viewPost()
     {
         $modelpost = new PostModel();
