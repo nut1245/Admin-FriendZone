@@ -94,12 +94,14 @@ class UserController extends BaseController
     //update Status Fail
     public function updateStatusFail($userId)
     {
+        $session = session();
         $status = "2";
         $data = [
             'statusUser' => $status
         ];
         $Usermodel = new UserModel();
         $Usermodel->where('userId', $userId)->set($data)->update();
+        $session->setFlashdata('Success', 'รอการแก้ไขตัวตน');
         return redirect()->to('/alluser');
     }
 
