@@ -1,5 +1,13 @@
-
 <center>
+<?php if (session()->getFlashdata('Success')) : ?> <div>
+      <script>
+        Swal.fire({
+          icon: 'success',
+          title: "<?= session()->getFlashdata('Success') ?>",
+        })
+      </script>
+    </div>
+  <?php endif ?>
     <div class="col-10 grid-margin">
         <div class="card" style="background-color: #fff;  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
 

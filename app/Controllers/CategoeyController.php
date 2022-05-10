@@ -32,7 +32,7 @@ class CategoeyController extends ResourceController
             $model = new CategoryModel();
             $insertCategory = $model->insertCategory($data);
             if ($insertCategory) {
-                $session->setFlashdata('success', 'บันทึกข้อมูลเรียบร้อยแล้ว');
+                $session->setFlashdata('Success', 'เพิ่มหมวดหมู่สำเร็จ');
                 return redirect()->to('/category');
             } 
         }
@@ -44,7 +44,7 @@ class CategoeyController extends ResourceController
             $model = new CategoryModel();
             $deleteCategory = $model->deleteCategory($id);
             if ($deleteCategory) {
-                $session->setFlashdata('success', 'ลบข้อมูลเรียบร้อยแล้ว');
+                $session->setFlashdata('Success', 'ลบหมวดหมู่สำเร็จ');
                 return redirect()->to('/category');
         }
     }

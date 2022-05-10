@@ -1,3 +1,4 @@
+<?php require('SqlConnect'); ?>
 <div class="row col-11">
   <div class="col-md-3 grid-margin stretch-card">
     <div class="card" style="background-color:#ffffcc; box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
@@ -5,8 +6,11 @@
         <div class="row">
           <div class="col-9">
             <div class="d-flex align-items-center align-self-start">
-              <h3 class="mb-0">4</h3>
-
+              <h3 class="mb-0">
+                <?php while ($row = mysqli_fetch_array($query1)) {
+                  echo $row[0];
+                } ?>
+              </h3>
             </div>
           </div>
           <div class="col-3">
@@ -25,7 +29,11 @@
         <div class="row">
           <div class="col-9">
             <div class="d-flex align-items-center align-self-start">
-              <h3 class="mb-0">4</h3>
+              <h3 class="mb-0">
+                <?php while ($row = mysqli_fetch_array($query2)) {
+                  echo $row[0];
+                } ?>
+              </h3>
               <!-- <p class="text-success ml-2 mb-0 font-weight-medium">+11%</p> -->
             </div>
           </div>
@@ -47,7 +55,11 @@
         <div class="row">
           <div class="col-9">
             <div class="d-flex align-items-center align-self-start">
-              <h3 class="mb-0">299</h3>
+              <h3 class="mb-0">
+                <?php while ($row = mysqli_fetch_array($query3)) {
+                  echo $row[0];
+                } ?>
+              </h3>
               <!-- <p class="text-danger ml-2 mb-0 font-weight-medium">-2.4%</p> -->
             </div>
           </div>
@@ -69,7 +81,11 @@
         <div class="row">
           <div class="col-9">
             <div class="d-flex align-items-center align-self-start">
-              <h3 class="mb-0">12</h3>
+              <h3 class="mb-0">
+                <?php while ($row = mysqli_fetch_array($query4)) {
+                  echo $row[0];
+                } ?>
+              </h3>
               <!-- <p class="text-success ml-2 mb-0 font-weight-medium">+3.5%</p> -->
             </div>
           </div>
