@@ -57,13 +57,15 @@ $routes->get('/viewUserEdit', 'UserController::viewUserEdit');                  
 */
 $routes->get('/postmanage', 'ReportController::viewPost');                           //viewPost(AllPost)
 $routes->get('/reportpost', 'ReportController::viewReport');                         //viewReport
+$routes->get('/deleteReport/(:any)', 'ReportController::deleteReport/$1');           //deleteReport
 
 /** 
 *!CategoryrController
 */
 $routes->get('/category', 'CategoeyController::showCategory');                       //showCategory
-$routes->get('/deleteCategory/(:any)', 'CategoeyController::deleteCategory/$1',);
+$routes->get('/deleteCategory/(:any)', 'CategoeyController::deleteCategory/$1');    //deleteCategory
 /*
+
  * --------------------------------------------------------------------
  * Additional Routing
  * --------------------------------------------------------------------

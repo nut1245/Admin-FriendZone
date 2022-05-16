@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Login Admin</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://media.discordapp.net/attachments/778499819072913482/964380238446489640/28bd6e21ded14639b5af7e3a515ce252-removebg-preview.png" />
     <!-- plugins:css -->
     <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">

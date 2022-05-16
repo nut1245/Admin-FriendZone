@@ -17,6 +17,8 @@ class ReportController extends BaseController
         $data = [
             'report' => $model->viewReport(),
         ];
+
+        //var_dump($data);
         echo view('reportPost', $data);
     }
 
@@ -26,8 +28,20 @@ class ReportController extends BaseController
         $modelpost = new PostModel();
         $datapost['posts'] = $modelpost->viewPost();
         $modelCom = new CommentModel();
-        $datapost['comments'] = $modelCom ->viewComment();
+        $datapost['comments'] = $modelCom->viewComment();
         // var_dump($datapost);
         return view('postmanage', $datapost);
+    }
+
+    //Delete Report
+    public function deleteReport($id = null)
+    {
+        $session = session();
+        $model = new ReportModel();
+        $deleteReport = $model->deleteReport($id);
+        if ($deleteReport) {
+            $session->setFlashdata('Success', 'ลบรายงานสำเร็จ');
+            return redirect()->to('/reportpost');
+        }
     }
 }

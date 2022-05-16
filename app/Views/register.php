@@ -6,6 +6,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>เพิ่มแอดมิน</title>
+  <link rel="shortcut icon" type="image/x-icon" href="https://media.discordapp.net/attachments/778499819072913482/964380238446489640/28bd6e21ded14639b5af7e3a515ce252-removebg-preview.png" />
   <!-- plugins:css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="preconnect" href="https://fonts.googleapis.com">

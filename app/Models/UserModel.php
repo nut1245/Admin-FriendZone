@@ -58,4 +58,6 @@ class UserModel extends Model
         ->where('statusUser', "2")
         ->paginate(10, 'pages', $page);
     }
+
+    
 }

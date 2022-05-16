@@ -24,7 +24,7 @@
                 </div>
             </div>
 
-            <img src="<?php echo $post["imagePost"] ?>" class="card-img-top" style="width:500px; height:250px">
+            <img src="<?php echo $post["imagePost"] ?>" class="card-img-top" style="width:100%; height:400px">
 
             <div class="card-post-body">
                 <div class="row row-post-body">

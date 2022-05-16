@@ -1,13 +1,13 @@
 <center>
-<?php if (session()->getFlashdata('Success')) : ?> <div>
-      <script>
-        Swal.fire({
-          icon: 'success',
-          title: "<?= session()->getFlashdata('Success') ?>",
-        })
-      </script>
-    </div>
-  <?php endif ?>
+    <?php if (session()->getFlashdata('Success')) : ?> <div>
+            <script>
+                Swal.fire({
+                    icon: 'success',
+                    title: "<?= session()->getFlashdata('Success') ?>",
+                })
+            </script>
+        </div>
+    <?php endif ?>
     <div class="col-10 grid-margin">
         <div class="card" style="background-color: #fff;  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
 
@@ -34,7 +34,7 @@
                                             <form>
                                                 <div class="mb-3">
 
-                                                 <input class="form-control"  name="name_category">
+                                                    <input class="form-control" name="name_category">
                                                 </div>
 
                                             </form>
@@ -71,30 +71,29 @@
                             <td></td>
                             <td></td>
                             <td><?php echo $value['name_category']; ?></td>
-
                             <td>
-                                <a href="/deleteCategory/<?php echo $value["categoryId"] ?>" type="button" class="btn btn-outline-danger ">
+                                <a href="/deleteCategory/<?php echo $value["categoryId"] ?>" type="button" class="btn btn-outline-danger">
                                     &nbsp;<i class="mdi mdi-delete"></i>
                                 </a>
                             </td>
-                            <?php } ?>
+                        <?php } ?>
                         </tr>
-                        
+
                     </tbody>
-                    
+
                 </center>
-            
+
     </div>
     </div>
-    
+
     </div>
-    
+
     </td>
-    
+
     </tr>
-    
+
     </tbody>
     </table>
-    
+
     </div>
     </div>

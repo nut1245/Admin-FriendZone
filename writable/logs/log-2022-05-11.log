@@ -1,0 +1,116 @@
+ERROR - 2022-05-11 00:07:42 --> Table 'friendzone.userid' doesn't exist
+CRITICAL - 2022-05-11 00:07:42 --> Table 'friendzone.userid' doesn't exist
+#0 C:\xampp\htdocs\AdminNew\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\AdminNew\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\AdminNew\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\AdminNew\app\Models\ReportModel.php(24): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\AdminNew\app\Controllers\ReportController.php(19): App\Models\ReportModel->viewImagePost()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\ReportController->viewReport()
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#9 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2022-05-11 00:08:51 --> Table 'friendzone.userid' doesn't exist
+CRITICAL - 2022-05-11 00:08:51 --> Table 'friendzone.userid' doesn't exist
+#0 C:\xampp\htdocs\AdminNew\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\AdminNew\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\AdminNew\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\AdminNew\app\Models\ReportModel.php(24): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\AdminNew\app\Controllers\ReportController.php(19): App\Models\ReportModel->viewImagePost()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\ReportController->viewReport()
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#9 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2022-05-11 00:09:20 --> Table 'friendzone.userid' doesn't exist
+CRITICAL - 2022-05-11 00:09:20 --> Table 'friendzone.userid' doesn't exist
+#0 C:\xampp\htdocs\AdminNew\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\AdminNew\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\AdminNew\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\AdminNew\app\Models\ReportModel.php(24): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\AdminNew\app\Controllers\ReportController.php(19): App\Models\ReportModel->viewImagePost()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\ReportController->viewReport()
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#9 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2022-05-11 00:10:25 --> Table 'friendzone.userid' doesn't exist
+CRITICAL - 2022-05-11 00:10:25 --> Table 'friendzone.userid' doesn't exist
+#0 C:\xampp\htdocs\AdminNew\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\AdminNew\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\AdminNew\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\AdminNew\app\Models\ReportModel.php(24): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\AdminNew\app\Controllers\ReportController.php(19): App\Models\ReportModel->viewImagePost()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\ReportController->viewReport()
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#9 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2022-05-11 00:10:26 --> Table 'friendzone.userid' doesn't exist
+CRITICAL - 2022-05-11 00:10:26 --> Table 'friendzone.userid' doesn't exist
+#0 C:\xampp\htdocs\AdminNew\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\AdminNew\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\AdminNew\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\AdminNew\app\Models\ReportModel.php(24): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\AdminNew\app\Controllers\ReportController.php(19): App\Models\ReportModel->viewImagePost()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\ReportController->viewReport()
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#9 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+ERROR - 2022-05-11 00:10:26 --> Table 'friendzone.userid' doesn't exist
+CRITICAL - 2022-05-11 00:10:26 --> Table 'friendzone.userid' doesn't exist
+#0 C:\xampp\htdocs\AdminNew\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\AdminNew\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\AdminNew\system\Model.php(728): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\AdminNew\app\Models\ReportModel.php(24): CodeIgniter\Model->__call('get', Array)
+#6 C:\xampp\htdocs\AdminNew\app\Controllers\ReportController.php(19): App\Models\ReportModel->viewImagePost()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\ReportController->viewReport()
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#9 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#11 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2022-05-11 01:04:13 --> Undefined array key "imagePost"
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\PostReport.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 9)
+#1 C:\xampp\htdocs\AdminNew\app\Views\reportpost.php(39): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('reportPost', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\ReportController.php(20): view('reportPost', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\ReportController->viewReport()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-05-11 01:04:14 --> Undefined array key "imagePost"
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\PostReport.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 9)
+#1 C:\xampp\htdocs\AdminNew\app\Views\reportpost.php(39): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('reportPost', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\ReportController.php(20): view('reportPost', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\ReportController->viewReport()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
