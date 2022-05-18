@@ -32,7 +32,6 @@ class UserModel extends Model
             ->join('districts', 'users.subDistrict = districts.id')
             ->where('statusUser', "1")
             ->paginate(10, 'pages', $page);
-        
     }
 
 
@@ -40,11 +39,11 @@ class UserModel extends Model
     public function viewUserFail($page)
     {
         return $this->select()
-        ->join('provinces', 'users.province = provinces.id')
-        ->join('amphures', 'users.district = amphures.id')
-        ->join('districts', 'users.subDistrict = districts.id')
-        ->where('statusUser', "0")
-        ->paginate(10, 'pages', $page);
+            ->join('provinces', 'users.province = provinces.id')
+            ->join('amphures', 'users.district = amphures.id')
+            ->join('districts', 'users.subDistrict = districts.id')
+            ->where('statusUser', "0")
+            ->paginate(10, 'pages', $page);
     }
 
 
@@ -52,12 +51,22 @@ class UserModel extends Model
     public function viewUserEdit($page)
     {
         return $this->select()
-        ->join('provinces', 'users.province = provinces.id')
-        ->join('amphures', 'users.district = amphures.id')
-        ->join('districts', 'users.subDistrict = districts.id')
-        ->where('statusUser', "2")
-        ->paginate(10, 'pages', $page);
+            ->join('provinces', 'users.province = provinces.id')
+            ->join('amphures', 'users.district = amphures.id')
+            ->join('districts', 'users.subDistrict = districts.id')
+            ->where('statusUser', "2")
+            ->paginate(10, 'pages', $page);
     }
 
-    
+    //show User in manageUser
+    public function viewAllUser($page)
+    {
+        return $this->select()
+            ->join('provinces', 'users.province = provinces.id')
+            ->join('amphures', 'users.district = amphures.id')
+            ->join('districts', 'users.subDistrict = districts.id')
+            ->orderBy('userId', "ASC")
+            ->paginate(10, 'pages', $page);
+        //->get()->getResultArray();
+    }
 }

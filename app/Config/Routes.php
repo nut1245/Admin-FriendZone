@@ -45,13 +45,13 @@ $routes->get('/logout', 'OfficerController::logout');                           
 */
 $routes->get('/dashboard', 'UserController::index');                                 //Dashboard
 $routes->get('/alluser', 'UserController::viewUser');                                //viewUser(request)                    
-$routes->get('/allusermanage', 'UserController::showAlluser');                       //showAllUser
 $routes->get('/updateStatus/(:any)', 'UserController::updateStatus/$1');             //updateStatusSuccess
 $routes->get('/updateStatusFail/(:any)', 'UserController::updateStatusFail/$1');     //updateStatusFail
 $routes->get('/viewUserSuccess', 'UserController::viewUserSuccess');                 //viewUserSuccess
 $routes->get('/viewUserFail', 'UserController::viewUserFail');                       //viewUserFail
 $routes->get('/viewUserEdit', 'UserController::viewUserEdit');                       //viewUserEdit
-
+$routes->get('/allusermanage', 'UserController::viewAllUser');                       //showAllUser(manage)
+$routes->get('/blockUser/(:any)', 'UserController::blockUser/$1');                    //blockUser
 /** 
 *!ReportController
 */
