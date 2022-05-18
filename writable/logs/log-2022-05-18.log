@@ -1,0 +1,48 @@
+CRITICAL - 2022-05-18 09:06:31 --> Undefined variable $query1
+#0 D:\AllWork\ProjectADMIN\AdminNew\app\Views\allusermanage.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\AllWork\\Proj...', 51)
+#1 D:\AllWork\ProjectADMIN\AdminNew\system\View\View.php(210): include('D:\\AllWork\\Proj...')
+#2 D:\AllWork\ProjectADMIN\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\AllWork\ProjectADMIN\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('allusermanage', Array, true)
+#4 D:\AllWork\ProjectADMIN\AdminNew\app\Controllers\UserController.php(111): view('allusermanage', Array)
+#5 D:\AllWork\ProjectADMIN\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewAllUser()
+#6 D:\AllWork\ProjectADMIN\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#7 D:\AllWork\ProjectADMIN\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\AllWork\ProjectADMIN\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\AllWork\ProjectADMIN\AdminNew\system\Commands\Server\rewrite.php(43): require_once('D:\\AllWork\\Proj...')
+#10 {main}
+CRITICAL - 2022-05-18 09:07:01 --> Undefined variable $query1
+#0 D:\AllWork\ProjectADMIN\AdminNew\app\Views\allusermanage.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\AllWork\\Proj...', 51)
+#1 D:\AllWork\ProjectADMIN\AdminNew\system\View\View.php(210): include('D:\\AllWork\\Proj...')
+#2 D:\AllWork\ProjectADMIN\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\AllWork\ProjectADMIN\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('allusermanage', Array, true)
+#4 D:\AllWork\ProjectADMIN\AdminNew\app\Controllers\UserController.php(111): view('allusermanage', Array)
+#5 D:\AllWork\ProjectADMIN\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewAllUser()
+#6 D:\AllWork\ProjectADMIN\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#7 D:\AllWork\ProjectADMIN\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\AllWork\ProjectADMIN\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\AllWork\ProjectADMIN\AdminNew\system\Commands\Server\rewrite.php(43): require_once('D:\\AllWork\\Proj...')
+#10 {main}
+CRITICAL - 2022-05-18 09:07:10 --> Undefined variable $query2
+#0 D:\AllWork\ProjectADMIN\AdminNew\app\Views\allusermanage.php(72): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\AllWork\\Proj...', 72)
+#1 D:\AllWork\ProjectADMIN\AdminNew\system\View\View.php(210): include('D:\\AllWork\\Proj...')
+#2 D:\AllWork\ProjectADMIN\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\AllWork\ProjectADMIN\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('allusermanage', Array, true)
+#4 D:\AllWork\ProjectADMIN\AdminNew\app\Controllers\UserController.php(111): view('allusermanage', Array)
+#5 D:\AllWork\ProjectADMIN\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewAllUser()
+#6 D:\AllWork\ProjectADMIN\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#7 D:\AllWork\ProjectADMIN\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\AllWork\ProjectADMIN\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\AllWork\ProjectADMIN\AdminNew\system\Commands\Server\rewrite.php(43): require_once('D:\\AllWork\\Proj...')
+#10 {main}
+CRITICAL - 2022-05-18 09:07:16 --> Undefined variable $query3
+#0 D:\AllWork\ProjectADMIN\AdminNew\app\Views\allusermanage.php(94): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\AllWork\\Proj...', 94)
+#1 D:\AllWork\ProjectADMIN\AdminNew\system\View\View.php(210): include('D:\\AllWork\\Proj...')
+#2 D:\AllWork\ProjectADMIN\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\AllWork\ProjectADMIN\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('allusermanage', Array, true)
+#4 D:\AllWork\ProjectADMIN\AdminNew\app\Controllers\UserController.php(111): view('allusermanage', Array)
+#5 D:\AllWork\ProjectADMIN\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewAllUser()
+#6 D:\AllWork\ProjectADMIN\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#7 D:\AllWork\ProjectADMIN\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\AllWork\ProjectADMIN\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\AllWork\ProjectADMIN\AdminNew\system\Commands\Server\rewrite.php(43): require_once('D:\\AllWork\\Proj...')
+#10 {main}

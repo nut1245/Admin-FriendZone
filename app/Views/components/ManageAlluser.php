@@ -59,7 +59,7 @@
                                     </td>
                                     <td>
                                         <a href="/blockUser/<?php echo $value['userId']; ?>" type="button" class="btn btn-outline-danger ">
-                                            <i class="mdi mdi-close"></i>
+                                            <i class="mdi mdi-block-helper"></i>
                                         </a>
                                     </td>
                                 </tr>
