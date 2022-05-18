@@ -81,6 +81,14 @@
                 <ul class="nav flex-column sub-menu">
 
                     <li class="nav-item">
+                        <a class="nav-link" href="/alluser">
+                            <span class="menu-icon">
+                                <i class="mdi mdi-account-multiple-plus" style="color:blue"></i>
+                            </span></i> คำขอการใช้งาน
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
                         <a class="nav-link" href="/allusermanage">
                             <span class="menu-icon">
                                 <i class="mdi mdi-account-check" style="color:green"></i>
@@ -88,13 +96,6 @@
                         </a>
                     </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="/alluser">
-                            <span class="menu-icon">
-                                <i class="mdi mdi-account-multiple-plus"  style="color:blue"></i>
-                            </span></i> คำขอการใช้งาน
-                        </a>
-                    </li>
                 </ul>
             </div>
         </li>

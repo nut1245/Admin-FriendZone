@@ -14,13 +14,6 @@ class UserController extends BaseController
         echo view('dashboard');
     }
 
-    public function showAlluser()
-    {
-        helper('form');
-        echo view('allusermanage');
-    }
-
-
     //Get all User
     public function viewUser()
     {
@@ -105,15 +98,32 @@ class UserController extends BaseController
         return redirect()->to('/alluser');
     }
 
-
-    
-
-    //Count User
-    public function countUser()
+    //Get all User in manageUser
+    public function viewAllUser()
     {
-        $model = new UserModel();
-        // $data['countUser'] = $this->db->table($this->table)->where(["statusUser" => 0])->countAllResults();
-        $data['countUser'] = $model->db->table($model->table)->countAllResults();
-        echo view('dashboard', $data);
+        $page=$this->request->getGet('pages');
+        $model = new \App\Models\UserModel();
+        $data = [
+            'user' => $model->viewAllUser($page),
+            'user1'=> $model->paginate(10 ,'pages'),
+            'pager' => $model->pager,
+        ];
+        echo view('allusermanage', $data);
     }
+
+    //blockUser
+    public function blockUser($userId)
+    {
+        $session = session();
+        $status = "3";
+        $data = [
+            'statusUser' => $status
+        ];
+        $Usermodel = new UserModel();
+        $Usermodel->where('userId', $userId)->set($data)->update();
+        $session->setFlashdata('Success', 'ผู้ใช้รายนี้ถูกบล็อก');
+        return redirect()->to('/allusermanage');
+    }
+
+
 }

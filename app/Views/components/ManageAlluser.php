@@ -1,6 +1,13 @@
 <div class="row ">
-
-
+<?php if (session()->getFlashdata('Success')) : ?> <div>
+      <script>
+        Swal.fire({
+          icon: 'success',
+          title: "<?= session()->getFlashdata('Success') ?>",
+        })
+      </script>
+    </div>
+  <?php endif ?>
     <div class="col-12 grid-margin">
         <div class="card" style="background-color: #fff;  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
             <div class="card-body">
@@ -24,103 +31,43 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td class="id">
-                                    1
-                                </td>
-                                <td>
-                                    <img src="https://pbs.twimg.com/profile_images/1148597177993834496/hUeW1JlQ_400x400.jpg" alt="image" />
-                                    <span class="pl-2"></span>
-                                </td>
-                                <td> 2548963157842 </td>
-                                <td> ชาย</td>
-                                <td> 20/5/2000 </td>
-                                <td>55555@gmail.com </td>
-                                <td>
-                                    <div class="badge badge-success">ยืนยันตัวตนสำเร็จ</div>
-                                </td>
-                                <td>
-                                    <a href="#" class="btn btn-outline-primary btn-update" data-bs-toggle="modal" data-bs-target="#update">
-                                        <i class="mdi mdi-eye"></i>
-                                    </a>
-                                    <a href="/updateStatusFail/" type="button" class="btn btn-outline-danger ">
-                                        <i class="mdi mdi-close"></i>
-                                    </a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="id">
-                                    1
-                                </td>
-                                <td>
-                                    <img src="https://pbs.twimg.com/profile_images/1148597177993834496/hUeW1JlQ_400x400.jpg" alt="image" />
-                                    <span class="pl-2"></span>
-                                </td>
-                                <td> 2548963157842 </td>
-                                <td> ชาย</td>
-                                <td> 20/5/2000 </td>
-                                <td>55555@gmail.com </td>
-                                <td>
-                                    <div class="badge badge-success">ยืนยันตัวตนสำเร็จ</div>
-                                </td>
-                                <td>
-                                    <a href="#" class="btn btn-outline-primary btn-update" data-bs-toggle="modal" data-bs-target="#update">
-                                        <i class="mdi mdi-eye"></i>
-                                    </a>
-                                    <a href="/updateStatusFail/" type="button" class="btn btn-outline-danger ">
-                                        <i class="mdi mdi-close"></i>
-                                    </a>
-                                </td>
-                            </tr> <tr>
-                                <td class="id">
-                                    1
-                                </td>
-                                <td>
-                                    <img src="https://pbs.twimg.com/profile_images/1148597177993834496/hUeW1JlQ_400x400.jpg" alt="image" />
-                                    <span class="pl-2"></span>
-                                </td>
-                                <td> 2548963157842 </td>
-                                <td> ชาย</td>
-                                <td> 20/5/2000 </td>
-                                <td>55555@gmail.com </td>
-                                <td>
-                                    <div class="badge badge-success">ยืนยันตัวตนสำเร็จ</div>
-                                </td>
-                                <td>
-                                    <a href="#" class="btn btn-outline-primary btn-update" data-bs-toggle="modal" data-bs-target="#update">
-                                        <i class="mdi mdi-eye"></i>
-                                    </a>
-                                    <a href="/updateStatusFail/" type="button" class="btn btn-outline-danger ">
-                                        <i class="mdi mdi-close"></i>
-                                    </a>
-                                </td>
-                            </tr> <tr>
-                                <td class="id">
-                                    1
-                                </td>
-                                <td>
-                                    <img src="https://pbs.twimg.com/profile_images/1148597177993834496/hUeW1JlQ_400x400.jpg" alt="image" />
-                                    <span class="pl-2"></span>
-                                </td>
-                                <td> 2548963157842 </td>
-                                <td> ชาย</td>
-                                <td> 20/5/2000 </td>
-                                <td>55555@gmail.com </td>
-                                <td>
-                                    <div class="badge badge-success">ยืนยันตัวตนสำเร็จ</div>
-                                </td>
-                                <td>
-                                    <a href="#" class="btn btn-outline-primary btn-update" data-bs-toggle="modal" data-bs-target="#update">
-                                        <i class="mdi mdi-eye"></i>
-                                    </a>
-                                    <a href="/updateStatusFail/" type="button" class="btn btn-outline-danger ">
-                                        <i class="mdi mdi-close"></i>
-                                    </a>
-                                </td>
-                            </tr>
+                            <?php $no = 1;
+                            foreach ($user as $key => $value) { ?>
+                                <tr>
+                                    <td class="id">
+                                        <?php echo $value['userId']; ?>
+                                    </td>
+                                    <td>
+                                        <img src="<?php echo $value['userImage']; ?>" alt="image" />
+                                        <span class="pl-2"><?php echo $value['FName']; ?></span>
+                                    </td>
+                                    <td> <?php echo $value['idCard']; ?> </td>
+                                    <td> <?php echo $value['gender']; ?></td>
+                                    <td> <?php echo $value['birthday']; ?> </td>
+                                    <td> <?php echo $value['email']; ?> </td>
+                                    <td>
+                                        <?php if ($value['statusUser'] == "0") {
+                                            echo '<div class="badge badge-outline-warning">รอการยืนยันตัวตน</div>';
+                                        } else if ($value['statusUser'] == "1") {
+                                            echo '<div class="badge badge-outline-success">ยืนยันตัวตนสำเร็จ</div>';
+                                        } else if ($value['statusUser'] == "2") {
+                                            echo '<div class="badge badge-outline-danger">รอการแก้ไขข้อมูล</div>';
+                                        } else if ($value['statusUser'] == "3") {
+                                            echo '<div class="badge badge-outline-dark">ผู้ใช้รายนี้ถูกบล็อก</div>';
+                                        };
+                                        ?>
+                                    </td>
+                                    <td>
+                                        <a href="/blockUser/<?php echo $value['userId']; ?>" type="button" class="btn btn-outline-danger ">
+                                            <i class="mdi mdi-close"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            <?php } ?>
                         </tbody>
                     </table>
                 </div>
+                <?= $pager->links('pages') ?>
             </div>
         </div>
     </div>

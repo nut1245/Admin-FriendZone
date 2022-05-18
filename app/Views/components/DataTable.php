@@ -59,6 +59,8 @@
                       echo '<div class="badge badge-outline-success">ยืนยันตัวตนสำเร็จ</div>';
                     } else if ($value['statusUser'] == "2") {
                       echo '<div class="badge badge-outline-danger">รอการแก้ไขข้อมูล</div>';
+                    } else if ($value['statusUser'] == "3") {
+                      echo '<div class="badge badge-outline-dark">ผู้ใช้รายนี้ถูกบล็อก</div>';
                     };
                     ?>
                   </td>
