@@ -35,6 +35,7 @@
 <body>
   <!------------------------------------------------------- Menu ---------------------------------------------------------------------------->
   <div class="container-scroller">
+    <?php require('components/SqlConnect'); ?>
     <?php $session = session(); ?>
     <?php require('components/Navbar.php'); ?>
     <div class="main-panel">
@@ -47,7 +48,9 @@
                   <div class="col-9">
                     <div class="d-flex align-items-center align-self-start">
                       <h3 class="mb-0">
-                        <!-- ไว้ใส่ตัวเลข -->100
+                        <?php while ($row = mysqli_fetch_array($allUser)) {
+                          echo $row[0];
+                        } ?>
                       </h3>
                     </div>
                   </div>
@@ -68,7 +71,9 @@
                   <div class="col-9">
                     <div class="d-flex align-items-center align-self-start">
                       <h3 class="mb-0">
-                        <!-- ไว้ใส่ตัวเลข -->1111
+                      <?php while ($row = mysqli_fetch_array($blockUser)) {
+                          echo $row[0];
+                        } ?>
                       </h3>
                       <!-- <p class="text-success ml-2 mb-0 font-weight-medium">+11%</p> -->
                     </div>

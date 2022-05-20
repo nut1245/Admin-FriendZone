@@ -3,18 +3,27 @@ $con = mysqli_connect("localhost", "root", "", "friendzone") or die("Error: " . 
 
 // Count Request User
 $sql_users = "SELECT COUNT(*) FROM users WHERE statusUser = 0";
-$query1 = mysqli_query($con, $sql_users);
+$requestUser = mysqli_query($con, $sql_users);
 
 // Count Success User
 $sql_users = "SELECT COUNT(*) FROM users WHERE statusUser = 1";
-$query2 = mysqli_query($con, $sql_users);
+$successUser = mysqli_query($con, $sql_users);
 
 // Conut All Post
 $sql_post = "SELECT COUNT(*) FROM post";
-$query3 = mysqli_query($con, $sql_post);
+$allPost = mysqli_query($con, $sql_post);
 
 // Count All ReportPost
 $sql_report = "SELECT COUNT(*) FROM report";
-$query4 = mysqli_query($con, $sql_report);
+$reportPost = mysqli_query($con, $sql_report);
+
+// Count All User
+$sql_report = "SELECT COUNT(*) FROM users";
+$allUser = mysqli_query($con, $sql_report);
+
+// Count All BlockUser
+$sql_report = "SELECT COUNT(*) FROM users WHERE statusUser = 3";
+$blockUser = mysqli_query($con, $sql_report);
 
 ?>
+

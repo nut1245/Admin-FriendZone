@@ -7,7 +7,7 @@
           <div class="col-9">
             <div class="d-flex align-items-center align-self-start">
               <h3 class="mb-0">
-                <?php while ($row = mysqli_fetch_array($query1)) {
+                <?php while ($row = mysqli_fetch_array($requestUser)) {
                   echo $row[0];
                 } ?>
               </h3>
@@ -30,7 +30,7 @@
           <div class="col-9">
             <div class="d-flex align-items-center align-self-start">
               <h3 class="mb-0">
-                <?php while ($row = mysqli_fetch_array($query2)) {
+                <?php while ($row = mysqli_fetch_array($successUser)) {
                   echo $row[0];
                 } ?>
               </h3>
@@ -54,7 +54,7 @@
           <div class="col-9">
             <div class="d-flex align-items-center align-self-start">
               <h3 class="mb-0">
-                <?php while ($row = mysqli_fetch_array($query3)) {
+                <?php while ($row = mysqli_fetch_array($allPost)) {
                   echo $row[0];
                 } ?>
               </h3>
@@ -78,7 +78,7 @@
           <div class="col-9">
             <div class="d-flex align-items-center align-self-start">
               <h3 class="mb-0">
-                <?php while ($row = mysqli_fetch_array($query4)) {
+                <?php while ($row = mysqli_fetch_array($reportPost)) {
                   echo $row[0];
                 } ?>
               </h3>
