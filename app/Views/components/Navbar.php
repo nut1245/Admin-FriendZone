@@ -19,7 +19,6 @@
                         <span style="color:black">Administer</span>
                     </div>
                 </div>
-
             </div>
         </li>
         <li class="nav-item nav-category ">
@@ -143,11 +142,7 @@
     <div class="navbar-menu-wrapper flex-grow d-flex align-items-stretch" style="background-color:#EF5DA8; box-shadow:none;">
 
         <ul class="navbar-nav w-100" style="background-color:#EF5DA8">
-            <li class="nav-item w-100">
-                <form class="nav-link mt-2 mt-md-0 d-none d-lg-flex search">
-                    <input type="text" class="form-control" placeholder="Search" style="color:#000">
-                </form>
-            </li>
+           
         </ul>
 
         <ul class="navbar-nav navbar-nav">

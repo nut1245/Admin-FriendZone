@@ -37,6 +37,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="col-md-3  grid-margin stretch-card">
                             <div class="card" style="background-color:#E0E0E0;box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
                                 <div class="card-body">
@@ -61,14 +62,37 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-md-6  grid-margin stretch-card">
+                            <div class="card" style="background-color:#ffbbff ;box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <h4 class="text-muted font-weight-normal">&nbsp;&nbsp; ค้นหาผู้ใช้จากบัตรประชาชน</h4>
+                                        <div class="col-12">
+                                            <div class="d-flex align-items-center align-self-start">
+                                                <form class="col-12">
+                                                    
+                                                    <div class="form-group">
+                                                        <div class="input-group">
+                                                            <input type="text" name="search" id="inputalluser" class="form-control" placeholder="ค้นหาผู้ใช้จากบัตรประชาชน" >
+                                                            <div class="input-group-append">
+                                                                <button class="btn btn-sm btn-primary" type="submit" id="button-addon2"> ค้นหา</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
                     </div>
                 </div>
-                <form>
-                    <div class="input-group mb-3">
-                        <input name="search" type="text" class="form-control form-control-lg" placeholder="ค้นหาผู้ใช้จากบัตรประชาชน" />
-                        <button class="btn btn-outline-dark btn-lg" type="submit" id="button-addon2">ค้นหา</button>
-                    </div>
-                </form>
+
                 <div class="table-responsive">
                     <table class="table">
                         <thead>
