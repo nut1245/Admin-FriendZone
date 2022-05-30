@@ -17,11 +17,11 @@ class UserController extends BaseController
     //Get all User
     public function viewUser()
     {
-        $page=$this->request->getGet('pages');
+        $page = $this->request->getGet('pages');
         $model = new \App\Models\UserModel();
         $data = [
             'user' => $model->viewUser($page),
-            'user1'=> $model->paginate(10 ,'pages'),
+            'user1' => $model->paginate(10, 'pages'),
             'pager' => $model->pager,
         ];
         echo view('alluser', $data);
@@ -31,39 +31,39 @@ class UserController extends BaseController
     //Get User by success status
     public function viewUserSuccess()
     {
-        $page=$this->request->getGet('pages');
+        $page = $this->request->getGet('pages');
         $model = new \App\Models\UserModel();
         $data = [
             'user' => $model->viewUserSuccess($page),
-            'user1'=> $model->paginate(10 ,'pages'),
+            'user1' => $model->paginate(10, 'pages'),
             'pager' => $model->pager,
         ];
         echo view('alluser', $data);
     }
 
-    
-     //Get User by fail status
-     public function viewUserFail()
-     {
-         $page=$this->request->getGet('pages');
-         $model = new \App\Models\UserModel();
-         $data = [
-             'user' => $model->viewUserFail($page),
-             'user1'=> $model->paginate(10 ,'pages'),
-             'pager' => $model->pager,
-         ];
-         echo view('alluser', $data);
-     }
 
-     
+    //Get User by fail status
+    public function viewUserFail()
+    {
+        $page = $this->request->getGet('pages');
+        $model = new \App\Models\UserModel();
+        $data = [
+            'user' => $model->viewUserFail($page),
+            'user1' => $model->paginate(10, 'pages'),
+            'pager' => $model->pager,
+        ];
+        echo view('alluser', $data);
+    }
+
+
     //Get User by edit status
     public function viewUserEdit()
     {
-        $page=$this->request->getGet('pages');
+        $page = $this->request->getGet('pages');
         $model = new \App\Models\UserModel();
         $data = [
             'user' => $model->viewUserEdit($page),
-            'user1'=> $model->paginate(10 ,'pages'),
+            'user1' => $model->paginate(10, 'pages'),
             'pager' => $model->pager,
         ];
         echo view('alluser', $data);
@@ -98,18 +98,32 @@ class UserController extends BaseController
         return redirect()->to('/alluser');
     }
 
+
+
     //Get all User in manageUser
     public function viewAllUser()
     {
-        $page=$this->request->getGet('pages');
+        $page = $this->request->getGet('pages');
         $model = new \App\Models\UserModel();
-        $data = [
-            'user' => $model->viewAllUser($page),
-            'user1'=> $model->paginate(10 ,'pages'),
-            'pager' => $model->pager,
-        ];
+        if ($this->request->getGet('search')) {
+            $search = $this->request->getGet('search');
+            $data = [
+                'user' => $model->like('idCard', $search)->findAll(),($page),
+                'user1' => $model->paginate(10, 'pages'),
+                'pager' => $model->pager,
+            ];
+        } else {
+            $data = [
+                'user' => $model->viewUser($page),
+                'user1' => $model->paginate(10, 'pages'),
+                'pager' => $model->pager,
+            ];
+        }
         echo view('allusermanage', $data);
+
+        
     }
+
 
     //blockUser
     public function blockUser($userId)
@@ -124,6 +138,4 @@ class UserController extends BaseController
         $session->setFlashdata('Success', 'ผู้ใช้รายนี้ถูกบล็อก');
         return redirect()->to('/allusermanage');
     }
-
-
 }

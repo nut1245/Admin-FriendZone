@@ -1,0 +1,164 @@
+CRITICAL - 2022-05-28 05:12:37 --> syntax error, unexpected token "public"
+#0 C:\xampp\htdocs\AdminNew\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\AdminNew\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-28 05:12:39 --> syntax error, unexpected token "public"
+#0 C:\xampp\htdocs\AdminNew\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\AdminNew\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-28 05:15:32 --> Invalid file: allusermanage/.php
+#0 C:\xampp\htdocs\AdminNew\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('allusermanage/....')
+#1 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('allusermanage/', Array, true)
+#2 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(120): view('allusermanage/', Array)
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewAllUser()
+#4 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#5 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-28 05:15:43 --> Object of type CodeIgniter\Database\MySQLi\Result is not callable
+#0 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewAllUser()
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-05-28 05:15:56 --> Call to undefined method App\Models\UserModel::getAll
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(109): CodeIgniter\Model->__call('getAll', Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewAllUser()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-28 05:16:38 --> Call to undefined method App\Models\UserModel::getAll
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(109): CodeIgniter\Model->__call('getAll', Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewAllUser()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-28 05:17:40 --> Call to undefined method App\Models\UserModel::getAll
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(109): CodeIgniter\Model->__call('getAll', Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewAllUser()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-28 05:17:55 --> syntax error, unexpected token ";", expecting "]"
+#0 C:\xampp\htdocs\AdminNew\system\Autoloader\Autoloader.php(241): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\AdminNew\system\Autoloader\Autoloader.php(219): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(797): class_exists('\\App\\Controller...', true)
+#4 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(406): CodeIgniter\CodeIgniter->startController()
+#5 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+CRITICAL - 2022-05-28 05:19:14 --> Call to undefined method App\Models\UserModel::getAll
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(109): CodeIgniter\Model->__call('getAll', Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewAllUser()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-28 05:23:08 --> Call to undefined method App\Models\UserModel::getAll
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(107): CodeIgniter\Model->__call('getAll', Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewAllUser()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-28 05:23:09 --> Call to undefined method App\Models\UserModel::getAll
+#0 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(107): CodeIgniter\Model->__call('getAll', Array)
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewAllUser()
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2022-05-28 05:24:27 --> Undefined variable $user
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ManageAlluser.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 88)
+#1 C:\xampp\htdocs\AdminNew\app\Views\allusermanage.php(44): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('allusermanage', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(111): view('allusermanage', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewAllUser()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-05-28 05:24:28 --> Undefined variable $user
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ManageAlluser.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 88)
+#1 C:\xampp\htdocs\AdminNew\app\Views\allusermanage.php(44): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('allusermanage', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(111): view('allusermanage', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewAllUser()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-05-28 05:24:38 --> Undefined variable $pager
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ManageAlluser.php(123): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 123)
+#1 C:\xampp\htdocs\AdminNew\app\Views\allusermanage.php(44): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('allusermanage', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(111): view('allusermanage', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewAllUser()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-05-28 05:28:03 --> Cannot redeclare App\Controllers\UserController::viewUser()
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2022-05-28 05:28:17 --> Array callback must have exactly two elements
+#0 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewAllUser()
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-05-28 05:29:28 --> Array callback must have exactly two elements
+#0 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewAllUser()
+#1 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#2 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2022-05-28 05:30:36 --> Undefined variable $user
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ManageAlluser.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 88)
+#1 C:\xampp\htdocs\AdminNew\app\Views\allusermanage.php(44): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('allusermanage', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\UserController.php(123): view('allusermanage', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\UserController->viewAllUser()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
