@@ -21227,7 +21227,15 @@ p.preview-subject{
   background-color: #ffbbff;
   color: #000;
 }
+#inputalluser{
+  background-color: #fff;
+  color: #000;
+}
 
+#inputalluser::placeholder {
+  color: #b5b0b2;
+  opacity: 1; /* Firefox */
+}
 /* #card-color:hover {
   
   box-shadow: 1px 1px 15px  rgb(240, 240, 240);
