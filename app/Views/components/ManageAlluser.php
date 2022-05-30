@@ -12,7 +12,7 @@
         <div class="card" style="background-color: #fff;  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
             <div class="card-body">
                 <div class="row justify-content-between ">
-                    <h4 class="card-title">ผู้ใช้งานทั้งหมดในระบบทั้งหมด</h4>
+                    <h4 class="card-title">ผู้ใช้งานทั้งหมดในระบบ</h4>
                     <div class="row col-12">
                         <div class="col-md-3 grid-margin stretch-card">
                             <div class="card" style="background-color:#ccf5ff; box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
@@ -63,8 +63,13 @@
                         </div>
                     </div>
                 </div>
+                <form>
+                    <div class="input-group mb-3">
+                        <input name="search" type="text" class="form-control form-control-lg" placeholder="ค้นหาผู้ใช้จากบัตรประชาชน" />
+                        <button class="btn btn-outline-dark btn-lg" type="submit" id="button-addon2">ค้นหา</button>
+                    </div>
+                </form>
                 <div class="table-responsive">
-
                     <table class="table">
                         <thead>
                             <tr>
