@@ -21224,7 +21224,8 @@ p.preview-subject{
 }
 
 .card input.form-control{
-  background-color: #ffbbff;
+  background-color: #fff;
+  border-color: #bfcdd2;
   color: #000;
 }
 #inputalluser{
@@ -21240,3 +21241,20 @@ p.preview-subject{
   
   box-shadow: 1px 1px 15px  rgb(240, 240, 240);
 } */
+
+.modal-body .form-group label{
+  color: #000;
+  
+  display: flex;
+justify-content: center;
+align-items: center;
+
+} 
+#color-card{
+  background-color: #fff;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px ,rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+ .block  {
+  background-color: #adb5bd;
+}

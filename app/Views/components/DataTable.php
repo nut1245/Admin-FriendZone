@@ -10,7 +10,7 @@
   <?php endif ?>
 
   <div class="col-12 grid-margin">
-    <div class="card" style="background-color: #fff;  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
+    <div class="card" id="color-card">
       <div class="card-body">
         <div class="row justify-content-between ">
           <h4 class="card-title">จัดการสถานะการใช้งานทั้งหมด</h4>

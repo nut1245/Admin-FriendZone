@@ -1,6 +1,6 @@
 <div class="row col-12" >
     <div class="col-md-3 grid-margin stretch-card">
-        <div class="card" style="background-color: #fff; box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
+        <div class="card" id="color-card">
             <div class="card-body">
                 <div class="chartjs-size-monitor">
                     <div class="chartjs-size-monitor-expand">
@@ -43,7 +43,7 @@
         </div>
     </div>
     <div class="col-md-4 grid-margin stretch-card">
-        <div class="card" style="background-color: #fff;  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
+        <div class="card" id="color-card">
             <div class="card-body" >
                 <h4 class="card-title">จังหวัดยอดนิยม</h4>
                 <div class="row">
@@ -153,7 +153,7 @@
         </div>
     </div>
     <div class="col-md-4 grid-margin  stretch-card">
-        <div class="card"  style="background-color: #fff;  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
+        <div class="card"  id="color-card">
             <div class="card-body">
                 <h4 class="card-title">ภาพสถานที่ท่องเที่ยวยอดนิยม</h4>
                 <div class="owl-carousel owl-theme full-width owl-carousel-dash portfolio-carousel owl-loaded owl-drag" id="owl-carousel-basic">

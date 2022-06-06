@@ -86,7 +86,6 @@
                             </span></i> คำขอการใช้งาน
                         </a>
                     </li>
-
                     <li class="nav-item">
                         <a class="nav-link" href="/allusermanage">
                             <span class="menu-icon">
@@ -109,13 +108,7 @@
             </a>
             <div class="collapse" id="admin">
                 <ul class="nav flex-column sub-menu">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/register">
-                            <span class="menu-icon">
-                                <i class="mdi mdi-account-multiple icon-item"></i>
-                            </span></i> เพิ่มแอดมิน&nbsp;&nbsp;&nbsp;
-                        </a>
-                    </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="/adminmanage">
                             <span class="menu-icon">

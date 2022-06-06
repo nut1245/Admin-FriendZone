@@ -9,13 +9,13 @@
         </div>
     <?php endif ?>
     <div class="col-12 grid-margin">
-        <div class="card" style="background-color: #fff;  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
+        <div class="card" id="color-card">
             <div class="card-body">
                 <div class="row justify-content-between ">
                     <h4 class="card-title">ผู้ใช้งานทั้งหมดในระบบ</h4>
                     <div class="row col-12">
                         <div class="col-md-3 grid-margin stretch-card">
-                            <div class="card" style="background-color:#ccf5ff; box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
+                            <div class="card" style="background-color:#ccf5ff" id="color-card">
                                 <div class="card-body ">
                                     <div class="row">
                                         <div class="col-9">
@@ -39,8 +39,8 @@
                         </div>
 
                         <div class="col-md-3  grid-margin stretch-card">
-                            <div class="card" style="background-color:#E0E0E0;box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
-                                <div class="card-body">
+                            <div class="card" id="color-card">
+                                <div class="card-body block">
                                     <div class="row">
                                         <div class="col-9">
                                             <div class="d-flex align-items-center align-self-start">
@@ -58,12 +58,12 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <h4 class="text-muted font-weight-normal">ผู้ใช้ที่ถูกบล็อก</h4>
+                                    <h4 class="text-muted font-weight-normal" >ผู้ใช้ที่ถูกบล็อก</h4>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6  grid-margin stretch-card">
-                            <div class="card" style="background-color:#ffbbff ;box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
+                            <div class="card" id="color-card">
                                 <div class="card-body">
                                     <div class="row">
                                         <h4 class="text-muted font-weight-normal">&nbsp;&nbsp; ค้นหาผู้ใช้จากบัตรประชาชน</h4>
