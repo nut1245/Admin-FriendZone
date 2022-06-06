@@ -10,48 +10,117 @@
     <?php endif ?>
     <center>
         <div class="col-10 grid-margin">
-            <div class="card" style="background-color: #fff;  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
-
-                <div class="card-body">
-                    <div class="row justify-content-between ">
-                        <h4 class="card-title">รายชื่อแอดมินผู้ดูแลระบบทั้งหมด</h4>
-
-
+            <div class="card"  id="color-card">
+                <div class="card-body" >
+                    <form action="/OfficerController/register" method="post" class="form-sample">
                         <div class="template-demo">
-
                             <!-- Button trigger modal -->
-                            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="float: right;">
-                                + เพิ่มหมวดหมู่กิจกรรม
-                            </button> -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="float: right;">
+                                + เพิ่มแอดมิน
+                            </button>
 
                             <!-- Modal -->
                             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered">
-                                    <div class="modal-content" >
-                                        <div class="modal-header" >
-                                            <h5 class="modal-title" id="staticBackdropLabel" >เพิ่มหมวดหมู่กิจกรรม</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">เพิ่มข้อมูลแอดมิน</h5>
+                                            <?php if (isset($validation)) : ?>
+                                                <div class="alert alert-danger"><?= $validation->listErrors(); ?></div>
+                                            <?php endif ?>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <form>
-                                                <div class="mb-3">
-                                                   
-                                                    <input type="text" class="form-control" id="recipient-name">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-3 ">ชื่อ</label>
+                                                        <div class="col-sm-8">
+                                                            <input type="text" class="form-control" id="FName" name="FName" require>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                               
-                                            </form>
+                                                <div class="col-md-12">
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-3 ">นามสกุล</label>
+                                                        <div class="col-sm-8">
+                                                            <input type="text" class="form-control" id="LName" name="LName" require>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 ">เพศ</label>
+                                                    <div class="col-sm-3">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label">
+                                                                <i class="mdi mdi-gender-male" style="color:cyan"></i>
+                                                                <input type="radio" class="form-check-input" name="gender" id="membershipRadios1" value="ชาย"> ชาย <i class="input-helper"></i></label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <div class="form-check">
+                                                            <label class="form-check-label">
+                                                                <i class="mdi mdi-gender-female" style="color:deeppink"></i>
+                                                                <input type="radio" class="form-check-input" name="gender" id="membershipRadios2" value="หญิง"> หญิง <i class="input-helper"></i></label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-3 ">ชื่อผู้ใช้งาน</label>
+                                                        <div class="col-sm-8">
+                                                            <input type="text" class="form-control" id="userName" name="userName" require>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-3 ">รหัสผ่าน</label>
+                                                        <div class="col-sm-8">
+                                                            <input type="password" class="form-control" id="password" name="password" require>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-3 ">ยืนยันรหัสผ่าน</label>
+                                                        <div class="col-sm-8">
+                                                            <input type="password" onchange="checkPassword()" class="form-control" id="confirmPassword" name="confirmpassword">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-3 ">เบอร์โทร</label>
+                                                        <div class="col-sm-8">
+                                                            <input type="text" class="form-control" id="phoneNumber" name="phoneNumber" require>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="form-group row">
+                                                        <label class="col-sm-3 ">รูปภาพ</label>
+                                                        <div class="col-sm-8">
+                                                            <input type="text" class="form-control" id="offImage" name="offImage" require>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
                                         </div>
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ยกเลิก</button>
-                                            <button type="button" class="btn btn-primary">ยืนยัน</button>
+                                            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" id="btn">ยืนยัน</button>
+                                            <a href="#" type="button" class="btn btn-danger" data-bs-dismiss="modal">ยกเลิก</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                    </form>
+                    <div class="row justify-content-between ">
+                        <h4 class="card-title">รายชื่อแอดมินผู้ดูแลระบบทั้งหมด</h4>
 
                     </div>
-
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
@@ -66,29 +135,29 @@
                             </thead>
                             <center>
                                 <tbody>
-                                <?php $no = 1;
-                            foreach ($user as $key => $value) { ?>
-                                    <tr>
-                                        <td> <?php echo $value['offId']; ?> </td>
-                                        <td><img src="<?php echo $value['offImage']; ?>" /></td>
-                                        <td><?php echo $value['userName']; ?></td>
-                                        <td><?php echo $value['gender']; ?></td>
-                                        <td><?php echo $value['phoneNumber']; ?></td>
-                                        <td>
-                                            <a href="/deleteAdmin/<?php echo $value["offId"] ?>" type="button" class="btn btn-outline-danger ">
-                                                &nbsp;<i class="mdi mdi-delete"></i>
-                                            </a>
-                                        </td>
-                                    </tr>
+                                    <?php $no = 1;
+                                    foreach ($user as $key => $value) { ?>
+                                        <tr>
+                                            <td> <?php echo $value['offId']; ?> </td>
+                                            <td><img src="<?php echo $value['offImage']; ?>" /></td>
+                                            <td><?php echo $value['userName']; ?></td>
+                                            <td><?php echo $value['gender']; ?></td>
+                                            <td><?php echo $value['phoneNumber']; ?></td>
+                                            <td>
+                                                <a href="/deleteAdmin/<?php echo $value["offId"] ?>" type="button" class="btn btn-outline-danger ">
+                                                    &nbsp;<i class="mdi mdi-delete"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
                                 </tbody>
                             </center>
                         <?php } ?>
                     </div>
+                </div>
+                </td>
+                </tr>
+                </tbody>
+                </table>
             </div>
-            </td>
-            </tr>
-            </tbody>
-            </table>
+
         </div>
-        
-</div>

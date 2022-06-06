@@ -9,7 +9,7 @@
         </div>
     <?php endif ?>
     <div class="col-10 grid-margin">
-        <div class="card" style="background-color: #fff;  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
+        <div class="card" id="color-card">
 
             <div class="card-body">
                 <div class="row justify-content-between ">
@@ -31,69 +31,54 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
-                                            <form>
-                                                <div class="mb-3">
-
-                                                    <input class="form-control" name="name_category">
-                                                </div>
-
-                                            </form>
+                                            <div class="mb-3">
+                                                <input class="form-control" name="name_category">
+                                            </div>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" onclick="CategoeyController()">ตกลง</button>
+                                            <a href="/catagory" type="button" class="btn btn-danger" data-bs-dismiss="modal">ยกเลิก</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                     </form>
-                    <a href="/catagory" type="button" class="btn btn-danger" data-bs-dismiss="modal">ยกเลิก</a>
                 </div>
             </div>
-        </div>
-    </div>
-    </div>
-
-    </div>
-
-    <div class="table-responsive">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th> ไอดี </th>
-                    <th></th>
-                    <th></th>
-                    <th> ชื่อหมวดหมู่กิจกรรม </th>
-                    <th> จัดการ </th>
-                </tr>
-            </thead>
-            <?php $no = 1;
-            foreach ($category as $key => $value) { ?>
-                <center>
-                    <tbody>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
                         <tr>
-                            <td><?php echo $value['categoryId']; ?></td>
-                            <td></td>
-                            <td></td>
-                            <td><?php echo $value['name_category']; ?></td>
-                            <td>
-                                <a href="/deleteCategory/<?php echo $value["categoryId"] ?>" type="button" class="btn btn-outline-danger">
-                                    &nbsp;<i class="mdi mdi-delete"></i>
-                                </a>
-                            </td>
-                        <?php } ?>
+                            <th> ไอดี </th>
+                            <th></th>
+                            <th></th>
+                            <th> ชื่อหมวดหมู่กิจกรรม </th>
+                            <th> จัดการ </th>
                         </tr>
+                    </thead>
+                    <?php $no = 1;
+                    foreach ($category as $key => $value) { ?>
+                        <center>
+                            <tbody>
+                                <tr>
+                                    <td><?php echo $value['categoryId']; ?></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><?php echo $value['name_category']; ?></td>
+                                    <td>
+                                        <a href="/deleteCategory/<?php echo $value["categoryId"] ?>" type="button" class="btn btn-outline-danger">
+                                            &nbsp;<i class="mdi mdi-delete"></i>
+                                        </a>
+                                    </td>
+                                <?php } ?>
+                                </tr>
 
-                    </tbody>
+                            </tbody>
 
-                </center>
-
-    </div>
-    </div>
-
-    </div>
-
-    </td>
-
-    </tr>
-
-    </tbody>
-    </table>
-
+                        </center>
+                </table>
+            </div>
+        </div>
     </div>
     </div>

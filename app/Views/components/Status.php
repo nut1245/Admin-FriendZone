@@ -1,7 +1,7 @@
 <?php require('SqlConnect'); ?>
 <div class="row col-11">
   <div class="col-md-3 grid-margin stretch-card">
-    <div class="card" style="background-color:#ffffcc; box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
+    <div class="card" style="background-color:#ffffcc;" id="color-card">
       <div class="card-body ">
         <div class="row">
           <div class="col-9">
@@ -24,7 +24,7 @@
     </div>
   </div>
   <div class="col-md-3  grid-margin stretch-card">
-    <div class="card" style="background-color:#b3ff99;box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
+    <div class="card" style="background-color:#b3ff99; "id="color-card">
       <div class="card-body">
         <div class="row">
           <div class="col-9">
@@ -48,7 +48,7 @@
     </div>
   </div>
   <div class="col-md-3  grid-margin stretch-card">
-    <div class="card" style="background-color:#59d0ff;box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
+    <div class="card" style="background-color:#59d0ff;"id="color-card">
       <div class="card-body">
         <div class="row">
           <div class="col-9">
@@ -72,7 +72,7 @@
     </div>
   </div>
   <div class="col-md-3  grid-margin stretch-card">
-    <div class="card" style="background-color:#ff7878 ;box-shadow:rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;">
+    <div class="card" style="background-color:#ff7878 ;"id="color-card">
       <div class="card-body">
         <div class="row">
           <div class="col-9">
