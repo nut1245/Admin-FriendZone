@@ -24,10 +24,23 @@ class OfficerController extends ResourceController // เปลี่ยนจ�
         echo view('register');
     }
 
-    public function showAdmin(){
-        helper('form');
-        echo view('adminmanage');
+    public function viewAdmin(){
+        $model = new OfficerModel();
+        $data['user'] = $model->viewAdmin();
+        echo view('adminmanage', $data);
     }
+
+     //Delete Admin
+     public function deleteAdmin($id = null)
+     {
+         $session = session();
+         $model = new OfficerModel();
+         $deleteAdmin = $model->deleteAdmin($id);
+         if ($deleteAdmin) {
+             $session->setFlashdata('Success', 'ลบแอดมินสำเร็จ');
+             return redirect()->to('/adminmanage');
+         }
+     }
     
 
     //Register
@@ -49,7 +62,7 @@ class OfficerController extends ResourceController // เปลี่ยนจ�
              ];
             if($data){
                  $register = $model->register($data);
-                 return redirect()->to('/dashboard');
+                 return redirect()->to('/adminmanage');
             }
             }else{
                  $data['validation'] = $this->validator;

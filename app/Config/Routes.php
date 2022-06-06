@@ -37,7 +37,8 @@ $routes->setAutoRoute(true);
 */
 $routes->get('/', 'OfficerController::index');                                      //Login (index)
 $routes->get('/register', 'OfficerController::index2');                             //Register
-$routes->get('/adminmanage', 'OfficerController::showAdmin');                       //showAllAdmin
+$routes->get('/adminmanage', 'OfficerController::viewAdmin');                       //showAllAdmin
+$routes->get('/deleteAdmin/(:any)', 'OfficerController::deleteAdmin/$1');                       //deleteAdmin
 $routes->get('/logout', 'OfficerController::logout');                               //Logout    
 
 /** 
@@ -52,6 +53,7 @@ $routes->get('/viewUserFail', 'UserController::viewUserFail');                  
 $routes->get('/viewUserEdit', 'UserController::viewUserEdit');                       //viewUserEdit
 $routes->get('/allusermanage', 'UserController::viewAllUser');                       //showAllUser(manage)
 $routes->get('/blockUser/(:any)', 'UserController::blockUser/$1');                    //blockUser
+
 /** 
 *!ReportController
 */
