@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\NotificationModel;
 use App\Models\UserModel;
 
 //------------------------Manage all users---------------------------------
@@ -91,6 +92,13 @@ class UserController extends BaseController
         $data = [
             'statusUser' => $status
         ];
+        $dataNoti = [
+            'notificateDetail' => "ได้ผ่านการยืนยันตัวตนเรียบร้อยแล้วสามารถโพสต์หาเพื่อนร่วมกิจกรรมหรือส่งคำขอเข้าร่วมกิจกรรมได้เลย!!",
+            'statusNotic' => "0",
+            'userId' => $userId,
+        ];
+        $NotificationModel = new NotificationModel($notificate);
+        $NotificationModel->insertNotification($dataNoti);
         $Usermodel = new UserModel();
         $Usermodel->where('userId', $userId)->set($data)->update();
         $session->setFlashdata('Success', 'ยืนยันตัวตนสำเร็จ');
