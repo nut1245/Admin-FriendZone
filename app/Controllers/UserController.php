@@ -69,6 +69,19 @@ class UserController extends BaseController
         echo view('alluser', $data);
     }
 
+    //Get User Block
+    public function viewUserBlock()
+    {
+        $page = $this->request->getGet('pages');
+        $model = new \App\Models\UserModel();
+        $data = [
+            'user' => $model->viewUserBlock($page),
+            'user1' => $model->paginate(10, 'pages'),
+            'pager' => $model->pager,
+        ];
+        echo view('alluser', $data);
+    }
+
 
     //update Status Success
     public function updateStatus($userId)

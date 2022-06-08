@@ -18,8 +18,8 @@
             <a href="/viewUserSuccess" type="button" class="btn btn-outline-success btn-fw">ยืนยันตัวตนสำเร็จ</a>
             <a href="/viewUserFail" type="button" class="btn btn-outline-warning btn-fw">รอยืนยันตัวตน</a>
             <a href="/viewUserEdit" type="button" class="btn btn-outline-danger btn-fw">รอการแก้ไข</a>
+            <a href="/viewUserBlock" type="button" class="btn btn-outline-dark btn-fw">ผู้ใช้รายที่ถูกบล็อก</a>
             <a href="/alluser" type="button" class="btn btn-outline-primary btn-fw">ผู้ใช้งานทั้งหมด</a>
-            <a href="/alluser" type="button" class="btn btn-outline-dark btn-fw">ผู้ใช้รายนี้ถูกบล็อก</a>
             <br><br>
           </div>
         </div>

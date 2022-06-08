@@ -58,6 +58,17 @@ class UserModel extends Model
             ->paginate(10, 'pages', $page);
     }
 
+    //show User Block
+    public function viewUserBlock($page)
+    {
+        return $this->select()
+            ->join('provinces', 'users.province = provinces.id')
+            ->join('amphures', 'users.district = amphures.id')
+            ->join('districts', 'users.subDistrict = districts.id')
+            ->where('statusUser', "3")
+            ->paginate(10, 'pages', $page);
+    }
+
     //show User in manageUser
     public function viewAllUser($page)
     {

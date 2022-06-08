@@ -51,8 +51,9 @@ $routes->get('/updateStatusFail/(:any)', 'UserController::updateStatusFail/$1');
 $routes->get('/viewUserSuccess', 'UserController::viewUserSuccess');                 //viewUserSuccess
 $routes->get('/viewUserFail', 'UserController::viewUserFail');                       //viewUserFail
 $routes->get('/viewUserEdit', 'UserController::viewUserEdit');                       //viewUserEdit
+$routes->get('/viewUserBlock', 'UserController::viewUserBlock');                     //viewUserBlock
 $routes->get('/allusermanage', 'UserController::viewAllUser');                       //showAllUser(manage)
-$routes->get('/blockUser/(:any)', 'UserController::blockUser/$1');                    //blockUser
+$routes->get('/blockUser/(:any)', 'UserController::blockUser/$1');                   //blockUser
 
 /** 
 *!ReportController
