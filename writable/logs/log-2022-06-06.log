@@ -93,3 +93,57 @@ CRITICAL - 2022-06-06 05:10:32 --> Invalid file: register.php
 #6 D:\AllWork\ProjectADMIN\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #7 D:\AllWork\ProjectADMIN\AdminNew\system\Commands\Server\rewrite.php(43): require_once('D:\\AllWork\\Proj...')
 #8 {main}
+CRITICAL - 2022-06-06 22:58:07 --> Undefined variable $user
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ManageAdmin.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\AdminNew\app\Views\adminmanage.php(43): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('adminmanage', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\OfficerController.php(69): view('adminmanage', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\OfficerController->register()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfficerController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-06-06 22:58:29 --> Undefined variable $user
+#0 C:\xampp\htdocs\AdminNew\app\Views\components\ManageAdmin.php(135): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 135)
+#1 C:\xampp\htdocs\AdminNew\app\Views\adminmanage.php(43): require('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\AdminNew\system\View\View.php(210): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#4 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('adminmanage', Array, true)
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\OfficerController.php(69): view('adminmanage', Array)
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\OfficerController->register()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfficerController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2022-06-06 23:24:02 --> Invalid file: register.php
+#0 C:\xampp\htdocs\AdminNew\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('register.php')
+#1 C:\xampp\htdocs\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('register', Array, true)
+#2 C:\xampp\htdocs\AdminNew\app\Controllers\OfficerController.php(24): view('register')
+#3 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\OfficerController->index2()
+#4 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfficerController))
+#5 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#7 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#8 {main}
+ERROR - 2022-06-06 23:24:42 --> Column 'gender' cannot be null
+CRITICAL - 2022-06-06 23:24:42 --> Column 'gender' cannot be null
+#0 C:\xampp\htdocs\AdminNew\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `of...', 0)
+#1 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `of...')
+#2 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `of...')
+#3 C:\xampp\htdocs\AdminNew\system\Database\BaseBuilder.php(1771): CodeIgniter\Database\BaseConnection->query('INSERT INTO `of...', Array, false)
+#4 C:\xampp\htdocs\AdminNew\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\AdminNew\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\AdminNew\system\Model.php(625): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\AdminNew\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\AdminNew\app\Models\OfficerModel.php(32): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\AdminNew\app\Controllers\OfficerController.php(64): App\Models\OfficerModel->register(Array)
+#10 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\OfficerController->register()
+#11 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfficerController))
+#12 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#13 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#14 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#15 {main}

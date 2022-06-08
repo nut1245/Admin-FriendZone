@@ -10,27 +10,23 @@
     <?php endif ?>
     <center>
         <div class="col-10 grid-margin">
-            <div class="card"  id="color-card">
-                <div class="card-body" >
-                    <form action="/OfficerController/register" method="post" class="form-sample">
+            <div class="card" id="color-card">
+                <div class="card-body">
                         <div class="template-demo">
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" style="float: right;">
                                 + เพิ่มแอดมิน
                             </button>
-
                             <!-- Modal -->
                             <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered">
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <h5 class="modal-title" id="staticBackdropLabel">เพิ่มข้อมูลแอดมิน</h5>
-                                            <?php if (isset($validation)) : ?>
-                                                <div class="alert alert-danger"><?= $validation->listErrors(); ?></div>
-                                            <?php endif ?>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                         </div>
                                         <div class="modal-body">
+                                            <form action="/OfficerController/register" method="post" class="form-sample">
                                             <div class="row">
                                                 <div class="col-md-12">
                                                     <div class="form-group row">
@@ -73,9 +69,10 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <p id="message"></p>
                                                 <div class="col-md-12">
                                                     <div class="form-group row">
-                                                        <label class="col-sm-3 ">รหัสผ่าน</label>
+                                                        <label class="col-sm-3 " class="password">รหัสผ่าน</label>
                                                         <div class="col-sm-8">
                                                             <input type="password" class="form-control" id="password" name="password" require>
                                                         </div>
@@ -83,7 +80,7 @@
                                                 </div>
                                                 <div class="col-md-12">
                                                     <div class="form-group row">
-                                                        <label class="col-sm-3 ">ยืนยันรหัสผ่าน</label>
+                                                        <label class="col-sm-3 " class="confirmPassword">ยืนยันรหัสผ่าน</label>
                                                         <div class="col-sm-8">
                                                             <input type="password" onchange="checkPassword()" class="form-control" id="confirmPassword" name="confirmpassword">
                                                         </div>
@@ -106,8 +103,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-
-
                                         </div>
                                         <div class="modal-footer">
                                             <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" id="btn">ยืนยัน</button>
@@ -119,7 +114,6 @@
                     </form>
                     <div class="row justify-content-between ">
                         <h4 class="card-title">รายชื่อแอดมินผู้ดูแลระบบทั้งหมด</h4>
-
                     </div>
                     <div class="table-responsive">
                         <table class="table">
@@ -149,9 +143,9 @@
                                                 </a>
                                             </td>
                                         </tr>
+                                    <?php } ?>
                                 </tbody>
                             </center>
-                        <?php } ?>
                     </div>
                 </div>
                 </td>
@@ -159,5 +153,21 @@
                 </tbody>
                 </table>
             </div>
-
         </div>
+
+        <script>
+            function checkPassword() {
+                let password = document.getElementById("password").value;
+                let confirmPassword = document.getElementById("confirmPassword").value;
+                console.log(password, confirmPassword);
+                if (password == confirmPassword) {
+                    document.getElementById("message").innerHTML = "*** รหัสผ่านตรงกัน ***";
+                    message.style.color = "#19b80a";
+                    document.getElementById("btn").disabled = false;
+                } else {
+                    document.getElementById("message").innerHTML = "*** รหัสผ่านไม่ตรงกัน ***";
+                    message.style.color = "#e20000";
+                    document.getElementById("btn").disabled = true;
+                }
+            }
+        </script>

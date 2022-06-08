@@ -66,7 +66,7 @@ class OfficerController extends ResourceController // เปลี่ยนจ�
             }
             }else{
                  $data['validation'] = $this->validator;
-                 echo view('register',$data);
+                 echo view('adminmanage',$data);
              }
     }
 

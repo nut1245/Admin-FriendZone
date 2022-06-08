@@ -69,6 +69,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
   <script src="js/dashboard.js"></script>
   <!-- End custom js for this page -->
   </script>
-</body>
 
+  
+</body>
 </html>
