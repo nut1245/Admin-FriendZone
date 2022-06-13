@@ -38,7 +38,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'OfficerController::index');                                      //Login (index)
 $routes->get('/register', 'OfficerController::index2');                             //Register
 $routes->get('/adminmanage', 'OfficerController::viewAdmin');                       //showAllAdmin
-$routes->get('/deleteAdmin/(:any)', 'OfficerController::deleteAdmin/$1');                       //deleteAdmin
+$routes->get('/deleteAdmin/(:any)', 'OfficerController::deleteAdmin/$1');           //deleteAdmin
 $routes->get('/logout', 'OfficerController::logout');                               //Logout    
 
 /** 
