@@ -78,6 +78,7 @@ class OfficerController extends ResourceController // เปลี่ยนจ�
         $password = $this->request->getVar('password');
         $data = $model->login($userName, $password);
         if ($data) {
+            $session = session();
             $session->set($data);
             return redirect()->to('dashboard');
         } else {

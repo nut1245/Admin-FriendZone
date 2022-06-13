@@ -10,7 +10,7 @@
                         <div class=""></div>
                     </div>
                 </div>
-                <h4 class="card-title" style="color: #000;">Top 3 จังหวัดที่มีการท่องเที่ยวมากที่สุด</h4>
+                <h4 class="card-title" style="color: #000;">จังหวัดที่มีการท่องเที่ยวมากที่สุด</h4>
                 <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
                 <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
                     <div class="text-md-center text-xl-left">
