@@ -54,6 +54,7 @@ $routes->get('/viewUserEdit', 'UserController::viewUserEdit');                  
 $routes->get('/viewUserBlock', 'UserController::viewUserBlock');                     //viewUserBlock
 $routes->get('/allusermanage', 'UserController::viewAllUser');                       //showAllUser(manage)
 $routes->get('/blockUser/(:any)', 'UserController::blockUser/$1');                   //blockUser
+$routes->get('/UnblockUser/(:any)', 'UserController::UnblockUser/$1');               //UnblockUser
 
 /** 
 *!ReportController

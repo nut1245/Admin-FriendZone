@@ -31,9 +31,9 @@
                 <th> ไอดี </th>
                 <th> ชื่อ-นามสกุล </th>
                 <th> รหัสบัตรประชาชน </th>
+                <th> วันหมดอายุบัตรประชาชน </th>
                 <th> เพศ </th>
                 <th> วันเกิด </th>
-                <th> อีเมล </th>
                 <th> สถานะ </th>
                 <th> Action </th>
               </tr>
@@ -50,9 +50,13 @@
                     <span class="pl-2"><?php echo $value['FName']; ?></span>
                   </td>
                   <td> <?php echo $value['idCard']; ?> </td>
+                  <td> <?php if ($value['expIdCard'] > "2020-12-31") {
+                          echo $value['expIdCard'];
+                        } else {
+                          echo '<div class="badge badge-outline-danger">บัตรประชาชนหมดอายุ</div>';
+                        } ?> </td>
                   <td> <?php echo $value['gender']; ?> </td>
                   <td> <?php echo $value['birthday']; ?> </td>
-                  <td> <?php echo $value['email']; ?> </td>
                   <td>
                     <?php if ($value['statusUser'] == "0") {
                       echo '<div class="badge badge-outline-warning">รอการยืนยันตัวตน</div>';
