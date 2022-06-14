@@ -159,4 +159,18 @@ class UserController extends BaseController
         $session->setFlashdata('Success', 'ผู้ใช้รายนี้ถูกบล็อก');
         return redirect()->to('/allusermanage');
     }
+
+    //UnblockUser
+    public function UnblockUser($userId)
+    {
+        $session = session();
+        $status = "1";
+        $data = [
+            'statusUser' => $status
+        ];
+        $Usermodel = new UserModel();
+        $Usermodel->where('userId', $userId)->set($data)->update();
+        $session->setFlashdata('Success', 'ปลดบล็อกผู้ใช้รายนี้');
+        return redirect()->to('/allusermanage');
+    }
 }

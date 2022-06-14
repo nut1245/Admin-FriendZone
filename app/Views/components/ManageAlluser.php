@@ -58,7 +58,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <h4 class="text-muted font-weight-normal" >ผู้ใช้ที่ถูกบล็อก</h4>
+                                    <h4 class="text-muted font-weight-normal">ผู้ใช้ที่ถูกบล็อก</h4>
                                 </div>
                             </div>
                         </div>
@@ -70,10 +70,10 @@
                                         <div class="col-12">
                                             <div class="d-flex align-items-center align-self-start">
                                                 <form class="col-12">
-                                                    
+
                                                     <div class="form-group">
                                                         <div class="input-group">
-                                                            <input type="text" name="search" id="inputalluser" class="form-control" placeholder="ค้นหาผู้ใช้จากบัตรประชาชน" >
+                                                            <input type="text" name="search" id="inputalluser" class="form-control" placeholder="ค้นหาผู้ใช้จากบัตรประชาชน">
                                                             <div class="input-group-append">
                                                                 <button class="btn btn-sm btn-primary" type="submit" id="button-addon2"> ค้นหา</button>
                                                             </div>
@@ -100,9 +100,9 @@
                                 <th> ไอดี </th>
                                 <th> ชื่อ-นามสกุล </th>
                                 <th> รหัสบัตรประชาชน </th>
+                                <th> วันหมดอายุบัตรประชาชน </th>
                                 <th> เพศ </th>
                                 <th> วันเกิด </th>
-                                <th> อีเมล </th>
                                 <th> สถานะ </th>
                                 <th> Action </th>
                             </tr>
@@ -119,9 +119,13 @@
                                         <span class="pl-2"><?php echo $value['FName']; ?></span>
                                     </td>
                                     <td> <?php echo $value['idCard']; ?> </td>
-                                    <td> <?php echo $value['gender']; ?></td>
+                                    <td> <?php if ($value['expIdCard'] > "2020-12-31") {
+                                                echo $value['expIdCard'];
+                                            } else {
+                                                echo '<div class="badge badge-outline-danger">บัตรประชาชนหมดอายุ</div>';
+                                            } ?> </td>
+                                    <td> <?php echo $value['gender']; ?> </td>
                                     <td> <?php echo $value['birthday']; ?> </td>
-                                    <td> <?php echo $value['email']; ?> </td>
                                     <td>
                                         <?php if ($value['statusUser'] == "0") {
                                             echo '<div class="badge badge-outline-warning">รอการยืนยันตัวตน</div>';
@@ -135,8 +139,11 @@
                                         ?>
                                     </td>
                                     <td>
+                                        <a href="/UnblockUser/<?php echo $value['userId']; ?>" type="button" class="btn btn-outline-primary ">
+                                            <i class="mdi mdi-lock-open-outline"></i>
+                                        </a>
                                         <a href="/blockUser/<?php echo $value['userId']; ?>" type="button" class="btn btn-outline-danger ">
-                                            <i class="mdi mdi-block-helper"></i>
+                                            <i class="mdi mdi-lock-outline"></i>
                                         </a>
                                     </td>
                                 </tr>
