@@ -41,6 +41,7 @@
     <!------------------------------------------------------- Menu ---------------------------------------------------------------------------->
     <div class="container-scroller">
         <?php $session = session(); ?>
+        <?php require('components/SqlConnect'); ?>
         <?php require('components/Navbar.php'); ?>
         <div class="main-panel">
             <div class="content-wrapper">
@@ -51,13 +52,39 @@
                                 <h4 class="card-title" style="color:black">โพสต์ทั้งหมด</h4>
                                 <div class="row col-12">
                                     <div class="col-md-4 grid-margin stretch-card">
+                                        <div class="card" style="background-color:lightskyblue" id="color-card">
+                                            <div class="card-body ">
+                                                <div class="row">
+                                                    <div class="col-9">
+                                                        <div class="d-flex align-items-center align-self-start">
+                                                            <h3 class="mb-0">
+                                                                <?php while ($row = mysqli_fetch_array($allPost)) {
+                                                                    echo $row[0];
+                                                                } ?>
+                                                            </h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="icon icon-box-dark ">
+                                                            <span class="mdi mdi-file-check"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <h4 class="text-muted font-weight-normal">โพสต์ทั้งหมด</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 grid-margin stretch-card">
                                         <div class="card" style="background-color:#b3ff99" id="color-card">
                                             <div class="card-body ">
                                                 <div class="row">
                                                     <div class="col-9">
                                                         <div class="d-flex align-items-center align-self-start">
                                                             <h3 class="mb-0">
-                                                                5
+                                                                <?php while ($row = mysqli_fetch_array($PostOpen)) {
+                                                                    echo $row[0];
+                                                                } ?>
                                                             </h3>
                                                         </div>
                                                     </div>
@@ -79,7 +106,9 @@
                                                     <div class="col-9">
                                                         <div class="d-flex align-items-center align-self-start">
                                                             <h3 class="mb-0">
-                                                                5
+                                                                <?php while ($row = mysqli_fetch_array($PostClose)) {
+                                                                    echo $row[0];
+                                                                } ?>
                                                             </h3>
                                                         </div>
                                                     </div>
@@ -94,30 +123,19 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-md-4  grid-margin stretch-card">
-                                        <div class="card" id="color-card">
-                                            <div class="card-body">
-                                                <div class="row">
-                                                    <h4 class="text-muted font-weight-normal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;สถานะของโพสต์</h4>
-                                                    <div class="col">
-                                                        &nbsp; &nbsp; &nbsp; <button type="button" class="btn btn-success btn-lg">โพสต์ที่เปิดอยู่</button>
-                                                    </div>
-                                                    <div class="col">
-                                                        <button type="button" class="btn btn-danger btn-lg">โพสต์ที่ปิดไปแล้ว</button>
-                                                    </div>
-                                                </div>
 
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
-
-
                         <hr width="20%" style=" border-top: 2px solid #000;  width:98%">
                         </hr>
-                        
+                        <div class="template-demo">
+                            <a href="/postmanage" type="button" class="btn btn-outline-primary btn-fw">โพสต์ทั้งหมด</a>
+                            <a href="/viewPostOpen" type="button" class="btn btn-outline-success btn-fw">โพสต์ที่เปิดอยู่</a>
+                            <a href="/viewPostClose" type="button" class="btn btn-outline-danger btn-fw">โพสต์ที่ปิดไปแล้ว</a>
+
+                            <br><br>
+                        </div>
                         <?php require('components/Post.php'); ?>
                     </div>
                 </div>

@@ -33,6 +33,28 @@ class ReportController extends BaseController
         return view('postmanage', $datapost);
     }
 
+    //Show all PostUser (Open)
+    public function viewPostOpen()
+    {
+        $modelpost = new PostModel();
+        $datapost['posts'] = $modelpost->viewPostOpen();
+        $modelCom = new CommentModel();
+        $datapost['comments'] = $modelCom->viewComment();
+        // var_dump($datapost);
+        return view('postmanage', $datapost);
+    }
+
+     //Show all PostUser (Close)
+     public function viewPostClose()
+     {
+         $modelpost = new PostModel();
+         $datapost['posts'] = $modelpost->viewPostClose();
+         $modelCom = new CommentModel();
+         $datapost['comments'] = $modelCom->viewComment();
+         // var_dump($datapost);
+         return view('postmanage', $datapost);
+     }
+
     //Delete Report
     public function deleteReport($id = null)
     {
