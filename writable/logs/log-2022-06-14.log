@@ -1,0 +1,39 @@
+ERROR - 2022-06-14 14:40:00 --> Error connecting to the database: No connection could be made because the target machine actively refused it
+CRITICAL - 2022-06-14 14:40:00 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+#0 D:\AllWork\ProjectADMIN\AdminNew\system\Database\BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 D:\AllWork\ProjectADMIN\AdminNew\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 D:\AllWork\ProjectADMIN\AdminNew\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#3 D:\AllWork\ProjectADMIN\AdminNew\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#4 D:\AllWork\ProjectADMIN\AdminNew\app\Models\OfficerModel.php(39): CodeIgniter\BaseModel->first()
+#5 D:\AllWork\ProjectADMIN\AdminNew\app\Controllers\OfficerController.php(79): App\Models\OfficerModel->login('knp001', '123456')
+#6 D:\AllWork\ProjectADMIN\AdminNew\system\CodeIgniter.php(832): App\Controllers\OfficerController->login()
+#7 D:\AllWork\ProjectADMIN\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\OfficerController))
+#8 D:\AllWork\ProjectADMIN\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\AllWork\ProjectADMIN\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 D:\AllWork\ProjectADMIN\AdminNew\system\Commands\Server\rewrite.php(43): require_once('D:\\AllWork\\Proj...')
+#11 {main}
+CRITICAL - 2022-06-14 14:46:27 --> Undefined variable $allUser
+#0 D:\AllWork\ProjectADMIN\AdminNew\app\Views\postmanage.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\AllWork\\Proj...', 58)
+#1 D:\AllWork\ProjectADMIN\AdminNew\system\View\View.php(210): include('D:\\AllWork\\Proj...')
+#2 D:\AllWork\ProjectADMIN\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\AllWork\ProjectADMIN\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('postmanage', Array, true)
+#4 D:\AllWork\ProjectADMIN\AdminNew\app\Controllers\ReportController.php(33): view('postmanage', Array)
+#5 D:\AllWork\ProjectADMIN\AdminNew\system\CodeIgniter.php(832): App\Controllers\ReportController->viewPost()
+#6 D:\AllWork\ProjectADMIN\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#7 D:\AllWork\ProjectADMIN\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\AllWork\ProjectADMIN\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\AllWork\ProjectADMIN\AdminNew\system\Commands\Server\rewrite.php(43): require_once('D:\\AllWork\\Proj...')
+#10 {main}
+CRITICAL - 2022-06-14 14:46:30 --> Undefined variable $allUser
+#0 D:\AllWork\ProjectADMIN\AdminNew\app\Views\postmanage.php(58): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\AllWork\\Proj...', 58)
+#1 D:\AllWork\ProjectADMIN\AdminNew\system\View\View.php(210): include('D:\\AllWork\\Proj...')
+#2 D:\AllWork\ProjectADMIN\AdminNew\system\View\View.php(213): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\AllWork\ProjectADMIN\AdminNew\system\Common.php(1089): CodeIgniter\View\View->render('postmanage', Array, true)
+#4 D:\AllWork\ProjectADMIN\AdminNew\app\Controllers\ReportController.php(33): view('postmanage', Array)
+#5 D:\AllWork\ProjectADMIN\AdminNew\system\CodeIgniter.php(832): App\Controllers\ReportController->viewPost()
+#6 D:\AllWork\ProjectADMIN\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#7 D:\AllWork\ProjectADMIN\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\AllWork\ProjectADMIN\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\AllWork\ProjectADMIN\AdminNew\system\Commands\Server\rewrite.php(43): require_once('D:\\AllWork\\Proj...')
+#10 {main}
