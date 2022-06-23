@@ -57,12 +57,14 @@ $routes->get('/blockUser/(:any)', 'UserController::blockUser/$1');              
 $routes->get('/UnblockUser/(:any)', 'UserController::UnblockUser/$1');               //UnblockUser
 $routes->get('/viewPostOpen', 'ReportController::viewPostOpen');                     //viewPostOpen
 $routes->get('/viewPostClose', 'ReportController::viewPostClose');                   //viewPostClose
+
 /** 
 *!ReportController
 */
 $routes->get('/postmanage', 'ReportController::viewPost');                           //viewPost(AllPost)
 $routes->get('/reportpost', 'ReportController::viewReport');                         //viewReport
 $routes->get('/deleteReport/(:any)', 'ReportController::deleteReport/$1');           //deleteReport
+$routes->get('/viewPostDetail/(:any)', 'PostController::viewPostDetail/$1',);        //viewPostDetail
 
 /** 
 *!CategoryrController
