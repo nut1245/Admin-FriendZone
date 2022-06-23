@@ -38,7 +38,7 @@
     <div class="main-panel">
       <div class="content-wrapper">
       <?php require('components/PostReport.php'); ?>
-        
+      <?php require('components/ModelReport.php'); ?>
       </div>
     </div>
   </div>
