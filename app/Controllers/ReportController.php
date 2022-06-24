@@ -18,7 +18,7 @@ class ReportController extends BaseController
             'report' => $model->viewReport(),
         ];
 
-        //var_dump($data);
+       // var_dump($data);
         echo view('reportPost', $data);
     }
 

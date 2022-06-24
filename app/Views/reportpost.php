@@ -25,6 +25,7 @@
   <!-- endinject -->
   <!-- Layout styles -->
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="/CSS/post.css">
   <!-- End layout styles -->
   <link rel="shortcut icon" href="#" />
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

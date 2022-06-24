@@ -1,0 +1,84 @@
+ERROR - 2022-06-24 01:17:41 --> Column 'postId' in where clause is ambiguous
+CRITICAL - 2022-06-24 01:17:41 --> Column 'postId' in where clause is ambiguous
+#0 C:\xampp\htdocs\AdminNew\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `report`...', 0)
+#1 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `report`...')
+#2 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `report`...')
+#3 C:\xampp\htdocs\AdminNew\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `report`...', Array, false)
+#4 C:\xampp\htdocs\AdminNew\app\Models\ReportModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\ReportController.php(18): App\Models\ReportModel->viewReport()
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\ReportController->viewReport()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-06-24 01:18:29 --> Column 'postId' in where clause is ambiguous
+CRITICAL - 2022-06-24 01:18:29 --> Column 'postId' in where clause is ambiguous
+#0 C:\xampp\htdocs\AdminNew\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `report`...', 0)
+#1 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `report`...')
+#2 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `report`...')
+#3 C:\xampp\htdocs\AdminNew\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `report`...', Array, false)
+#4 C:\xampp\htdocs\AdminNew\app\Models\ReportModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\ReportController.php(18): App\Models\ReportModel->viewReport()
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\ReportController->viewReport()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-06-24 01:19:39 --> Column 'postId' in where clause is ambiguous
+CRITICAL - 2022-06-24 01:19:39 --> Column 'postId' in where clause is ambiguous
+#0 C:\xampp\htdocs\AdminNew\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `report`...', 0)
+#1 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `report`...')
+#2 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `report`...')
+#3 C:\xampp\htdocs\AdminNew\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `report`...', Array, false)
+#4 C:\xampp\htdocs\AdminNew\app\Models\ReportModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\ReportController.php(18): App\Models\ReportModel->viewReport()
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\ReportController->viewReport()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-06-24 01:19:40 --> Column 'postId' in where clause is ambiguous
+CRITICAL - 2022-06-24 01:19:40 --> Column 'postId' in where clause is ambiguous
+#0 C:\xampp\htdocs\AdminNew\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `report`...', 0)
+#1 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `report`...')
+#2 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `report`...')
+#3 C:\xampp\htdocs\AdminNew\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `report`...', Array, false)
+#4 C:\xampp\htdocs\AdminNew\app\Models\ReportModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\ReportController.php(18): App\Models\ReportModel->viewReport()
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\ReportController->viewReport()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-06-24 01:19:40 --> Column 'postId' in where clause is ambiguous
+CRITICAL - 2022-06-24 01:19:40 --> Column 'postId' in where clause is ambiguous
+#0 C:\xampp\htdocs\AdminNew\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `report`...', 0)
+#1 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `report`...')
+#2 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `report`...')
+#3 C:\xampp\htdocs\AdminNew\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `report`...', Array, false)
+#4 C:\xampp\htdocs\AdminNew\app\Models\ReportModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\ReportController.php(18): App\Models\ReportModel->viewReport()
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\ReportController->viewReport()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}
+ERROR - 2022-06-24 01:19:50 --> Column 'postId' in where clause is ambiguous
+CRITICAL - 2022-06-24 01:19:50 --> Column 'postId' in where clause is ambiguous
+#0 C:\xampp\htdocs\AdminNew\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `report`...', 0)
+#1 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `report`...')
+#2 C:\xampp\htdocs\AdminNew\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `report`...')
+#3 C:\xampp\htdocs\AdminNew\system\Database\BaseBuilder.php(1455): CodeIgniter\Database\BaseConnection->query('SELECT `report`...', Array, false)
+#4 C:\xampp\htdocs\AdminNew\app\Models\ReportModel.php(26): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\AdminNew\app\Controllers\ReportController.php(18): App\Models\ReportModel->viewReport()
+#6 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(832): App\Controllers\ReportController->viewReport()
+#7 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(419): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+#8 C:\xampp\htdocs\AdminNew\system\CodeIgniter.php(326): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\AdminNew\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\AdminNew\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#11 {main}

@@ -22,7 +22,6 @@ class ReportModel extends Model
             ->join('provinces', 'post.province = provinces.id')
             ->join('amphures', 'post.district = amphures.id')
             ->join('districts', 'post.subDistrict = districts.id')
-            ->orderBy('reportId', 'ASC')
             ->get()->getResultArray();
     }
 
