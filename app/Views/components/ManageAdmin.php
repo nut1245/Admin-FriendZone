@@ -27,7 +27,7 @@
                                     </div>
                                     <div class="modal-body">
 
-                                        <img src="https://cdn.discordapp.com/attachments/778499819072913482/984391043703259136/fdd4a153ec3ebebc.png" id="previewImgSaveDataProfile" class="saveData-img-card-default">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaPwg-3P7xolgUHOv0URrMCODQgwie5XcDXf_Xgu5fVfX9d_t6AIF4EFSLO9dRBp-wXsQ&usqp=CAU" id="previewImgSaveDataProfile" class="saveData-img-card-default" width="100px" height="100px" style="border-radius: 100%;">
                                         <p id="message">**เลือกรูปภาพที่ต้องการแล้วกดอัพโหลด**</p>
                                         <form>
                                             <div class="col-md-12">
@@ -37,7 +37,7 @@
                                                         <div class="input-group">
                                                             <input type="file" class="form-control" id="adminImage" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
                                                             <button type="button" class="btn btn-primary" onclick="uploadProfile()">อัพโหลด</button>
-            
+        
                                                         </div>
                                                     </div>
                                                 </div>
