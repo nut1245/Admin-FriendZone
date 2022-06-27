@@ -26,8 +26,39 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
+
+                                        <img src="https://cdn.discordapp.com/attachments/778499819072913482/984391043703259136/fdd4a153ec3ebebc.png" id="previewImgSaveDataProfile" class="saveData-img-card-default">
+                                        <p id="message">**เลือกรูปภาพที่ต้องการแล้วกดอัพโหลด**</p>
+                                        <form>
+                                            <div class="col-md-12">
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 ">รูปภาพ</label>
+                                                    <div class="col-sm-8">
+                                                        <div class="input-group">
+                                                            <input type="file" class="form-control" id="adminImage" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                                                            <button type="button" class="btn btn-primary" onclick="uploadProfile()">อัพโหลด</button>
+            
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                        <script>
+                                            let imgInputSaveDataProfile = document.querySelector("#adminImage");
+                                            let previewImgSaveDataProfile = document.querySelector("#previewImgSaveDataProfile");
+
+                                            imgInputSaveDataProfile.onchange = evt => {
+                                                const [file] = imgInputSaveDataProfile.files;
+                                                if (file) {
+                                                    previewImgSaveDataProfile.src = URL.createObjectURL(file);
+                                                }
+                                            }
+                                        </script>
+
                                         <form action="/OfficerController/register" method="post" class="form-sample">
                                             <div class="row">
+                                                <input type="hidden" class="form-control" id="adminImageURL" name="offImage">
                                                 <div class="col-md-12">
                                                     <div class="form-group row">
                                                         <label class="col-sm-3 ">ชื่อ</label>
@@ -69,7 +100,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <p id="message"></p>
+                                                <p id="message2"></p>
                                                 <div class="col-md-12">
                                                     <div class="form-group row">
                                                         <label class="col-sm-3 " class="password">รหัสผ่าน</label>
@@ -94,16 +125,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-12">
-                                                    <div class="form-group row">
-                                                        <label class="col-sm-3 ">รูปภาพ</label>
-                                                        <div class="col-sm-8">
-                                                            <div class="input-group">
-                                                                <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+
                                             </div>
                                     </div>
                                     <div class="modal-footer">
