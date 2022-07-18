@@ -45,6 +45,7 @@ src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
       <div class="content-wrapper">
         <?php require('components/Status.php'); ?>
         <?php require('components/GraphData.php'); ?>
+        <?php require('components/SocialButton.php'); ?>
       </div>
     </div>
   </div>
