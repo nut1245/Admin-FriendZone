@@ -10,33 +10,33 @@
                         <div class=""></div>
                     </div>
                 </div>
-                <h4 class="card-title" style="color: #000;">จังหวัดที่มีการท่องเที่ยวมากที่สุด</h4>
+                <h4 class="card-title" style="color: #000;">หมวดหมู่ที่ได้รับความสนใจ</h4>
                 <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
                 <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
                     <div class="text-md-center text-xl-left">
-                        <h6 class="mb-1">เชียงใหม่</h6>
+                        <h6 class="mb-1">ภูเขา</h6>
                         <p class="text-muted mb-0">ดอย,กางเต้น</p>
                     </div>
                     <div class="align-self-center flex-grow text-right text-md-center text-xl-right py-md-2 py-xl-0">
-                        <h6 class="font-weight-bold mb-0">$236</h6>
+                        <h6 class="font-weight-bold mb-0">15</h6>
                     </div>
                 </div>
                 <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
                     <div class="text-md-center text-xl-left">
-                        <h6 class="mb-1">กรุงเทพฯ</h6>
-                        <p class="text-muted mb-0">วัดพระแก้ว</p>
+                        <h6 class="mb-1">น้ำตก</h6>
+                        <p class="text-muted mb-0">น้ำตกเอราวัณ</p>
                     </div>
                     <div class="align-self-center flex-grow text-right text-md-center text-xl-right py-md-2 py-xl-0">
-                        <h6 class="font-weight-bold mb-0">$236</h6>
+                        <h6 class="font-weight-bold mb-0">10</h6>
                     </div>
                 </div>
                 <div class="bg-gray-dark d-flex d-md-block d-xl-flex flex-row py-3 px-4 px-md-3 px-xl-4 rounded mt-3">
                     <div class="text-md-center text-xl-left">
-                        <h6 class="mb-1">ชลบุรี</h6>
+                        <h6 class="mb-1">ทะเล</h6>
                         <p class="text-muted mb-0">พัทยา</p>
                     </div>
                     <div class="align-self-center flex-grow text-right text-md-center text-xl-right py-md-2 py-xl-0">
-                        <h6 class="font-weight-bold mb-0">$593</h6>
+                        <h6 class="font-weight-bold mb-0">5</h6>
                     </div>
                 </div>
             </div>
@@ -229,12 +229,11 @@
 &nbsp;
 
 <script>
-    var xValues = ["เชียงใหม่", "กรุงเทพฯ", "ชลบุรี", "ภูเก็ต", ];
-    var yValues = [1500, 800, 760, 450];
+    var xValues = ["ภูเขา", "น้ำตก", "ทะเล", ];
+    var yValues = [1500, 800, 760,];
     var barColors = [
         "#F95CC5",
         "#9FF95C",
-        "#2b5797",
         "#44F2FA"
     ];
 
