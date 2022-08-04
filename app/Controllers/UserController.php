@@ -15,6 +15,13 @@ class UserController extends BaseController
         echo view('dashboard');
     }
 
+    public function reviewpost()
+    {
+        helper('form');
+        echo view('reviewpost');
+    }
+
+
     //Get all User
     public function viewUser()
     {

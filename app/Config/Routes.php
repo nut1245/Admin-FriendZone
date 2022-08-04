@@ -57,6 +57,8 @@ $routes->get('/blockUser/(:any)', 'UserController::blockUser/$1');              
 $routes->get('/UnblockUser/(:any)', 'UserController::UnblockUser/$1');               //UnblockUser
 $routes->get('/viewPostOpen', 'ReportController::viewPostOpen');                     //viewPostOpen
 $routes->get('/viewPostClose', 'ReportController::viewPostClose');                   //viewPostClose
+$routes->get('/reviewpost', 'UserController::reviewpost');                          //reviewPost
+
 
 /** 
 *!ReportController

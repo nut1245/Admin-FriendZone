@@ -62,6 +62,13 @@
                             </span></i> รายงานโพสต์
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/reviewpost">
+                            <span class="menu-icon">
+                                <i class="mdi mdi-alert-octagon icon-item" style="color:red"></i>
+                            </span></i> รีวิวโพสต์
+                        </a>
+                    </li>
 
 
                 </ul>
