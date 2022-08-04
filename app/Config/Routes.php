@@ -55,18 +55,19 @@ $routes->get('/viewUserBlock', 'UserController::viewUserBlock');                
 $routes->get('/allusermanage', 'UserController::viewAllUser');                       //showAllUser(manage)
 $routes->get('/blockUser/(:any)', 'UserController::blockUser/$1');                   //blockUser
 $routes->get('/UnblockUser/(:any)', 'UserController::UnblockUser/$1');               //UnblockUser
-$routes->get('/viewPostOpen', 'ReportController::viewPostOpen');                     //viewPostOpen
-$routes->get('/viewPostClose', 'ReportController::viewPostClose');                   //viewPostClose
-$routes->get('/reviewpost', 'UserController::reviewpost');                          //reviewPost
 
 
 /** 
-*!ReportController
+*!PostController
 */
-$routes->get('/postmanage', 'ReportController::viewPost');                           //viewPost(AllPost)
-$routes->get('/reportpost', 'ReportController::viewReport');                         //viewReport
-$routes->get('/deleteReport/(:any)', 'ReportController::deleteReport/$1');           //deleteReport
+$routes->get('/postmanage', 'PostController::viewPost');                           //viewPost(AllPost)
+$routes->get('/reportpost', 'PostController::viewReport');                         //viewReport
+$routes->get('/deleteReport/(:any)', 'PostController::deleteReport/$1');           //deleteReport
 $routes->get('/viewPostDetail/(:any)', 'PostController::viewPostDetail/$1',);        //viewPostDetail
+$routes->get('/reviewpost', 'PostController::reviewpost');                          //reviewPost
+$routes->get('/viewPostOpen', 'PostController::viewPostOpen');                     //viewPostOpen
+$routes->get('/viewPostClose', 'PostController::viewPostClose');                   //viewPostClose
+
 
 /** 
 *!CategoryrController

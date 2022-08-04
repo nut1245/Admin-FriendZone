@@ -36,6 +36,16 @@ class PostModel extends Model{
         ->get()->getResultArray();
     }
 
+    public function viewPostReview()
+    {
+        return $this->db->table('post')
+        ->join('provinces','post.province = provinces.id')
+        ->join('users','post.userId = users.userId')
+        ->orderBy('postId','DESC' )
+        ->where('statusPost','0')
+        ->get()->getResultArray();
+    }
+
 }
 
 ?>

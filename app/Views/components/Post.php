@@ -57,10 +57,11 @@
                 <div class="post-people-join">
                     <i class="fad fa-pennant fa-post-flag"></i>
                     <label class="text-post-people-join">ผู้เข้าร่วม :</label>
-                    <img src="https://media.discordapp.net/attachments/778499819072913482/936489935022747648/158282142_728598437840104_1157295371700176386_n.jpg?width=493&height=467" class="img-post-people-join">
-                    <img src="https://media.discordapp.net/attachments/778499819072913482/936575366338838578/5adf240418944669.jpg?width=463&height=467" class="img-post-people-join">
-                    <img src="https://media.discordapp.net/attachments/778499819072913482/958981116663050270/gus.jpg?width=465&height=467" class="img-post-people-join">
-                    <img src="https://media.discordapp.net/attachments/778499819072913482/802451103404130314/140456311_896854401129979_6687474046750012869_n.jpg?width=463&height=467" class="img-post-people-join">
+                    <?php foreach ($partsProfile as $partProfile) { ?>
+                        <?php if ($post["postId"] == $partProfile["postId_post"]) { ?>
+                            <img src="<?php echo $partProfile["userImage"] ?>" class="img-post-people-join">
+                        <?php } ?>
+                    <?php } ?>
                 </div>
 
                 <div class="post-line"></div>
