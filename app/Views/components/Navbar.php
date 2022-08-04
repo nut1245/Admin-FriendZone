@@ -48,13 +48,15 @@
                             </span></i> ตรวจสอบโพสต์
                         </a>
                     </li>
+
                     <li class="nav-item">
-                        <a class="nav-link" href="/category">
+                        <a class="nav-link" href="/reviewpost">
                             <span class="menu-icon">
-                                <i class="mdi mdi-star-circle" style="color:black"></i>
-                            </span></i> จัดการหมวดหมู่
+                                <i class="mdi mdi-star" style="color:yellow"></i>
+                            </span></i> รีวิวโพสต์
                         </a>
                     </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="/reportpost">
                             <span class="menu-icon">
@@ -63,10 +65,10 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/reviewpost">
+                        <a class="nav-link" href="/category">
                             <span class="menu-icon">
-                                <i class="mdi mdi-alert-octagon icon-item" style="color:red"></i>
-                            </span></i> รีวิวโพสต์
+                                <i class="mdi mdi-star-circle" style="color:black"></i>
+                            </span></i> จัดการหมวดหมู่
                         </a>
                     </li>
 

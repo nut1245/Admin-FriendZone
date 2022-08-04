@@ -4,6 +4,7 @@
         <div class="row row-cols-1 row-cols-md-4 g-4 ">
 
             <?php foreach ($postreviews as $postreview) { ?>
+                <div class="col">
                 <div class="card-post">
                     <div class="card-post-title1">
                         <img src="<?php echo $postreview["userImage"] ?>" class="img-post-profileUser">
@@ -114,8 +115,9 @@
                                     <?php } ?>
                                     <div class="div-text-review">
                                         <span class="span-review">
-                                            <a href="#" class="username-review"><?php echo $review["FName"] ?> : </a>
+                                            <a href="#" class="username-review"><?php echo $review["FName"] ?> : 
                                             <?php echo $review["detail_review"] ?>
+                                            </a>
                                         </span>
                                     </div>
                                 </div>
@@ -124,6 +126,10 @@
                     </div>
 
                 </div>
+                </div>
                 <br>
             <?php } ?>
+
         </div>
+    </div>
+</div>
