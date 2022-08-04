@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+body{
+    font-family: 'Kanit', cursive;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+.sum-review {
+    float: right;
+    margin: 1% 5% 0% 0%;
+    color: #ef5da8;
+}
+.div-review {
+    padding: 2% 4% 1% 4%;
+    /* background-color: antiquewhite; */
+}
+.img-review {
+    width: 9%;
+    border-radius: 50%;
+    float: left;
+}
+.fa-star-review1 {
+    color: #ffd900;
+    margin: 0% 0% 0% 3%;
+}
+.fa-star-review {
+    color: #ffd900;
+}
+.div-text-review {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0% 0% 0% 12%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.username-review {
+    text-decoration: none;
+    color: #3f3f3f;
+    font-weight: bold;
+}
+.username-review:hover {
+    color: #000000;
+}
+.span-review {
+    background-color: #e9e9e9;
+    padding: 1.5% 3%;
+    font-size: 92%;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.fa-star-title-review {
+    color: #ef5da8;
+    margin: 0% 1% 0% 0%;
+}
+.modal-review-btn-ok {
+    background-color: #6fb9ff;
+    color: #222222;
+    border-radius:20px;
+    margin: 5% 3% 0% 0%;
+    width: 150px;
+    height: 37px;
+}
+.modal-review-btn-ok:hover {
+    background-color: #3ca1ff;
+    color: #ffffff;
+}
+
+.modal-review-btn-cancel {
+    background-color: #ababab;
+    color: #222222;
+    border-radius: 20px;
+    margin-top: 5%;
+    width: 150px;
+    height: 37px;
+}
+.modal-review-btn-cancel:hover {
+    background-color: #797979;
+    color: #ffffff;
+}

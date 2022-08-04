@@ -26,8 +26,10 @@
   <!-- Layout styles -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="/CSS/post.css">
+  <link rel="stylesheet" href="/CSS/postReview.css">
   <!-- End layout styles -->
   <link rel="shortcut icon" href="#" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
@@ -37,7 +39,7 @@
     <?php $session = session(); ?>
     <?php require('components/Navbar.php'); ?>
     <div class="main-panel">
-      <div class="content-wrapper">
+      <div class="content-wrapper allPost">
       <?php require('components/ReviewPost.php'); ?>
       </div>
     </div>
@@ -66,6 +68,26 @@
   <script src="js/dashboard.js"></script>
   <!-- End custom js for this page -->
   </script>
+  <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const cardPost = document.querySelector(".allPost");
+            let toggle = false;
+            cardPost.addEventListener("click", (e) => {
+                const target = e.target.closest(".btn-show-comment")
+                if (!target) return
+                console.log(target.id);
+                const card = target.closest(".card-post");
+                const slidedown = card.querySelector(".slidedown");
+                console.log(toggle);
+                if (!toggle) {
+                    toggle = true;
+                    slidedown.style.display = "block";
+                } else {
+                    toggle = false;
+                    slidedown.style.display = "none";
+                }
+            })
+        }, false);
+    </script>
 </body>
-
 </html>

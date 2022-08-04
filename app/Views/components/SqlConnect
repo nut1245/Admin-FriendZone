@@ -18,20 +18,20 @@ $sql_report = "SELECT COUNT(*) FROM users";
 $allUser = mysqli_query($con, $sql_report);
 
 // Count All BlockUser
-$sql_report = "SELECT COUNT(*) FROM users WHERE statusUser = 3";
-$blockUser = mysqli_query($con, $sql_report);
+$sql_BlockUser = "SELECT COUNT(*) FROM users WHERE statusUser = 3";
+$blockUser = mysqli_query($con, $sql_BlockUser);
 
 // Count All Post
-$sql_report = "SELECT COUNT(*) FROM post";
-$allPost = mysqli_query($con, $sql_report);
+$sql_Post = "SELECT COUNT(*) FROM post";
+$allPost = mysqli_query($con, $sql_Post);
 
 // Count All PostOpen
-$sql_report = "SELECT COUNT(*) FROM post WHERE statusPost = 1";
-$PostOpen = mysqli_query($con, $sql_report);
+$sql_PostOpen = "SELECT COUNT(*) FROM post WHERE statusPost = 1";
+$PostOpen = mysqli_query($con, $sql_PostOpen);
 
 // Count All PostClose
-$sql_report = "SELECT COUNT(*) FROM post WHERE statusPost = 0";
-$PostClose = mysqli_query($con, $sql_report);
+$sql_PostClose = "SELECT COUNT(*) FROM post WHERE statusPost = 0";
+$PostClose = mysqli_query($con, $sql_PostClose);
 
 ?>
 
