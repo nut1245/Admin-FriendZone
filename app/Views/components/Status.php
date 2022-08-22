@@ -1,5 +1,5 @@
 <?php require('SqlConnect'); ?>
-<div class="row col-11">
+<div class="row col-12">
   <div class="col-md-3 grid-margin stretch-card">
     <div class="card" style="background-color:#ffffcc;" id="color-card">
       <div class="card-body ">
