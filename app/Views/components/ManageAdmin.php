@@ -56,7 +56,7 @@
                                             }
                                         </script>
 
-                                        <form action="/OfficerController/register" method="post" class="form-sample">
+                                        <form action="<?php echo base_url(); ?>/OfficerController/register" method="post" class="form-sample">
                                             <div class="row">
                                                 <input type="hidden" class="form-control" id="adminImageURL" name="offImage">
                                                 <div class="col-md-12">
@@ -162,7 +162,7 @@
                                                 <td><?php echo $value['gender']; ?></td>
                                                 <td><?php echo $value['phoneNumber']; ?></td>
                                                 <td>
-                                                    <a href="/deleteAdmin/<?php echo $value["offId"] ?>" type="button" class="btn btn-outline-danger ">
+                                                    <a href="<?php echo base_url(); ?>/deleteAdmin/<?php echo $value["offId"] ?>" type="button" class="btn btn-outline-danger ">
                                                         &nbsp;<i class="mdi mdi-delete"></i>
                                                     </a>
                                                 </td>

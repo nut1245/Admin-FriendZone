@@ -1,5 +1,5 @@
 <?php
-$con = mysqli_connect("localhost", "root", "", "friendzone") or die("Error: " . mysqli_error($con));
+$con = mysqli_connect("localhost", "friendszon_admin", "123456", "friendszon_admin") or die("Error: " . mysqli_error($con));
 
 // Count Request User
 $sql_users = "SELECT COUNT(*) FROM users WHERE statusUser = 0";

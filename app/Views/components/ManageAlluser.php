@@ -139,10 +139,10 @@
                                         ?>
                                     </td>
                                     <td>
-                                        <a href="/UnblockUser/<?php echo $value['userId']; ?>" type="button" class="btn btn-outline-primary ">
+                                        <a href="<?php echo base_url(); ?>/UnblockUser/<?php echo $value['userId']; ?>" type="button" class="btn btn-outline-primary ">
                                             <i class="mdi mdi-lock-open-outline"></i>
                                         </a>
-                                        <a href="/blockUser/<?php echo $value['userId']; ?>" type="button" class="btn btn-outline-danger ">
+                                        <a href="<?php echo base_url(); ?>/blockUser/<?php echo $value['userId']; ?>" type="button" class="btn btn-outline-danger ">
                                             <i class="mdi mdi-lock-outline"></i>
                                         </a>
                                     </td>

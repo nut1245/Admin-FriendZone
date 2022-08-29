@@ -14,7 +14,7 @@
             <div class="card-body">
                 <div class="row justify-content-between ">
                     <h4 class="card-title">จัดการหมวดหมู่กิจกรรม</h4>
-                    <form action="/CategoeyController/insertCategory" method="POST">
+                    <form action="<?php echo base_url(); ?>/CategoeyController/insertCategory" method="POST">
                         <div class="template-demo">
 
                             <!-- Button trigger modal -->
@@ -67,7 +67,7 @@
                                     <td></td>
                                     <td><?php echo $value['name_category']; ?></td>
                                     <td>
-                                        <a href="/deleteCategory/<?php echo $value["categoryId"] ?>" type="button" class="btn btn-outline-danger">
+                                        <a href="<?php echo base_url(); ?>/deleteCategory/<?php echo $value["categoryId"] ?>" type="button" class="btn btn-outline-danger">
                                             &nbsp;<i class="mdi mdi-delete"></i>
                                         </a>
                                     </td>

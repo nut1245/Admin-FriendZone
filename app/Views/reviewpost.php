@@ -24,9 +24,9 @@
   <!-- inject:css -->
   <!-- endinject -->
   <!-- Layout styles -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="/CSS/post.css">
-  <link rel="stylesheet" href="/CSS/postReview.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>/css/style.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>/css/post.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>/css/postReview.css">
   <!-- End layout styles -->
   <link rel="shortcut icon" href="#" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />

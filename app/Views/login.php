@@ -31,7 +31,7 @@
     <div class="center">
         <div class="ear ear--left"></div>
         <div class="ear ear--right"></div>
-        <div class="face" action="/OfficerController/login" method="post">
+        <div class="face" action="<?php echo base_url(); ?>/OfficerController/login" method="post">
             <div class="eyes">
                 <div class="eye eye--left">
                     <div class="glow"></div>
@@ -89,7 +89,7 @@
             </div>
         </div>
         
-        <form action="/OfficerController/login" method="post">
+        <form action="<?php echo base_url(); ?>/OfficerController/login" method="post">
             <div class="login">
             <?php if (session()->getFlashdata('msg')) : ?>
                     <div>

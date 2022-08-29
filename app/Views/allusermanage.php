@@ -35,7 +35,7 @@
 <body>
   <!------------------------------------------------------- Menu ---------------------------------------------------------------------------->
   <div class="container-scroller">
-    <?php require('components/SqlConnect'); ?>
+    <?php require('components/SqlConnect.php'); ?>
     <?php $session = session(); ?>
     <?php require('components/Navbar.php'); ?>
     <div class="main-panel">

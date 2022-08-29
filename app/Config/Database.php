@@ -33,9 +33,9 @@ class Database extends Config
     public $default = [
         'DSN'      => '',
         'hostname' => 'localhost',
-        'username' => 'root',
-        'password' => '',
-        'database' => 'friendzone',
+        'username' => 'friendszon_admin',
+        'password' => '123456',
+        'database' => 'friendszon_admin',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,

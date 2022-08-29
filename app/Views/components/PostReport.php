@@ -27,7 +27,7 @@
                                         <i class="mdi mdi-eye"></i>
                                     </a>
 
-                                    <a href="/deleteReport/<?php echo $value["reportId"] ?>" type="button" class="btn btn-outline-danger">
+                                    <a href="<?php echo base_url(); ?>/deleteReport/<?php echo $value["reportId"] ?>" type="button" class="btn btn-outline-danger">
                                         &nbsp;<i class="mdi mdi-delete"></i>
                                     </a>
                                 </center>

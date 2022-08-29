@@ -1,4 +1,4 @@
-<?php require('SqlConnect'); ?>
+<?php require('SqlConnect.php'); ?>
 <div class="row col-12">
   <div class="col-md-3 grid-margin stretch-card">
     <div class="card" style="background-color:#ffffcc;" id="color-card">

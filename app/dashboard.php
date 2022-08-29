@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+$con = mysqli_connect("localhost", "root", "", "friendzone") or die("Error: " . mysqli_error($con));
+?>
 
 <head>
   <!-- Required meta tags -->
@@ -24,11 +27,13 @@
   <!-- inject:css -->
   <!-- endinject -->
   <!-- Layout styles -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>/css/style.css">
-  <link rel="stylesheet" href="<?php echo base_url(); ?>/css/post.css">
+  <link rel="stylesheet" href="css/style.css">
   <!-- End layout styles -->
   <link rel="shortcut icon" href="#" />
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script
+src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+</script>
 </head>
 
 <body>
@@ -38,8 +43,9 @@
     <?php require('components/Navbar.php'); ?>
     <div class="main-panel">
       <div class="content-wrapper">
-      <?php require('components/PostReport.php'); ?>
-      <?php require('components/ModelReport.php'); ?>
+        <?php require('components/Status.php'); ?>
+        <?php require('components/GraphData.php'); ?>
+        <?php require('components/SocialButton.php'); ?>
       </div>
     </div>
   </div>

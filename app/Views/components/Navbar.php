@@ -14,8 +14,8 @@
                         <span class="count bg-success"></span>
                     </div>
                     <div class="profile-name">
-                        <h5 class="mb-0 font-weight-normal" style="color:black"><?php echo $session->get('FName'); ?></h5>
-                        <span style="color:black">Administer</span>
+                        <h5 class="mb-0 font-weight-normal" style="color:black"><?php echo $session->get('FName') . " " . $session->get('LName'); ?></h5>
+                        <span style="color:green">Administer</span>
                     </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@
             <span class="nav-link">แถบเมนู</span>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" href='/dashboard'>
+            <a class="nav-link" href='<?php echo base_url(); ?>/dashboard'>
                 <span class="menu-icon">
                     <i class="mdi mdi-home"></i>
                 </span>
@@ -42,7 +42,7 @@
             <div class="collapse" id="Post">
                 <ul class="nav flex-column sub-menu">
                     <li class="nav-item">
-                        <a class="nav-link" href="postmanage">
+                        <a class="nav-link" href="<?php echo base_url(); ?>/postmanage">
                             <span class="menu-icon">
                                 <i class="mdi mdi-animation"></i>
                             </span></i> ตรวจสอบโพสต์
@@ -50,7 +50,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/reviewpost">
+                        <a class="nav-link" href="<?php echo base_url(); ?>/reviewpost">
                             <span class="menu-icon">
                                 <i class="mdi mdi-star" style="color:yellow"></i>
                             </span></i> รีวิวโพสต์
@@ -58,14 +58,14 @@
                     </li>
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="/reportpost">
+                        <a class="nav-link" href="<?php echo base_url(); ?>/reportpost">
                             <span class="menu-icon">
                                 <i class="mdi mdi-alert-octagon icon-item" style="color:red"></i>
                             </span></i> รายงานโพสต์
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/category">
+                        <a class="nav-link" href="<?php echo base_url(); ?>/category">
                             <span class="menu-icon">
                                 <i class="mdi mdi-star-circle" style="color:black"></i>
                             </span></i> จัดการหมวดหมู่
@@ -88,14 +88,14 @@
                 <ul class="nav flex-column sub-menu">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="/alluser">
+                        <a class="nav-link" href="<?php echo base_url(); ?>/alluser">
                             <span class="menu-icon">
                                 <i class="mdi mdi-account-multiple-plus" style="color:blue"></i>
                             </span></i> คำขอการใช้งาน
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/allusermanage">
+                        <a class="nav-link" href="<?php echo base_url(); ?>/allusermanage">
                             <span class="menu-icon">
                                 <i class="mdi mdi-account-check" style="color:green"></i>
                             </span></i> จัดการผู้ใช้งานระบบ
@@ -118,7 +118,7 @@
                 <ul class="nav flex-column sub-menu">
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="/adminmanage">
+                        <a class="nav-link" href="<?php echo base_url(); ?>/adminmanage">
                             <span class="menu-icon">
                                 <i class="mdi mdi-account-multiple icon-item"></i>
                             </span></i> จัดการผู้ใช้งานแอดมิน
@@ -253,7 +253,7 @@
                 <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
                     <div class="navbar-profile">
                         <img class="img-xs rounded-circle" src="<?php echo $session->get('offImage'); ?>" alt="">
-                        <p class="mb-0 d-none d-sm-block navbar-profile-name"><?php echo $session->get('FName'); ?></p>
+                        <p class="mb-0 d-none d-sm-block navbar-profile-name"style="color: #fff;"><?php echo $session->get('FName') ?></p>
                         <i class="mdi mdi-menu-down d-none d-sm-block"></i>
                     </div>
                 </a>
@@ -271,7 +271,7 @@
                         </div>
                     </a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item preview-item" href="/logout">
+                    <a class="dropdown-item preview-item" href="<?php echo base_url(); ?>/logout">
                         <div class="preview-thumbnail">
                             <div class="preview-icon bg-dark rounded-circle">
                                 <i class="mdi mdi-logout text-danger"></i>

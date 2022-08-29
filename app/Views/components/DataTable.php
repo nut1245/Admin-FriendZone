@@ -15,11 +15,11 @@
         <div class="row justify-content-between ">
           <h4 class="card-title">จัดการสถานะการใช้งานทั้งหมด</h4>
           <div class="template-demo">
-            <a href="/viewUserSuccess" type="button" class="btn btn-outline-success btn-fw">ยืนยันตัวตนสำเร็จ</a>
-            <a href="/viewUserFail" type="button" class="btn btn-outline-warning btn-fw">รอยืนยันตัวตน</a>
-            <a href="/viewUserEdit" type="button" class="btn btn-outline-danger btn-fw">รอการแก้ไข</a>
-            <a href="/viewUserBlock" type="button" class="btn btn-outline-dark btn-fw">ผู้ใช้รายที่ถูกบล็อก</a>
-            <a href="/alluser" type="button" class="btn btn-outline-primary btn-fw">ผู้ใช้งานทั้งหมด</a>
+            <a href="<?php echo base_url(); ?>/viewUserSuccess" type="button" class="btn btn-outline-success btn-fw">ยืนยันตัวตนสำเร็จ</a>
+            <a href="<?php echo base_url(); ?>/viewUserFail" type="button" class="btn btn-outline-warning btn-fw">รอยืนยันตัวตน</a>
+            <a href="<?php echo base_url(); ?>/viewUserEdit" type="button" class="btn btn-outline-danger btn-fw">รอการแก้ไข</a>
+            <a href="<?php echo base_url(); ?>/viewUserBlock" type="button" class="btn btn-outline-dark btn-fw">ผู้ใช้รายที่ถูกบล็อก</a>
+            <a href="<?php echo base_url(); ?>/alluser" type="button" class="btn btn-outline-primary btn-fw">ผู้ใช้งานทั้งหมด</a>
             <br><br>
           </div>
         </div>
@@ -74,7 +74,7 @@
                       <i class="mdi mdi-eye"></i>
                     </a>
 
-                    <a href="/updateStatusFail/<?php echo $value['userId']; ?>" type="button" class="btn btn-outline-danger ">
+                    <a href="<?php echo base_url(); ?>/updateStatusFail/<?php echo $value['userId']; ?>" type="button" class="btn btn-outline-danger ">
                       <i class="mdi mdi-close"></i>
                     </a>
 

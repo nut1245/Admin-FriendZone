@@ -4,7 +4,7 @@
       <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header" style="background-color:#191c24">
-            <h5 class="modal-title" id="exampleModalLongTitle">ข้อมูลเพิ่มเติม</h5>
+            <h5 class="modal-title" id="exampleModalLongTitle" style="color:#fff">ข้อมูลเพิ่มเติม</h5>
             <button type="button" class="close " data-dismiss="modal" aria-label="Close" style="color:#fff; margin-right:1px;">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -82,11 +82,11 @@
               </div>
               <div class="row">
                 <div class="col-md-2 ms-auto">
-                  <a href="/updateStatus/<?php echo $value['userId']; ?>" type="button" class="btn btn-outline-success ">
+                  <a href="<?php echo base_url(); ?>/updateStatus/<?php echo $value['userId']; ?>" type="button" class="btn btn-outline-success ">
                     <h5>ผ่าน</h5>
                   </a>
                   &nbsp;
-                  <a href="/updateStatusFail/<?php echo $value['userId']; ?>" type="button" class="btn btn-outline-danger ">
+                  <a href="<?php echo base_url(); ?>/updateStatusFail/<?php echo $value['userId']; ?>" type="button" class="btn btn-outline-danger ">
                     <h5>ไม่ผ่าน</h5>
                   </a>
                 </div>

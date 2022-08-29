@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php
-$con = mysqli_connect("localhost", "root", "", "friendzone") or die("Error: " . mysqli_error($con));
+$con = mysqli_connect("localhost", "friendszon_admin", "123456", "friendszon_admin") or die("Error: " . mysqli_error($con));
 ?>
 
 <head>
@@ -27,7 +27,7 @@ $con = mysqli_connect("localhost", "root", "", "friendzone") or die("Error: " . 
   <!-- inject:css -->
   <!-- endinject -->
   <!-- Layout styles -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>/css/style.css">
   <!-- End layout styles -->
   <link rel="shortcut icon" href="#" />
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>

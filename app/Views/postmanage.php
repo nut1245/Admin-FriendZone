@@ -41,7 +41,7 @@
     <!------------------------------------------------------- Menu ---------------------------------------------------------------------------->
     <div class="container-scroller">
         <?php $session = session(); ?>
-        <?php require('components/SqlConnect'); ?>
+        <?php require('components/SqlConnect.php'); ?>
         <?php require('components/Navbar.php'); ?>
         <div class="main-panel">
             <div class="content-wrapper">
@@ -130,9 +130,9 @@
                         <hr width="20%" style=" border-top: 2px solid #000;  width:98%">
                         </hr>
                         <div class="template-demo">
-                            <a href="/postmanage" type="button" class="btn btn-outline-primary btn-fw">โพสต์ทั้งหมด</a>
-                            <a href="/viewPostOpen" type="button" class="btn btn-outline-success btn-fw">โพสต์ที่เปิดอยู่</a>
-                            <a href="/viewPostClose" type="button" class="btn btn-outline-danger btn-fw">โพสต์ที่ปิดไปแล้ว</a>
+                            <a href="<?php echo base_url(); ?>/postmanage" type="button" class="btn btn-outline-primary btn-fw">โพสต์ทั้งหมด</a>
+                            <a href="<?php echo base_url(); ?>/viewPostOpen" type="button" class="btn btn-outline-success btn-fw">โพสต์ที่เปิดอยู่</a>
+                            <a href="<?php echo base_url(); ?>/viewPostClose" type="button" class="btn btn-outline-danger btn-fw">โพสต์ที่ปิดไปแล้ว</a>
 
                             <br><br>
                         </div>

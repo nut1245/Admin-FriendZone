@@ -21,7 +21,7 @@ class PostController extends BaseController
         ];
 
         // var_dump($data);
-        echo view('reportPost', $data);
+        echo view('reportpost', $data);
     }
 
     //Show all PostUser
