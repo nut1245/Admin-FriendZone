@@ -76,6 +76,13 @@ $routes->get('/category', 'CategoeyController::showCategory');                  
 $routes->get('/deleteCategory/(:any)', 'CategoeyController::deleteCategory/$1');    //deleteCategory
 /*
 
+/** 
+*!For Test
+*/
+$routes->get('/deleteUser/(:any)', 'UserController::deleteUser/$1');    //deleteCategory
+/*
+
+
  * --------------------------------------------------------------------
  * Additional Routing
  * --------------------------------------------------------------------

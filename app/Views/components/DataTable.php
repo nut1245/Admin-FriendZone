@@ -78,6 +78,10 @@
                       <i class="mdi mdi-close"></i>
                     </a>
 
+                    <a href="<?php echo base_url(); ?>/deleteUser/<?php echo $value['userId']; ?>" type="button" class="btn btn-outline-danger ">
+                      <i class="mdi mdi-delete"></i>
+                    </a>
+
 
                   </td>
                 </tr>
