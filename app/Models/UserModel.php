@@ -80,4 +80,11 @@ class UserModel extends Model
             ->paginate(10, 'pages', $page);
         //->get()->getResultArray();
     }
+
+     //Delete User (Test)
+     public function deleteUser($userId)
+     {
+         $this->where('userId', $userId)->delete();
+         return TRUE;
+     }
 }

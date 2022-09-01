@@ -180,4 +180,16 @@ class UserController extends BaseController
         $session->setFlashdata('Success', 'ปลดบล็อกผู้ใช้รายนี้');
         return redirect()->to('/allusermanage');
     }
+
+    //Delete User (Test)
+    public function deleteUser($id = null)
+    {
+        $session = session();
+        $model = new UserModel();
+        $deleteUser = $model->deleteUser($id);
+        if ($deleteUser) {
+            $session->setFlashdata('Success', 'ลบผู้ใช้สำเร็จ');
+            return redirect()->to('/allusermanage');
+        }
+    }
 }
