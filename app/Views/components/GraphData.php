@@ -11,7 +11,7 @@
                         <div class=""></div>
                     </div>
                 </div>
-                <iframe title="FriendZoneBI" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=ddc30bce-0dfe-4e64-8d63-8e97e6320188&autoAuth=true&ctid=ede33462-c21d-405f-85e6-9586d5a60473" frameborder="0" allowFullScreen="true"></iframe>  
+                <iframe title="FriendZoneBI" width="1550" height="600" src="https://app.powerbi.com/reportEmbed?reportId=ddc30bce-0dfe-4e64-8d63-8e97e6320188&autoAuth=true&ctid=ede33462-c21d-405f-85e6-9586d5a60473" frameborder="0" allowFullScreen="true"></iframe>  
             </div>
         </div>
     </div>
