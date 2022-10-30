@@ -11,7 +11,7 @@
                         <div class=""></div>
                     </div>
                 </div>
-                <iframe title="FriendZones" width="1550" height="600" src="https://app.powerbi.com/reportEmbed?reportId=93e1ce73-2645-43f5-ac66-d5fbf12a668c&autoAuth=true&ctid=ede33462-c21d-405f-85e6-9586d5a60473&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXNvdXRoLWVhc3QtYXNpYS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true"></iframe>  
+                <iframe title="FriendZoneBI" width="1140" height="541.25" src="https://app.powerbi.com/reportEmbed?reportId=ddc30bce-0dfe-4e64-8d63-8e97e6320188&autoAuth=true&ctid=ede33462-c21d-405f-85e6-9586d5a60473" frameborder="0" allowFullScreen="true"></iframe>  
             </div>
         </div>
     </div>
